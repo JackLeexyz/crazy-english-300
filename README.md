@@ -30,6 +30,20 @@
 
 ---
 
+## 账号与云同步（可选）
+
+`server/` 是一个可选的轻量后端（FastAPI + SQLite），提供注册登录与多端进度同步：
+
+```bash
+cd server
+pip install -r requirements.txt
+python server.py        # http://127.0.0.1:8000
+```
+
+- 邮箱验证码注册 + 图形验证码防刷 + 登录失败限流 + 忘记密码
+- **没有后端时页面自动降级为纯离线模式**，账号入口隐藏，功能不受影响
+- 详见 [server/README.md](server/README.md)
+
 ## 目录结构
 
 ```

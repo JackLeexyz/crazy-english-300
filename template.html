@@ -110,6 +110,35 @@ footer{text-align:center;color:var(--sub);font-size:12px;padding:30px 0 50px}
 /* confetti */
 .confetto{position:fixed;top:-20px;font-size:22px;z-index:300;pointer-events:none;animation:fall linear forwards}
 @keyframes fall{to{transform:translateY(105vh) rotate(720deg);opacity:.2}}
+/* account widget */
+.acct{display:flex;align-items:center;gap:8px;margin-left:auto}
+.acct .a-chip{display:flex;align-items:center;gap:6px;border:1px solid var(--line);background:#fff;border-radius:20px;padding:5px 14px;font-size:13px;cursor:pointer;color:var(--sub)}
+.acct .a-chip:hover{border-color:var(--brand);color:var(--brand)}
+.acct .a-chip.me{cursor:default;color:#065f46;background:#ecfdf5;border-color:#a7f3d0}
+.acct .a-state{font-size:11px;color:#9ca3af}
+.acct .a-state.syncing{color:#d97706}
+.acct .a-state.ok{color:#059669}
+.acct .a-state.err{color:#dc2626}
+.acct .a-out{border:none;background:none;color:var(--sub);font-size:12px;cursor:pointer;text-decoration:underline;padding:0}
+#authMask{position:fixed;inset:0;background:rgba(17,24,39,.55);z-index:160;display:none;align-items:center;justify-content:center}
+#authMask.show{display:flex}
+.auth-card{position:relative;width:min(380px,92vw);background:#fff;border-radius:18px;padding:28px 26px;box-shadow:0 20px 60px rgba(0,0,0,.35);animation:pop .25s}
+.auth-card h3{font-size:19px;margin-bottom:4px}
+.auth-card p.sub{color:var(--sub);font-size:12px;margin-bottom:16px}
+.auth-card input{width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:10px;font-size:15px;margin-bottom:10px;outline:none}
+.auth-card input:focus{border-color:var(--brand)}
+.auth-card .btn{width:100%;border:none;background:var(--brand);color:#fff;border-radius:10px;padding:12px;font-size:16px;font-weight:600;cursor:pointer}
+.auth-card .btn:disabled{opacity:.55}
+.auth-card .swap{text-align:center;margin-top:12px;font-size:13px;color:var(--sub)}
+.auth-card .swap b{color:var(--accent);cursor:pointer}
+.auth-card .err{background:#fef2f2;color:#b91c1c;border-radius:8px;padding:8px 10px;font-size:13px;margin-top:10px;display:none}
+.auth-card .tip{font-size:11px;color:#9ca3af;margin-top:12px;line-height:1.6}
+.auth-card .row{display:flex;gap:8px;align-items:center;margin-bottom:10px}
+.auth-card .row input{margin-bottom:0;flex:1}
+.auth-card .mini{border:1px solid var(--brand);background:#fff;color:var(--brand);border-radius:10px;padding:0 14px;height:44px;font-size:13px;cursor:pointer;white-space:nowrap}
+.auth-card .mini:disabled{opacity:.5;cursor:default;border-color:var(--line);color:var(--sub)}
+.auth-card #authCaptchaImg{cursor:pointer;line-height:0;flex:0 0 auto}
+.auth-card #authCaptchaImg svg{border:1px solid var(--line);border-radius:8px;display:block}
 /* flashcard modal */
 #fcMask{position:fixed;inset:0;background:rgba(17,24,39,.55);z-index:150;display:none;align-items:center;justify-content:center}
 #fcMask.show{display:flex}
@@ -147,6 +176,7 @@ footer{text-align:center;color:var(--sub);font-size:12px;padding:30px 0 50px}
       <div class="pbar green"><div class="p-label"><span>🔤 重点词汇</span><b id="vocabProgText">0 / 0</b></div><div class="p-track"><div class="p-fill" id="vocabProgFill"></div></div></div>
       <div class="streak" id="streakBox" title="连续学习天数">🔥 <span id="streakDays">0</span> 天连胜 · 今日 +<span id="todayCount">0</span></div>
       <button class="dicebtn" onclick="randomSentence()" title="随机挑一句没学过的，自动朗读">🎲 随机学一句</button>
+      <div class="acct" id="acctBox" style="display:none"></div>
     </div>
   </div>
 
@@ -176,6 +206,28 @@ footer{text-align:center;color:var(--sub);font-size:12px;padding:30px 0 50px}
   </div>
 </div>
 
+<div id="authMask" onclick="if(event.target===this)closeAuth()">
+  <div class="auth-card">
+    <button class="fc-close" onclick="closeAuth()">✖</button>
+    <h3 id="authTitle">登录</h3>
+    <p class="sub" id="authSub">登录后可在手机、电脑之间同步学习进度</p>
+    <input type="email" id="authEmail" placeholder="邮箱" autocomplete="username">
+    <div class="row" id="authCodeRow" style="display:none">
+      <input type="text" id="authCode" placeholder="邮箱验证码" maxlength="6" inputmode="numeric">
+      <button class="mini" id="authSendCode" onclick="requestEmailCode()">获取验证码</button>
+    </div>
+    <input type="password" id="authPwd" placeholder="密码（至少 8 位）" autocomplete="current-password">
+    <input type="text" id="authName" placeholder="昵称（选填）" style="display:none">
+    <div class="row" id="authCaptchaRow" style="display:none">
+      <span id="authCaptchaImg" onclick="refreshCaptcha()" title="点击换一张"></span>
+      <input type="text" id="authCaptcha" placeholder="图形验证码" maxlength="6">
+    </div>
+    <button class="btn" id="authSubmit" onclick="submitAuth()">登录</button>
+    <div class="swap"><span id="authSwapText"></span> <b id="authSwapBtn" onclick="toggleAuthMode()"></b><span id="authForgot"></span></div>
+    <div class="err" id="authErr"></div>
+    <div class="tip" id="authTip"></div>
+  </div>
+</div>
 <div id="fcMask" onclick="if(event.target===this)closeFlashcard()">
   <div class="fc-wrap">
     <button class="fc-close" onclick="closeFlashcard()">✖</button>
@@ -215,6 +267,7 @@ function saveAll(){
   store.setItem(LS.sent, JSON.stringify([...learnedSent]));
   store.setItem(LS.vocab, JSON.stringify([...learnedVocab]));
   store.setItem(LS.mile, JSON.stringify(milestones));
+  schedulePush();   // 登录后自动把进度推到云端（未登录/离线时无操作）
 }
 const SENT_TOTAL = DATA.reduce((s,p)=>s+p.examples.length,0);
 const VOCAB_TOTAL = VOCAB.length;
@@ -522,6 +575,236 @@ renderVocab('alpha','');
 updateProgress();
 refreshStreak();
 
+/* ---------- account & cloud sync ---------- */
+const AUTH_KEY = 'c300_auth';
+let auth = null;
+try{ auth = JSON.parse(store.getItem(AUTH_KEY) || 'null'); }catch(e){}
+let apiOnline = false, syncTimer = null, authMode = 'login';
+let captchaId = '', codeTimer = null, loginNeedCaptcha = false, lastServerTs = 0;
+
+function setSyncState(txt, cls){
+  const el = document.getElementById('syncState');
+  if(el){ el.textContent = txt; el.className = 'a-state ' + (cls || ''); }
+}
+function renderAcct(){
+  const box = document.getElementById('acctBox');
+  if(!apiOnline){ box.style.display = 'none'; return; }   // 纯静态部署时完全隐藏
+  box.style.display = 'flex';
+  if(auth && auth.token){
+    box.innerHTML = '<span class="a-chip me">👤 ' + escapeHtml(auth.user?.name || auth.user?.email || '已登录') + '</span>'
+      + '<button class="a-out" onclick="logout()">退出</button>'
+      + '<span class="a-state" id="syncState"></span>';
+    setSyncState('已同步', 'ok');
+  } else {
+    box.innerHTML = '<span class="a-chip" onclick="openAuth(\'login\')">🔑 登录 / 注册</span>';
+  }
+}
+async function api(path, opts){
+  opts = opts || {};
+  const headers = {'Content-Type':'application/json'};
+  if(auth && auth.token) headers['Authorization'] = 'Bearer ' + auth.token;
+  const r = await fetch(path, {method: opts.method || 'GET', headers,
+    body: opts.body ? JSON.stringify(opts.body) : undefined});
+  let data = null;
+  try{ data = await r.json(); }catch(e){}
+  if(!r.ok) throw new Error((data && (data.detail || data.error)) || ('请求失败 ' + r.status));
+  return data || {};
+}
+async function probeAPI(){
+  try{
+    const r = await fetch('/api/me');
+    apiOnline = (r.status === 401 || r.ok);   // 401 说明后端在，只是没登录
+  }catch(e){ apiOnline = false; }
+  renderAcct();
+  if(apiOnline && auth && auth.token){
+    try{
+      const me = await api('/api/me');
+      if(me.user) auth.user = me.user;
+      await pullProgress();
+    }catch(e){ auth = null; store.removeItem(AUTH_KEY); renderAcct(); }
+  }
+}
+function showAuthErr(msg){
+  const err = document.getElementById('authErr');
+  err.textContent = msg; err.style.display = 'block';
+}
+function clearAuthErr(){ document.getElementById('authErr').style.display = 'none'; }
+function showCaptchaRow(show){
+  const row = document.getElementById('authCaptchaRow');
+  row.style.display = show ? 'flex' : 'none';
+  if(show){
+    document.getElementById('authCaptchaImg').textContent = '⏳';   // 加载中占位，避免用户看到空白
+    return refreshCaptcha();
+  }
+  return Promise.resolve();
+}
+async function refreshCaptcha(){
+  try{
+    const d = await api('/api/captcha');
+    captchaId = d.id;
+    document.getElementById('authCaptchaImg').innerHTML = d.svg;
+    document.getElementById('authCaptcha').value = '';
+  }catch(e){}
+}
+function setAuthMode(mode){
+  authMode = mode;
+  const isLogin = mode === 'login';
+  document.getElementById('authTitle').textContent =
+    isLogin ? '登录' : (mode === 'register' ? '注册' : '重置密码');
+  document.getElementById('authSub').textContent =
+    isLogin ? '登录后可在手机、电脑之间同步学习进度'
+            : (mode === 'register' ? '注册后进度自动同步到云端，换设备不丢' : '输入注册邮箱，验证后可设置新密码');
+  document.getElementById('authCodeRow').style.display = isLogin ? 'none' : 'flex';
+  document.getElementById('authName').style.display = mode === 'register' ? 'block' : 'none';
+  document.getElementById('authPwd').placeholder = mode === 'reset' ? '新密码（至少 8 位）' : '密码（至少 8 位）';
+  document.getElementById('authSubmit').textContent =
+    isLogin ? '登录' : (mode === 'register' ? '注册并同步' : '确认重置');
+  document.getElementById('authSwapText').textContent =
+    isLogin ? '还没有账号？' : (mode === 'register' ? '已有账号？' : '想起来了？');
+  document.getElementById('authSwapBtn').textContent = isLogin ? '立即注册' : '去登录';
+  document.getElementById('authForgot').innerHTML =
+    isLogin ? ' · <b onclick="setAuthMode(\'reset\')">忘记密码</b>' : '';
+  document.getElementById('authTip').textContent =
+    isLogin ? '不登录也能正常使用，进度保存在本机浏览器；连续输错 3 次会要求输入图形验证码。'
+            : (mode === 'register' ? '验证码发送到邮箱，10 分钟内有效。未配置邮件服务时，验证码会显示在提示里。'
+                                   : '重置后原进度不受影响。');
+  clearAuthErr(); showCaptchaRow(false);
+}
+function openAuth(mode){
+  setAuthMode(mode || 'login');
+  document.getElementById('authMask').classList.add('show');
+  setTimeout(()=>document.getElementById('authEmail').focus(), 60);
+}
+function closeAuth(){ document.getElementById('authMask').classList.remove('show'); }
+function toggleAuthMode(){ setAuthMode(authMode === 'login' ? 'register' : 'login'); }
+function startCodeCooldown(){
+  const btn = document.getElementById('authSendCode');
+  let left = 60;
+  btn.disabled = true; btn.textContent = left + 's 后重发';
+  clearInterval(codeTimer);
+  codeTimer = setInterval(()=>{
+    left--;
+    if(left <= 0){ clearInterval(codeTimer); btn.disabled = false; btn.textContent = '重新获取'; }
+    else btn.textContent = left + 's 后重发';
+  }, 1000);
+}
+async function requestEmailCode(){
+  const email = document.getElementById('authEmail').value.trim();
+  clearAuthErr();
+  if(!email.includes('@')){ showAuthErr('请先填写有效邮箱'); return; }
+  const cap = document.getElementById('authCaptcha').value.trim();
+  if(!cap){                       // 先展示图形验证码，填了才能发邮件
+    await showCaptchaRow(true);
+    showAuthErr('请先填写图形验证码，再获取邮箱验证码');
+    return;
+  }
+  const btn = document.getElementById('authSendCode');
+  btn.disabled = true; btn.textContent = '发送中…';
+  try{
+    const d = await api('/api/email-code', {method:'POST', body:{
+      email, purpose: authMode === 'reset' ? 'reset' : 'register',
+      captcha_id: captchaId, captcha_code: cap,
+    }});
+    document.getElementById('authCaptcha').value = '';
+    showCaptchaRow(false);
+    startCodeCooldown();
+    toast(d.sent ? '📮 验证码已发送到邮箱' : ('🛠 开发模式验证码：' + (d.code || '见服务端日志')));
+  }catch(e){
+    btn.disabled = false; btn.textContent = '获取验证码';
+    showCaptchaRow(true);
+    showAuthErr(e.message || '验证码发送失败');
+  }
+}
+async function submitAuth(){
+  const email = document.getElementById('authEmail').value.trim();
+  const pwd = document.getElementById('authPwd').value;
+  const name = document.getElementById('authName').value.trim();
+  const code = document.getElementById('authCode').value.trim();
+  const btn = document.getElementById('authSubmit');
+  clearAuthErr();
+  if(!email.includes('@')){ showAuthErr('请输入有效邮箱'); return; }
+  if(pwd.length < 8){ showAuthErr('密码至少 8 位'); return; }
+  if(authMode === 'login'){
+    if(loginNeedCaptcha && !document.getElementById('authCaptcha').value.trim()){
+      showCaptchaRow(true); showAuthErr('请输入图形验证码'); return;
+    }
+  } else if(!/^\d{6}$/.test(code)){
+    showAuthErr('请输入 6 位邮箱验证码'); return;
+  }
+  btn.disabled = true; btn.textContent = '处理中…';
+  try{
+    if(authMode === 'login'){
+      const res = await api('/api/login', {method:'POST', body:{
+        email, password: pwd,
+        captcha_id: captchaId, captcha_code: document.getElementById('authCaptcha').value.trim(),
+      }});
+      auth = {token: res.token, user: res.user};
+      store.setItem(AUTH_KEY, JSON.stringify(auth));
+      loginNeedCaptcha = false;
+      closeAuth(); renderAcct(); await pullProgress();
+    } else {
+      const path = authMode === 'register' ? '/api/register' : '/api/password/reset';
+      const res = await api(path, {method:'POST', body:{email, password: pwd, name, code}});
+      if(authMode === 'reset'){
+        toast('✅ 密码已重置，请用新密码登录');
+        setAuthMode('login');
+      } else {
+        auth = {token: res.token, user: res.user};
+        store.setItem(AUTH_KEY, JSON.stringify(auth));
+        closeAuth(); renderAcct(); await pullProgress();
+      }
+    }
+  }catch(e){
+    const msg = e.message || '操作失败';
+    showAuthErr(msg);
+    if(authMode === 'login' && msg.includes('图形验证码')){   // 连续失败后服务端要求验证码
+      loginNeedCaptcha = true;
+      await showCaptchaRow(true);
+      showAuthErr('为安全起见，请输入图形验证码后重新登录');
+      setTimeout(()=>document.getElementById('authCaptcha').focus(), 60);
+    }
+  }finally{
+    btn.disabled = false;
+    btn.textContent = authMode === 'login' ? '登录' : (authMode === 'register' ? '注册并同步' : '确认重置');
+  }
+}
+function logout(){
+  auth = null; store.removeItem(AUTH_KEY); renderAcct();
+  toast('已退出登录，进度仍保存在本机');
+}
+async function pullProgress(){
+  try{
+    const p = await api('/api/progress');
+    lastServerTs = p.updated_at || 0;
+    let added = 0;
+    (p.sent || []).forEach(id => { if(!learnedSent.has(id)){ learnedSent.add(id); added++; } });
+    (p.vocab || []).forEach(w => { if(!learnedVocab.has(w)){ learnedVocab.add(w); added++; } });
+    if(added){
+      saveAll();
+      renderSentences(document.getElementById('searchBox').value);
+      renderVocab(currentSort, document.getElementById('searchBox').value);
+      updateProgress();
+    }
+    toast('☁️ 已同步云端进度' + (added ? '（合并 ' + added + ' 条）' : ''));
+  }catch(e){ setSyncState('同步失败', 'err'); }
+}
+function schedulePush(){
+  if(!apiOnline || !(auth && auth.token)) return;
+  setSyncState('同步中…', 'syncing');
+  clearTimeout(syncTimer);
+  syncTimer = setTimeout(async () => {
+    try{
+      const res = await api('/api/progress', {method:'PUT', body:{
+        sent:[...learnedSent], vocab:[...learnedVocab], base_ts: lastServerTs,
+      }});
+      lastServerTs = res.updated_at || lastServerTs;
+      setSyncState(res.merged ? '已合并' : '已同步', 'ok');
+    }catch(e){ setSyncState('同步失败', 'err'); }
+  }, 1200);
+}
+document.getElementById('authPwd') && document.getElementById('authPwd')
+  .addEventListener('keydown', e => { if(e.key === 'Enter') submitAuth(); });
+
 /* ---------- random sentence ---------- */
 function randomSentence(){
   const todo = [];
@@ -597,6 +880,10 @@ document.addEventListener('keydown', e=>{
   if(e.key==='ArrowRight') fcAnswer(true);
   if(e.key==='Escape') closeFlashcard();
 });
+
+/* ---------- 启动（放在最后，确保所有声明已就绪） ---------- */
+setAuthMode('login');   // 初始化登录弹窗文案
+probeAPI();             // 探测后端：有则显示账号入口并同步，无则保持纯离线模式
 </script>
 </body>
 </html>
