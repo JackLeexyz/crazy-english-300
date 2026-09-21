@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>李阳疯狂英语 300 句 · 互动朗读版</title>
+<style>
+:root{
+  --bg:#f5f7fb; --card:#ffffff; --ink:#1f2937; --sub:#6b7280;
+  --brand:#e0432f; --brand-soft:#fdeceb; --accent:#2563eb; --line:#e5e7eb;
+  --tip-bg:#1f2937; --tip-ink:#f9fafb;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"PingFang SC","Microsoft YaHei",-apple-system,"Helvetica Neue",Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.7}
+a{color:var(--accent);text-decoration:none}
+header.top{background:linear-gradient(135deg,#c73327,#e0432f 55%,#f0762f);color:#fff;padding:34px 20px 76px;text-align:center}
+header.top h1{font-size:30px;letter-spacing:2px}
+header.top p{opacity:.92;margin-top:8px;font-size:14px}
+.wrap{max-width:960px;margin:0 auto;padding:0 16px}
+.toolbar{margin:-46px auto 18px;background:var(--card);border-radius:14px;box-shadow:0 8px 24px rgba(31,41,55,.10);padding:14px 16px;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.toolbar input[type=search]{flex:1;min-width:200px;padding:10px 14px;border:1px solid var(--line);border-radius:10px;font-size:15px;outline:none}
+.toolbar input[type=search]:focus{border-color:var(--brand)}
+.tabbtn{border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px 18px;font-size:15px;cursor:pointer;color:var(--sub)}
+.tabbtn.active{background:var(--brand);border-color:var(--brand);color:#fff;font-weight:600}
+.ratebox{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--sub)}
+.ratebox input{width:110px}
+.section-title{font-size:20px;font-weight:700;margin:26px 0 12px;padding-left:12px;border-left:5px solid var(--brand)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:16px;box-shadow:0 2px 8px rgba(31,41,55,.04)}
+.pat-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;border-bottom:1px dashed var(--line);padding-bottom:10px;margin-bottom:10px}
+.pat-num{background:var(--brand);color:#fff;font-weight:700;border-radius:8px;padding:2px 10px;font-size:14px}
+.pat-en{font-size:18px;font-weight:700;color:#b3331f}
+.pat-cn{color:var(--sub);font-size:14px}
+.tagchip{background:#eef2ff;color:#4338ca;border-radius:6px;font-size:12px;padding:1px 8px}
+.ex{padding:8px 0 8px 4px}
+.ex+.ex{border-top:1px solid #f1f3f7}
+.ex-en{font-size:17px}
+.ex-cn{color:var(--sub);font-size:14px;margin-top:2px}
+.w{cursor:pointer;border-radius:4px;padding:0 1px;transition:background .12s}
+.w:hover{background:#ffe3d6;color:#c73327}
+.spk{display:inline-flex;align-items:center;justify-content:center;border:none;background:var(--brand-soft);color:var(--brand);width:30px;height:30px;border-radius:50%;cursor:pointer;margin-left:8px;vertical-align:middle;transition:transform .12s}
+.spk:hover{transform:scale(1.12)}
+.spk.small{width:24px;height:24px;font-size:12px}
+.spk.speaking{background:var(--brand);color:#fff;animation:pulse 1s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(224,67,47,.45)}100%{box-shadow:0 0 0 9px rgba(224,67,47,0)}}
+#tooltip{position:absolute;z-index:99;max-width:340px;background:var(--tip-bg);color:var(--tip-ink);border-radius:12px;padding:12px 14px;font-size:14px;box-shadow:0 10px 30px rgba(0,0,0,.28);display:none;line-height:1.6}
+#tooltip .t-word{font-size:17px;font-weight:700;color:#ffd9cf}
+#tooltip .t-phon{color:#9ca3af;margin-left:8px;font-size:13px}
+#tooltip .t-ctx{margin-top:6px;background:rgba(224,67,47,.22);border-left:3px solid #f0762f;padding:4px 8px;border-radius:6px}
+#tooltip .t-ctx b{color:#ffb59f}
+#tooltip .t-senses{margin-top:6px;color:#d1d5db;font-size:13px}
+#tooltip .t-spk{margin-top:8px}
+#tooltip .t-spk button{background:#374151;color:#fff;border:none;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:13px}
+#tooltip .t-spk button:hover{background:var(--brand)}
+#tooltip .t-none{color:#9ca3af;margin-top:6px;font-size:13px}
+/* vocab */
+.letters{position:sticky;top:0;z-index:20;background:var(--bg);padding:10px 0;display:flex;flex-wrap:wrap;gap:5px}
+.letters button{border:1px solid var(--line);background:#fff;border-radius:8px;min-width:32px;height:32px;cursor:pointer;font-size:13px;color:var(--sub)}
+.letters button:hover,.letters button.on{background:var(--brand);color:#fff;border-color:var(--brand)}
+.sortbar{display:flex;gap:8px;margin:12px 0;flex-wrap:wrap}
+.sortbar button{border:1px solid var(--line);background:#fff;border-radius:20px;padding:6px 16px;cursor:pointer;font-size:13px;color:var(--sub)}
+.sortbar button.on{background:#1f2937;color:#fff;border-color:#1f2937}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.vcard{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.vcard .v-head{display:flex;align-items:center;gap:8px}
+.vcard .v-word{font-size:17px;font-weight:700;color:#b3331f}
+.vcard .v-phon{color:var(--sub);font-size:12px}
+.vcard .v-mean{font-size:13px;color:var(--ink);margin-top:4px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.vcard .v-ex{font-size:12px;color:var(--sub);margin-top:6px;border-top:1px dashed var(--line);padding-top:6px}
+.vcard .v-roots{margin-top:6px;background:#fff8f2;border:1px solid #ffe3cc;border-radius:8px;padding:5px 8px;font-size:12px;color:#9a3412;display:flex;flex-wrap:wrap;gap:4px 10px}
+.vcard .v-roots .rp b{color:#c2410c}
+.vcard .v-roots .rp i{font-style:normal;color:#b6c0cf;margin:0 2px}
+.vcard .v-roots .rk{color:#a8b3c2;font-size:11px;margin-left:2px}
+.v-word .seg-dot{color:#f0762f;font-weight:800;padding:0 1px}
+.v-word .syl-dot{color:#b6c0cf;font-weight:600;padding:0 1px}
+.fc-word .syl-dot{color:#f3c2b3;font-weight:600;padding:0 1px}
+.pat-en .w:hover{background:#ffe3d6;color:#8f2313}
+.vcard .v-ex em{color:var(--accent);font-style:normal}
+.letter-h{font-size:18px;font-weight:800;color:var(--brand);margin:18px 0 10px}
+.empty{color:var(--sub);text-align:center;padding:40px 0}
+footer{text-align:center;color:var(--sub);font-size:12px;padding:30px 0 50px}
+/* learn checkbox */
+.learn{display:inline-flex;align-items:center;gap:4px;margin-left:8px;cursor:pointer;user-select:none;font-size:12px;color:var(--sub);vertical-align:middle}
+.learn input{accent-color:var(--brand);width:16px;height:16px;cursor:pointer}
+.ex.learned .ex-en{color:#9ca3af}
+.ex.learned .ex-en .w:hover{background:#d1fae5;color:#047857}
+.pat-prog{margin-left:auto;font-size:12px;color:var(--sub)}
+.pat-prog.done{color:#059669;font-weight:700}
+.vcard .v-learn{margin-left:auto}
+.vcard.learned{opacity:.62;border-color:#a7f3d0;background:#f6fef9}
+/* progress bars */
+.prow{display:flex;flex-wrap:wrap;gap:14px;align-items:center;width:100%;border-top:1px dashed var(--line);padding-top:12px;margin-top:4px}
+.pbar{flex:1;min-width:200px}
+.pbar .p-label{display:flex;justify-content:space-between;font-size:12px;color:var(--sub);margin-bottom:4px}
+.pbar .p-label b{color:var(--ink)}
+.pbar .p-track{height:10px;background:#eef0f4;border-radius:6px;overflow:hidden}
+.pbar .p-fill{height:100%;border-radius:6px;background:linear-gradient(90deg,#f0762f,#e0432f);width:0;transition:width .5s cubic-bezier(.22,1,.36,1)}
+.pbar.green .p-fill{background:linear-gradient(90deg,#34d399,#059669)}
+.streak{display:flex;align-items:center;gap:6px;background:#fff7ed;border:1px solid #fed7aa;color:#c2410c;border-radius:10px;padding:6px 12px;font-size:13px;font-weight:600}
+.dicebtn{border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 14px;cursor:pointer;font-size:13px;color:var(--accent);font-weight:600}
+.dicebtn:hover{background:#eef2ff}
+.automark{display:flex;align-items:center;gap:5px;font-size:12px;color:var(--sub);cursor:pointer;user-select:none}
+.automark input{accent-color:var(--brand)}
+/* filter chips */
+.fchips{display:flex;gap:8px;margin:14px 0 4px;flex-wrap:wrap}
+.fchips button{border:1px solid var(--line);background:#fff;border-radius:20px;padding:5px 14px;cursor:pointer;font-size:12px;color:var(--sub)}
+.fchips button.on{background:var(--brand);color:#fff;border-color:var(--brand)}
+/* toast */
+#toast{position:fixed;left:50%;bottom:36px;transform:translateX(-50%) translateY(20px);background:#1f2937;color:#fff;border-radius:12px;padding:12px 22px;font-size:15px;opacity:0;pointer-events:none;transition:all .35s;z-index:200;box-shadow:0 10px 30px rgba(0,0,0,.3)}
+#toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+/* confetti */
+.confetto{position:fixed;top:-20px;font-size:22px;z-index:300;pointer-events:none;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(105vh) rotate(720deg);opacity:.2}}
+/* flashcard modal */
+#fcMask{position:fixed;inset:0;background:rgba(17,24,39,.55);z-index:150;display:none;align-items:center;justify-content:center}
+#fcMask.show{display:flex}
+.fc-card{width:min(420px,90vw);background:#fff;border-radius:18px;padding:30px 26px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.35);animation:pop .25s}
+@keyframes pop{from{transform:scale(.85);opacity:0}to{transform:scale(1);opacity:1}}
+.fc-count{font-size:12px;color:var(--sub)}
+.fc-word{font-size:34px;font-weight:800;color:#b3331f;margin:10px 0 2px}
+.fc-phon{color:var(--sub);font-size:14px}
+.fc-mean{margin:16px auto;min-height:52px;font-size:16px;color:var(--ink);background:#f8fafc;border-radius:12px;padding:12px;display:flex;align-items:center;justify-content:center}
+.fc-mean.hidden-mean{color:transparent;text-shadow:0 0 12px rgba(31,41,55,.35);cursor:pointer;user-select:none}
+.fc-ex{font-size:13px;color:var(--sub);margin-bottom:14px}
+.fc-btns{display:flex;gap:10px;justify-content:center;margin-top:8px}
+.fc-btns button{border:none;border-radius:10px;padding:10px 22px;font-size:15px;cursor:pointer;font-weight:600}
+.fc-know{background:#059669;color:#fff}
+.fc-dunno{background:#f3f4f6;color:#374151}
+.fc-close{position:absolute;top:14px;right:18px;border:none;background:none;font-size:20px;cursor:pointer;color:var(--sub)}
+.fc-wrap{position:relative}
+@media (max-width:640px){header.top h1{font-size:22px}.ex-en{font-size:16px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <h1>李阳疯狂英语 300 句</h1>
+  <p>互动朗读版 · 点击喇叭朗读句子 · 鼠标悬停单词查看释义与发音 · 共 __PATCOUNT__ 个句型 / __EXCOUNT__ 条例句</p>
+</header>
+<div class="wrap">
+  <div class="toolbar">
+    <button class="tabbtn active" id="tabSent" onclick="switchTab('sent')">📖 句型例句</button>
+    <button class="tabbtn" id="tabVocab" onclick="switchTab('vocab')">🔤 重点词汇</button>
+    <input type="search" id="searchBox" placeholder="搜索句型、英文句子或中文释义…" oninput="onSearch(this.value)">
+    <div class="ratebox">语速 <input type="range" id="rate" min="0.5" max="1.3" step="0.05" value="0.9" oninput="speechRate=this.value"><span id="rateVal">0.9</span></div>
+    <label class="automark" title="点击喇叭朗读后自动标记为已学"><input type="checkbox" id="autoMark" onchange="setAutoMark(this.checked)">朗读后自动标记</label>
+    <div class="prow">
+      <div class="pbar"><div class="p-label"><span>📖 句型例句</span><b id="sentProgText">0 / 0</b></div><div class="p-track"><div class="p-fill" id="sentProgFill"></div></div></div>
+      <div class="pbar green"><div class="p-label"><span>🔤 重点词汇</span><b id="vocabProgText">0 / 0</b></div><div class="p-track"><div class="p-fill" id="vocabProgFill"></div></div></div>
+      <div class="streak" id="streakBox" title="连续学习天数">🔥 <span id="streakDays">0</span> 天连胜 · 今日 +<span id="todayCount">0</span></div>
+      <button class="dicebtn" onclick="randomSentence()" title="随机挑一句没学过的，自动朗读">🎲 随机学一句</button>
+    </div>
+  </div>
+
+  <div id="sentView">
+    <div class="fchips" id="sentFilter">
+      <button class="on" data-f="all" onclick="setSentFilter('all',this)">全部</button>
+      <button data-f="todo" onclick="setSentFilter('todo',this)">未学</button>
+      <button data-f="done" onclick="setSentFilter('done',this)">已学 ✅</button>
+    </div>
+    <div id="sentList"></div>
+  </div>
+
+  <div id="vocabView" style="display:none">
+    <div class="sortbar">
+      <button class="on" data-sort="alpha" onclick="setVocabSort('alpha',this)">按字母排序</button>
+      <button data-sort="freq" onclick="setVocabSort('freq',this)">按考频星级排序</button>
+      <button data-sort="order" onclick="setVocabSort('order',this)">按句中出现顺序</button>
+      <button class="dicebtn" style="margin-left:auto" onclick="openFlashcard()">🃏 闪卡复习</button>
+    </div>
+    <div class="fchips" id="vocabFilter">
+      <button class="on" data-f="all" onclick="setVocabFilter('all',this)">全部</button>
+      <button data-f="todo" onclick="setVocabFilter('todo',this)">未学</button>
+      <button data-f="done" onclick="setVocabFilter('done',this)">已学 ✅</button>
+    </div>
+    <div class="letters" id="letterBar"></div>
+    <div id="vocabList"></div>
+  </div>
+</div>
+
+<div id="fcMask" onclick="if(event.target===this)closeFlashcard()">
+  <div class="fc-wrap">
+    <button class="fc-close" onclick="closeFlashcard()">✖</button>
+    <div class="fc-card" id="fcCard"></div>
+  </div>
+</div>
+<div id="toast"></div>
+
+<div id="tooltip"></div>
+<footer>数据来源：李阳疯狂英语 300 句整理版 · 词典：ECDICT 开源英汉词典 · 发音由浏览器语音合成提供</footer>
+
+<script>
+const DATA = __DATA__;
+const DICT = __DICT__;   // word -> {p: phonetic, t: translation}
+const CTX  = __CTX__;    // "patIdx-exIdx" -> { word: contextualSense }
+const VOCAB = __VOCAB__; // [{w,p,t,s,ex:{pi,ei,en,cn}}]
+let speechRate = 0.9;
+document.getElementById('rate').addEventListener('input',e=>{document.getElementById('rateVal').textContent=e.target.value});
+
+/* ---------- learning state (persisted) ---------- */
+const LS = {sent:'c300_sent', vocab:'c300_vocab', days:'c300_days', mile:'c300_mile', auto:'c300_auto'};
+const store = (()=>{ // localStorage with in-memory fallback (e.g. restricted file:// contexts)
+  try{localStorage.setItem('__t','1');localStorage.removeItem('__t');return localStorage;}catch(e){
+    const m = {};
+    return {getItem:k=>(k in m?m[k]:null), setItem:(k,v)=>{m[k]=String(v)}, removeItem:k=>{delete m[k]}};
+  }
+})();
+function loadSet(k){try{return new Set(JSON.parse(store.getItem(k)||'[]'))}catch(e){return new Set()}}
+const learnedSent = loadSet(LS.sent);
+const learnedVocab = loadSet(LS.vocab);
+let milestones = {};
+try{milestones = JSON.parse(store.getItem(LS.mile)||'{}')}catch(e){}
+let autoMark = store.getItem(LS.auto)==='1';
+document.getElementById('autoMark').checked = autoMark;
+function setAutoMark(v){autoMark=v;store.setItem(LS.auto,v?'1':'0')}
+function saveAll(){
+  store.setItem(LS.sent, JSON.stringify([...learnedSent]));
+  store.setItem(LS.vocab, JSON.stringify([...learnedVocab]));
+  store.setItem(LS.mile, JSON.stringify(milestones));
+}
+const SENT_TOTAL = DATA.reduce((s,p)=>s+p.examples.length,0);
+const VOCAB_TOTAL = VOCAB.length;
+
+/* streak & daily count */
+function todayStr(){return new Date().toISOString().slice(0,10)}
+function getDays(){try{return JSON.parse(store.getItem(LS.days)||'{}')}catch(e){return{}}}
+function bumpToday(){
+  const d = getDays(); const t = todayStr();
+  d[t] = (d[t]||0)+1;
+  store.setItem(LS.days, JSON.stringify(d));
+}
+function streakInfo(){
+  const d = getDays();
+  let streak = 0;
+  const cur = new Date();
+  if(!d[todayStr()]) cur.setDate(cur.getDate()-1); // today not yet: count from yesterday
+  while(d[cur.toISOString().slice(0,10)]){streak++;cur.setDate(cur.getDate()-1);}
+  return {streak, today: d[todayStr()]||0};
+}
+function refreshStreak(){
+  const s = streakInfo();
+  document.getElementById('streakDays').textContent = s.streak;
+  document.getElementById('todayCount').textContent = s.today;
+}
+
+/* toast + confetti */
+let toastTimer = null;
+function toast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(()=>t.classList.remove('show'), 2600);
+}
+function confetti(){
+  const emo = ['🎉','⭐','🔥','💪','👏','✨'];
+  for(let i=0;i<26;i++){
+    const s = document.createElement('span');
+    s.className = 'confetto';
+    s.textContent = emo[Math.floor(Math.random()*emo.length)];
+    s.style.left = Math.random()*100+'vw';
+    s.style.animationDuration = (1.6+Math.random()*1.6)+'s';
+    s.style.fontSize = (16+Math.random()*18)+'px';
+    document.body.appendChild(s);
+    setTimeout(()=>s.remove(), 3400);
+  }
+}
+const MILE_MSG = {25:'🌱 好的开始！完成 25% 了',50:'💪 过半啦！完成 50%',75:'🚀 冲刺阶段！完成 75%',100:'🏆 太疯狂了！全部完成！'};
+function checkMilestone(kind, done, total){
+  const pct = Math.floor(done/total*100);
+  for(const th of [25,50,75,100]){
+    if(pct>=th && !milestones[kind+th]){
+      milestones[kind+th] = 1; saveAll();
+      confetti(); toast(MILE_MSG[th] + (kind==='s'?'（句型例句）':'（重点词汇）'));
+    }
+  }
+}
+function updateProgress(){
+  const sd = learnedSent.size, vd = learnedVocab.size;
+  document.getElementById('sentProgText').textContent = sd+' / '+SENT_TOTAL+'（'+Math.floor(sd/SENT_TOTAL*100)+'%）';
+  document.getElementById('sentProgFill').style.width = (sd/SENT_TOTAL*100)+'%';
+  document.getElementById('vocabProgText').textContent = vd+' / '+VOCAB_TOTAL+'（'+Math.floor(vd/VOCAB_TOTAL*100)+'%）';
+  document.getElementById('vocabProgFill').style.width = (vd/VOCAB_TOTAL*100)+'%';
+}
+
+/* toggle handlers */
+function toggleSent(pi, ei, cb){
+  const id = pi+'-'+ei;
+  const was = learnedSent.has(id);
+  if(cb.checked && !was){learnedSent.add(id);bumpToday();}
+  else if(!cb.checked) learnedSent.delete(id);
+  saveAll(); updateProgress(); refreshStreak();
+  const ex = cb.closest('.ex'); ex.classList.toggle('learned', cb.checked);
+  const card = cb.closest('.card');
+  const total = DATA[pi].examples.length;
+  const done = DATA[pi].examples.filter((e,i)=>learnedSent.has(pi+'-'+i)).length;
+  const pp = card.querySelector('.pat-prog');
+  pp.textContent = done===total ? '✅ 全部掌握' : '已学 '+done+'/'+total;
+  pp.classList.toggle('done', done===total);
+  if(cb.checked) checkMilestone('s', learnedSent.size, SENT_TOTAL);
+}
+function toggleVocab(w, cb){
+  const was = learnedVocab.has(w);
+  if(cb.checked && !was){learnedVocab.add(w);bumpToday();}
+  else if(!cb.checked) learnedVocab.delete(w);
+  saveAll(); updateProgress(); refreshStreak();
+  cb.closest('.vcard').classList.toggle('learned', cb.checked);
+  if(cb.checked) checkMilestone('v', learnedVocab.size, VOCAB_TOTAL);
+}
+
+/* ---------- speech ---------- */
+let curBtn = null;
+function speak(text, btn){
+  if(!('speechSynthesis' in window)){alert('当前浏览器不支持语音合成');return;}
+  speechSynthesis.cancel();
+  if(curBtn) curBtn.classList.remove('speaking');
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'en-US'; u.rate = speechRate;
+  const voices = speechSynthesis.getVoices().filter(v=>v.lang && v.lang.startsWith('en'));
+  const us = voices.find(v=>v.lang==='en-US') || voices[0];
+  if(us) u.voice = us;
+  if(btn){btn.classList.add('speaking');curBtn=btn;u.onend=u.onerror=()=>btn.classList.remove('speaking');}
+  speechSynthesis.speak(u);
+}
+speechSynthesis && speechSynthesis.getVoices();
+
+/* ---------- sentence view ---------- */
+function tokenize(en){
+  return en.split(/(\s+)/).map(part=>{
+    if(/^\s+$/.test(part) || part==='') return part;
+    const m = part.match(/^([^\w']*)([A-Za-z]+(?:['’][a-z]+)?)([^\w']*)$/);
+    if(!m) return escapeHtml(part);
+    return escapeHtml(m[1])+'<span class="w" data-w="'+m[2].toLowerCase().replace(/[’']/g,"'")+'">'+escapeHtml(m[2])+'</span>'+escapeHtml(m[3]);
+  }).join('');
+}
+function escapeHtml(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+
+let sentFilter = 'all';
+function setSentFilter(f, btn){
+  sentFilter = f;
+  document.querySelectorAll('#sentFilter button').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+  renderSentences(document.getElementById('searchBox').value);
+}
+function renderSentences(filter){
+  const box = document.getElementById('sentList');
+  const q = (filter||'').trim().toLowerCase();
+  let html = '';
+  DATA.forEach((p,pi)=>{
+    if(q){
+      const inPat = (p.pattern+' '+p.gloss).toLowerCase().includes(q);
+      const inEx = p.examples.some(e=>(e.en+' '+e.cn).toLowerCase().includes(q));
+      if(!inPat && !inEx) return;
+    }
+    const doneCnt = p.examples.filter((e,i)=>learnedSent.has(pi+'-'+i)).length;
+    if(sentFilter==='done' && doneCnt===0) return;
+    if(sentFilter==='todo' && doneCnt===p.examples.length) return;
+    const tag = (p.gloss.match(/【(.+?)】/)||[])[1];
+    html += '<div class="card" id="pat-'+pi+'">'
+      + '<div class="pat-head"><span class="pat-num">'+String(p.num).padStart(3,'0')+'</span>'
+      + '<span class="pat-en">'+tokenize(p.pattern)+'</span>'
+      + '<span class="pat-cn">'+escapeHtml(p.gloss.replace(/【.+?】/g,''))+'</span>'
+      + (tag?'<span class="tagchip">'+escapeHtml(tag)+'</span>':'')
+      + '<button class="spk small" onclick="speak(DATA['+pi+'].pattern,this)" title="朗读句型">🔊</button>'
+      + '<span class="pat-prog'+(doneCnt===p.examples.length?' done':'')+'">'
+      + (doneCnt===p.examples.length?'✅ 全部掌握':'已学 '+doneCnt+'/'+p.examples.length)+'</span></div>';
+    p.examples.forEach((e,ei)=>{
+      const id = pi+'-'+ei;
+      const learned = learnedSent.has(id);
+      if(sentFilter==='done' && !learned) return;
+      if(sentFilter==='todo' && learned) return;
+      html += '<div class="ex'+(learned?' learned':'')+'" data-key="'+id+'"><div class="ex-en">'+tokenize(e.en)
+        + '<button class="spk" onclick="speak(DATA['+pi+'].examples['+ei+'].en,this);if(autoMark){const c=this.nextElementSibling.querySelector(\'input\');if(!c.checked){c.checked=true;toggleSent('+pi+','+ei+',c);}}" title="朗读句子">🔊</button>'
+        + '<label class="learn" title="标记为已学"><input type="checkbox"'+(learned?' checked':'')+' onchange="toggleSent('+pi+','+ei+',this)">已学</label></div>'
+        + (e.cn?'<div class="ex-cn">'+escapeHtml(e.cn)+'</div>':'')
+        + '</div>';
+    });
+    html += '</div>';
+  });
+  box.innerHTML = html || '<div class="empty">没有匹配的内容</div>';
+}
+renderSentences('');
+
+/* ---------- tooltip ---------- */
+const tip = document.getElementById('tooltip');
+let tipPinned = false;
+function lookupWord(w){
+  if(DICT[w]) return DICT[w];
+  // try simple lemma fallbacks
+  const tries = [];
+  if(w.endsWith("'s")) tries.push(w.slice(0,-2));
+  if(w.endsWith('ies')) tries.push(w.slice(0,-3)+'y');
+  if(w.endsWith('es')) tries.push(w.slice(0,-2));
+  if(w.endsWith('s')) tries.push(w.slice(0,-1));
+  if(w.endsWith('ied')) tries.push(w.slice(0,-3)+'y');
+  if(w.endsWith('ed')){ tries.push(w.slice(0,-2)); tries.push(w.slice(0,-1)); }
+  if(w.endsWith('ing')){ tries.push(w.slice(0,-3)); tries.push(w.slice(0,-3)+'e'); }
+  if(w.endsWith('er')) tries.push(w.slice(0,-2));
+  if(w.endsWith('est')) tries.push(w.slice(0,-3));
+  if(w.endsWith('ly')) tries.push(w.slice(0,-2));
+  for(const t of tries){ if(DICT[t]) return DICT[t]; }
+  return null;
+}
+function showTip(span){
+  const w = span.dataset.w;
+  const entry = lookupWord(w);
+  const exEl = span.closest('.ex');
+  let ctxSense = null;
+  if(exEl){
+    const key = exEl.dataset.key;
+    if(key && CTX[key] && CTX[key][w]) ctxSense = CTX[key][w];
+  }
+  let html = '<div><span class="t-word">'+escapeHtml(span.textContent)+'</span>';
+  if(entry && entry.p) html += '<span class="t-phon">/'+escapeHtml(entry.p)+'/</span>';
+  html += '</div>';
+  if(ctxSense) html += '<div class="t-ctx">本句释义：<b>'+escapeHtml(ctxSense)+'</b></div>';
+  if(entry && entry.t){
+    const senses = entry.t.split(/\\n|；|;/).map(s=>s.trim()).filter(s=>s && s!==ctxSense).slice(0,4);
+    if(senses.length) html += '<div class="t-senses">其他释义：'+senses.map(escapeHtml).join('；')+'</div>';
+  }
+  if(!entry && !ctxSense) html += '<div class="t-none">未收录该词（可能是人名/专名或缩写）</div>';
+  html += '<div class="t-spk"><button onclick="event.stopPropagation();speak(\''+w.replace(/'/g,"\\'")+'\',null)">🔊 朗读单词</button></div>';
+  tip.innerHTML = html;
+  tip.style.display = 'block';
+  const r = span.getBoundingClientRect();
+  const tw = tip.offsetWidth, th = tip.offsetHeight;
+  let left = r.left + window.scrollX + r.width/2 - tw/2;
+  left = Math.max(8, Math.min(left, window.scrollX + document.documentElement.clientWidth - tw - 8));
+  let top = r.bottom + window.scrollY + 8;
+  if(top + th > window.scrollY + document.documentElement.clientHeight - 8) top = r.top + window.scrollY - th - 8;
+  tip.style.left = left+'px'; tip.style.top = top+'px';
+}
+function hideTip(){ if(!tipPinned) tip.style.display='none'; }
+document.addEventListener('mouseover', e=>{
+  const span = e.target.closest('.w');
+  if(span){ tipPinned=false; showTip(span); }
+});
+document.addEventListener('click', e=>{
+  const span = e.target.closest('.w');
+  if(span){ tipPinned=true; showTip(span); return; }
+  if(!e.target.closest('#tooltip')){ tipPinned=false; hideTip(); }
+});
+document.addEventListener('mouseout', e=>{
+  if(e.target.closest('.w') && !e.relatedTarget?.closest?.('#tooltip')) hideTip();
+});
+tip.addEventListener('mouseleave', ()=>{ tipPinned=false; hideTip(); });
+window.addEventListener('scroll', ()=>{ if(!tipPinned) hideTip(); }, {passive:true});
+
+/* ---------- tabs & search ---------- */
+function switchTab(t){
+  document.getElementById('sentView').style.display = t==='sent'?'':'none';
+  document.getElementById('vocabView').style.display = t==='vocab'?'':'none';
+  document.getElementById('tabSent').classList.toggle('active', t==='sent');
+  document.getElementById('tabVocab').classList.toggle('active', t==='vocab');
+  hideTip();
+}
+function onSearch(q){
+  if(document.getElementById('sentView').style.display!=='none') renderSentences(q);
+  else renderVocab(currentSort, q);
+}
+
+/* ---------- vocab view ---------- */
+let currentSort = 'alpha';
+let vocabFilter = 'all';
+function setVocabFilter(f, btn){
+  vocabFilter = f;
+  document.querySelectorAll('#vocabFilter button').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+  renderVocab(currentSort, document.getElementById('searchBox').value);
+}
+function setVocabSort(s, btn){
+  currentSort = s;
+  document.querySelectorAll('.sortbar button[data-sort]').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+  renderVocab(s, document.getElementById('searchBox').value);
+}
+function vcardHtml(v){
+  const learned = learnedVocab.has(v.w);
+  let wordDisp = escapeHtml(v.w), rootsHtml = '';
+  if(v.seg && v.seg.length>=2){
+    wordDisp = v.seg.map(p=>escapeHtml(p[0])).join('<span class="seg-dot">·</span>');
+    rootsHtml = '<div class="v-roots">🧩 '+v.seg.map(p=>
+      '<span class="rp"><b>'+escapeHtml(p[0])+'</b><span class="rk">'+escapeHtml(p[1])+'</span>'
+      +(p[2]?' <i>'+escapeHtml(p[2])+'</i>':'')+'</span>'
+    ).join('<span style="color:#fdba74">＋</span>')+'</div>';
+  } else if(v.syl && v.syl.length>=2){
+    wordDisp = v.syl.map(escapeHtml).join('<span class="syl-dot">·</span>');
+  }
+  return '<div class="vcard'+(learned?' learned':'')+'" data-w="'+escapeHtml(v.w)+'"><div class="v-head"><span class="v-word">'+wordDisp+'</span>'
+    + (v.p?'<span class="v-phon">/'+escapeHtml(v.p)+'/</span>':'')
+    + '<button class="spk small" onclick="speak(\''+v.w.replace(/'/g,"\\'")+'\',this);if(autoMark){const c=this.parentElement.querySelector(\'.v-learn input\');if(!c.checked){c.checked=true;toggleVocab(\''+v.w.replace(/'/g,"\\'")+'\',c);}}">🔊</button>'
+    + '<label class="learn v-learn" title="标记为已掌握"><input type="checkbox"'+(learned?' checked':'')+' onchange="toggleVocab(\''+v.w.replace(/'/g,"\\'")+'\',this)">已会</label></div>'
+    + '<div class="v-mean">'+escapeHtml(v.t)+'</div>'
+    + rootsHtml
+    + (v.ex?'<div class="v-ex"><em>例句</em> '+escapeHtml(v.ex.en)+'<br>'+escapeHtml(v.ex.cn||'')+'</div>':'')
+    + '</div>';
+}
+function renderVocab(sort, filter){
+  const q = (filter||'').trim().toLowerCase();
+  let list = VOCAB.filter(v=>{
+    if(q && !v.w.includes(q) && !(v.t&&v.t.includes(q))) return false;
+    if(vocabFilter==='done' && !learnedVocab.has(v.w)) return false;
+    if(vocabFilter==='todo' && learnedVocab.has(v.w)) return false;
+    return true;
+  });
+  const bar = document.getElementById('letterBar');
+  const box = document.getElementById('vocabList');
+  if(sort==='alpha'){
+    list.sort((a,b)=>a.w.localeCompare(b.w));
+    const groups = {};
+    list.forEach(v=>{const L=v.w[0].toUpperCase();(groups[L]=groups[L]||[]).push(v);});
+    const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').filter(L=>groups[L]);
+    bar.style.display='flex';
+    bar.innerHTML = letters.map(L=>'<button onclick="document.getElementById(\'L-'+L+'\').scrollIntoView({behavior:\'smooth\',block:\'start\'})">'+L+'</button>').join('');
+    box.innerHTML = letters.map(L=>'<div class="letter-h" id="L-'+L+'">'+L+' <small style="color:var(--sub);font-weight:400">'+groups[L].length+' 词</small></div><div class="vgrid">'+groups[L].map(vcardHtml).join('')+'</div>').join('');
+  } else {
+    bar.style.display='none';
+    if(sort==='freq') list.sort((a,b)=>(b.s-a.s)||a.w.localeCompare(b.w));
+    else list.sort((a,b)=>a.o-b.o);
+    box.innerHTML = '<div class="vgrid" style="margin-top:14px">'+list.map(vcardHtml).join('')+'</div>';
+  }
+  if(!list.length) box.innerHTML = '<div class="empty">没有匹配的词汇</div>';
+}
+renderVocab('alpha','');
+updateProgress();
+refreshStreak();
+
+/* ---------- random sentence ---------- */
+function randomSentence(){
+  const todo = [];
+  DATA.forEach((p,pi)=>p.examples.forEach((e,ei)=>{if(!learnedSent.has(pi+'-'+ei)) todo.push([pi,ei]);}));
+  if(!todo.length){confetti();toast('🏆 所有句子都学完了，太疯狂了！');return;}
+  const [pi,ei] = todo[Math.floor(Math.random()*todo.length)];
+  if(document.getElementById('sentView').style.display==='none') switchTab('sent');
+  setSentFilterSilent('all');
+  document.getElementById('searchBox').value='';
+  renderSentences('');
+  requestAnimationFrame(()=>{
+    const card = document.getElementById('pat-'+pi);
+    if(!card) return;
+    card.scrollIntoView({behavior:'smooth', block:'center'});
+    card.style.boxShadow='0 0 0 3px var(--brand)';
+    setTimeout(()=>card.style.boxShadow='', 2400);
+    speak(DATA[pi].examples[ei].en, card.querySelectorAll('.ex')[ei].querySelector('.spk'));
+  });
+}
+function setSentFilterSilent(f){
+  sentFilter = f;
+  document.querySelectorAll('#sentFilter button').forEach(b=>b.classList.toggle('on', b.dataset.f===f));
+}
+
+/* ---------- flashcard ---------- */
+let fcQueue = [], fcIdx = 0, fcRevealed = false;
+function openFlashcard(){
+  let pool = VOCAB.filter(v=>!learnedVocab.has(v.w));
+  if(!pool.length){ pool = VOCAB.slice(); if(!pool.length) return; toast('全部词汇都已掌握，进入总复习模式 🎓'); }
+  fcQueue = pool.sort(()=>Math.random()-.5).slice(0, 20);
+  fcIdx = 0;
+  document.getElementById('fcMask').classList.add('show');
+  renderCard();
+}
+function closeFlashcard(){document.getElementById('fcMask').classList.remove('show');speechSynthesis&&speechSynthesis.cancel();}
+function renderCard(){
+  fcRevealed = false;
+  const v = fcQueue[fcIdx];
+  const c = document.getElementById('fcCard');
+  let wordDisp;
+  if(v.seg && v.seg.length>=2) wordDisp = v.seg.map(p=>escapeHtml(p[0])).join('<span class="seg-dot">·</span>');
+  else if(v.syl && v.syl.length>=2) wordDisp = v.syl.map(escapeHtml).join('<span class="syl-dot">·</span>');
+  else wordDisp = escapeHtml(v.w);
+  c.innerHTML = '<div class="fc-count">闪卡 '+(fcIdx+1)+' / '+fcQueue.length+'（优先抽取未掌握词汇）</div>'
+    + '<div class="fc-word">'+wordDisp+'</div>'
+    + '<div class="fc-phon">'+(v.p?'/'+escapeHtml(v.p)+'/':'')+' <button class="spk small" onclick="speak(\''+v.w.replace(/'/g,"\\'")+'\',this)">🔊</button></div>'
+    + '<div class="fc-mean hidden-mean" id="fcMean" title="点击显示释义" onclick="revealMean()">'+escapeHtml(v.t)+'</div>'
+    + (v.ex?'<div class="fc-ex">'+escapeHtml(v.ex.en)+'</div>':'')
+    + '<div class="fc-btns"><button class="fc-dunno" onclick="fcAnswer(false)">😅 还不熟</button><button class="fc-know" onclick="fcAnswer(true)">✅ 认识了</button></div>';
+}
+function revealMean(){
+  if(fcRevealed) return;
+  fcRevealed = true;
+  document.getElementById('fcMean').classList.remove('hidden-mean');
+}
+function fcAnswer(know){
+  const v = fcQueue[fcIdx];
+  if(know && !learnedVocab.has(v.w)){
+    learnedVocab.add(v.w); bumpToday(); saveAll(); updateProgress(); refreshStreak();
+    checkMilestone('v', learnedVocab.size, VOCAB_TOTAL);
+    renderVocab(currentSort, document.getElementById('searchBox').value);
+  }
+  fcIdx++;
+  if(fcIdx >= fcQueue.length){
+    closeFlashcard();
+    confetti(); toast('🃏 本组闪卡完成！共复习 '+fcQueue.length+' 个词');
+  } else renderCard();
+}
+document.addEventListener('keydown', e=>{
+  if(!document.getElementById('fcMask').classList.contains('show')) return;
+  if(e.key===' '||e.key==='Enter'){e.preventDefault();fcRevealed?fcAnswer(true):revealMean();}
+  if(e.key==='ArrowLeft') fcAnswer(false);
+  if(e.key==='ArrowRight') fcAnswer(true);
+  if(e.key==='Escape') closeFlashcard();
+});
+</script>
+</body>
+</html>

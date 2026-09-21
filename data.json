@@ -1,0 +1,4416 @@
+[
+ {
+  "num": 1,
+  "pattern": "According to",
+  "gloss": "依照/根据……。【写作必备句型】",
+  "examples": [
+   {
+    "en": "According to the newspaper, it's a great movie.",
+    "cn": "根据报纸说，这是一部非常棒的电影。"
+   },
+   {
+    "en": "According to Chinese custom, 8 is a lucky number.",
+    "cn": "根据中国的习俗，8是一个幸运的数字。"
+   }
+  ]
+ },
+ {
+  "num": 2,
+  "pattern": "Am I allowed to...？",
+  "gloss": "我可以……吗？【请求允许句型】",
+  "examples": [
+   {
+    "en": "Am I allowed to smoke here?",
+    "cn": "我可以在这儿抽烟吗？"
+   },
+   {
+    "en": "Am I allowed to take pictures here?",
+    "cn": "我可以在这儿照相吗？"
+   },
+   {
+    "en": "Am I allowed to introduce our new manager Mr. Anderson to all of you?",
+    "cn": "请允许我向大家介绍我们的新经理安德森先生。"
+   }
+  ]
+ },
+ {
+  "num": 3,
+  "pattern": "As a matter of fact",
+  "gloss": "实际上……",
+  "examples": [
+   {
+    "en": "As a matter of fact, I don't really agree with you.",
+    "cn": "实际上，我不大同意你的看法。"
+   },
+   {
+    "en": "As a matter of fact, I just got back from America yesterday.",
+    "cn": "事实上，我昨天刚刚从美国回来。"
+   }
+  ]
+ },
+ {
+  "num": 4,
+  "pattern": "As far as I'm concerned",
+  "gloss": "就我而言，……【表达观点句型】",
+  "examples": [
+   {
+    "en": "As far as I'm concerned, everyone should learn English.",
+    "cn": "就我看来，大家都应该学英语。"
+   },
+   {
+    "en": "As far as I'm concerned, I think we should pay more attention to the safety of schoolchildren.",
+    "cn": "就我而言，我认为我们应该更关注在校儿童的安全问题。"
+   }
+  ]
+ },
+ {
+  "num": 5,
+  "pattern": "As far as I know",
+  "gloss": "据我所知，",
+  "examples": [
+   {
+    "en": "As far as I know, Teacher Li will come to our school tomorrow.",
+    "cn": "据我所知，李老师明天要来我们学校。"
+   },
+   {
+    "en": "As far as I know, he is not coming, but I may be wrong.",
+    "cn": "就我所知，他不打算来，但我或许会弄错。"
+   }
+  ]
+ },
+ {
+  "num": 6,
+  "pattern": "As I just mentioned",
+  "gloss": "正如我刚才提到过的，⋯",
+  "examples": [
+   {
+    "en": "As I just mentioned, we all need to protect the earth.",
+    "cn": "正如我刚才提到过的，我们要保护地球。"
+   },
+   {
+    "en": "As I just mentioned, nobody should drop out of school unless they believe they face the opportunity of a lifetime. And even then they should reconsider.",
+    "cn": "正如我刚才提到过的，任何人都不应该辍学，除非他们相信他们面临着一生中难得的机会。即使是那样，他们还需再三考虑。"
+   }
+  ]
+ },
+ {
+  "num": 7,
+  "pattern": "As I see it",
+  "gloss": "在我看来，……【表达观点句型】",
+  "examples": [
+   {
+    "en": "As I see it, inflation is still growing.",
+    "cn": "在我看来，通货膨胀还在继续。"
+   },
+   {
+    "en": "As I see it, he is not the right person for this position.",
+    "cn": "在我看来，他不是这个职位的适合人选。"
+   }
+  ]
+ },
+ {
+  "num": 8,
+  "pattern": "As is known to us all",
+  "gloss": "众所周知，……。",
+  "examples": [
+   {
+    "en": "As is known to us all, Hong Kong is one of the financial centers of Asia.",
+    "cn": "众所周知，香港是亚洲金融中心之一。"
+   },
+   {
+    "en": "As is known to us all, China has the largest population in the world.",
+    "cn": "众所周知，中国是世界上人口最多的国家。"
+   }
+  ]
+ },
+ {
+  "num": 9,
+  "pattern": "As long as",
+  "gloss": "只要……。【引导条件状语从句的句型】",
+  "examples": [
+   {
+    "en": "As long as you're going to live here, you should really study Chinese.",
+    "cn": "如果你要在这儿住的话，你真应该学中文。"
+   },
+   {
+    "en": "As long as we work together, we can make the impossible possible.",
+    "cn": "只要我们一起努力，我们就能把不可能变为可能。"
+   }
+  ]
+ },
+ {
+  "num": 10,
+  "pattern": "But for",
+  "gloss": "若不是因为⋯……。/ 如果没有⋯。【虚拟语气句型】",
+  "examples": [
+   {
+    "en": "But for wearing his seat belt, he would have died in the crash.",
+    "cn": "如果不是系了安全带，他就已经死于车祸了。"
+   },
+   {
+    "en": "But for your generous help, we couldn't have finished the work so soon.",
+    "cn": "如果没有你的鼎力相助，我们不可能这么快完成工作的。"
+   }
+  ]
+ },
+ {
+  "num": 11,
+  "pattern": "Can you believe (that)...？",
+  "gloss": "你相信……吗？【that引导宾语从句】",
+  "examples": [
+   {
+    "en": "Can you believe that Yao Ming taught himself English？",
+    "cn": "你相信吗，姚明的英语是自学的。"
+   },
+   {
+    "en": "Can you believe (that) this excellent song was composed by a high school student?",
+    "cn": "你相信这首美妙的歌曲是出自一个高中生之手吗？"
+   }
+  ]
+ },
+ {
+  "num": 12,
+  "pattern": "Can you imagine...？",
+  "gloss": "你能想像…⋯吗？",
+  "examples": [
+   {
+    "en": "Can you imagine how much your parents love you?",
+    "cn": "你能想像你的父母是多么的爱你吗？"
+   },
+   {
+    "en": "Can you imagine how she lived through all these difficulties？",
+    "cn": "你能想像她是怎么捱过种种困境的吗？"
+   }
+  ]
+ },
+ {
+  "num": 13,
+  "pattern": "Could you please explain...？",
+  "gloss": "你能解释一下……吗？",
+  "examples": [
+   {
+    "en": "Could you please explain why you didn't come to the meeting yesterday?",
+    "cn": "你能解释一下为什么昨天没来开会吗？"
+   },
+   {
+    "en": "Could you please explain a little bit more about the Forbidden City?",
+    "cn": "你能再多说一点关于紫禁城的事情吗？"
+   }
+  ]
+ },
+ {
+  "num": 14,
+  "pattern": "Can't we...？",
+  "gloss": "难道我们不能……吗？【反问句型】",
+  "examples": [
+   {
+    "en": "Can't we walk there from here?",
+    "cn": "我们就不能从这儿走到那儿吗？"
+   },
+   {
+    "en": "Can't we just finish the work tomorrow?",
+    "cn": "难道我们就不能明天再完成这项工作吗？"
+   }
+  ]
+ },
+ {
+  "num": 15,
+  "pattern": "Could you do me a favor and...?",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "Could you do me a favor and lend me 10 dollars until tomorrow?",
+    "cn": "能否帮我个忙，借我10美元？明天还你。"
+   },
+   {
+    "en": "Could you do me a favor and give this present to Hilary for her birthday?",
+    "cn": "能否帮我一个忙，把这份生日礼物交给希拉里？"
+   }
+  ]
+ },
+ {
+  "num": 16,
+  "pattern": "Do you by any chance know...？",
+  "gloss": "你碰巧知道…⋯吗？",
+  "examples": [
+   {
+    "en": "Do you by any chance know what time the movie begins？",
+    "cn": "你知道电影什么时候开始吗？"
+   },
+   {
+    "en": "Do you by any chance know if this machine accepts foreign bank cards?",
+    "cn": "你知道这台机器可以刷外国银行卡吗？【绝对高级！】"
+   }
+  ]
+ },
+ {
+  "num": 17,
+  "pattern": "Do you enjoy doing...？",
+  "gloss": "你喜欢……吗？【询问爱好句型】",
+  "examples": [
+   {
+    "en": "Do you enjoy trying different kinds of food?",
+    "cn": "你喜欢尝试不同的食物吗？"
+   },
+   {
+    "en": "Do you enjoy having a few friends around talking and laughing？",
+    "cn": "你喜欢几个朋友聚在一起有说有笑吗？"
+   }
+  ]
+ },
+ {
+  "num": 18,
+  "pattern": "Do you happen to know...？",
+  "gloss": "你碰巧知道……吗？",
+  "examples": [
+   {
+    "en": "Do you happen to know how I can get to Times Square？",
+    "cn": "你知道怎么去时代广场吗？"
+   },
+   {
+    "en": "Do you happen to know a good Beijing duck restaurant around here?",
+    "cn": "你知道这儿附近有不错的北京烤鸭店吗？"
+   }
+  ]
+ },
+ {
+  "num": 19,
+  "pattern": "Do you have any good ways to...?",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "Do you have any good ways to improve pronunciation?",
+    "cn": "你有没有改善发音的好办法？"
+   },
+   {
+    "en": "Do you have any good ways to promote our new product？",
+    "cn": "你有没有好办法推广我们的新产品？"
+   }
+  ]
+ },
+ {
+  "num": 20,
+  "pattern": "Did you know (that)...？",
+  "gloss": "你知道⋯……吗？【that引导宾语从句】",
+  "examples": [
+   {
+    "en": "Did you know (that)we are getting a foreign teacher this semester?",
+    "cn": "你知道吗，我们这学期将有一个外教。"
+   },
+   {
+    "en": "Did you know (that) Daniel won the first prize of the writing contest?",
+    "cn": "你知道吗，丹尼尔在写作比赛中拿了一等奖。"
+   }
+  ]
+ },
+ {
+  "num": 21,
+  "pattern": "Do you know if/whether...？",
+  "gloss": "你知不知道是否.……？",
+  "examples": [
+   {
+    "en": "Do you know if there are any apartments available in this area?",
+    "cn": "你知不知道这一带有没有公寓出租？"
+   },
+   {
+    "en": "Do you know if there is an English corner this weekend？",
+    "cn": "你知不知道这个周末有没有英语角？"
+   }
+  ]
+ },
+ {
+  "num": 22,
+  "pattern": "Do/Would you mind doing...？",
+  "gloss": "你介意…⋯吗？",
+  "examples": [
+   {
+    "en": "Would you mind giving me a glass of water and some aspirin?",
+    "cn": "你能不能给我一杯水和一些阿司匹林？"
+   },
+   {
+    "en": "Do you mind speaking a little more slowly?",
+    "cn": "你可以说得稍微慢一点吗？"
+   }
+  ]
+ },
+ {
+  "num": 23,
+  "pattern": "Do/Would you mind if...？",
+  "gloss": "如果……你是否介意？",
+  "examples": [
+   {
+    "en": "Do you mind if I ask you a few questions?",
+    "cn": "你介意我问你几个问题吗？"
+   },
+   {
+    "en": "Would you mind if we took a picture together?",
+    "cn": "我们一起拍张照吧？【绝对高级、礼貌！】"
+   }
+  ]
+ },
+ {
+  "num": 24,
+  "pattern": "Do you realize (that)...？",
+  "gloss": "你有没有意识到⋯…？",
+  "examples": [
+   {
+    "en": "Do you realize that everyone is counting on you?",
+    "cn": "你有没有意识到，大家都指望你了？"
+   },
+   {
+    "en": "Do you realize (that) your parents really care about you？",
+    "cn": "你有没有意识到，你的父母很关心你？"
+   }
+  ]
+ },
+ {
+  "num": 25,
+  "pattern": "Do you think it is possible to...？",
+  "gloss": "你认为做…⋯可能吗？",
+  "examples": [
+   {
+    "en": "Do you think it is possible to solve the problem overnight?",
+    "cn": "一夜之间解决这个问题你觉得有可能吗？"
+   },
+   {
+    "en": "Do you think it is possible for you to watch my kids? I have to go to the bathroom.",
+    "cn": "可以帮我照看一下孩子吗？我去一下洗手问。"
+   }
+  ]
+ },
+ {
+  "num": 26,
+  "pattern": "Do you think it necessary to...？",
+  "gloss": "你认为有必要….吗？",
+  "examples": [
+   {
+    "en": "Do you think it necessary to ask for official permission for the event to take place?",
+    "cn": "你觉得进行这项活动，有必要得到正式的批准吗？"
+   },
+   {
+    "en": "Do you think it necessary to take an umbrella?",
+    "cn": "你觉得有必要带把伞吗？"
+   }
+  ]
+ },
+ {
+  "num": 27,
+  "pattern": "doesn't make sense",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "What you said doesn't make sense. I don't agree with you.",
+    "cn": "你说的话没有道理。我不同意你的看法。"
+   },
+   {
+    "en": "This bill doesn' make sense. I was overcharged.",
+    "cn": "账单不对，多收我钱了。"
+   }
+  ]
+ },
+ {
+  "num": 28,
+  "pattern": "Don't be afraid of",
+  "gloss": "不要害怕……",
+  "examples": [
+   {
+    "en": "Don' be afraid of losing face and making mistakes.",
+    "cn": "不要害怕丢脸和犯错。【李阳疯狂英语经典口号】"
+   },
+   {
+    "en": "Don't be afraid of talking with foreigners.",
+    "cn": "不要害怕和外国人说话。"
+   }
+  ]
+ },
+ {
+  "num": 29,
+  "pattern": "Don't take it for granted that",
+  "gloss": "别认为⋯……理所当然。",
+  "examples": [
+   {
+    "en": "Don't take it for granted that there will always be enough water for mankind.",
+    "cn": "别理所当然认为人类总会有足够的水可用。"
+   },
+   {
+    "en": "Don't take it for granted that your parents should support you all your life.",
+    "cn": "别以 你父母养你一辈子是天经地义的事。"
+   }
+  ]
+ },
+ {
+  "num": 30,
+  "pattern": "Don't waste time doing",
+  "gloss": "不要浪费时间做……",
+  "examples": [
+   {
+    "en": "Don't waste time playing video games.",
+    "cn": "不要浪费时间玩电子游戏。"
+   },
+   {
+    "en": "Don't waste time learning a lot of useless words in isolation. The best way of learning English words 1s to blurt out as many authentic sentences as you can.",
+    "cn": "不要浪费时间孤立地学习没有用的单词。学习英语单词最好的方法就是脱口而出尽量多的地道句子。"
+   }
+  ]
+ },
+ {
+  "num": 31,
+  "pattern": "Don't you think that...？",
+  "gloss": "难道你不认为…吗？",
+  "examples": [
+   {
+    "en": "Don't you think that the gap between rich and poor is getting wider?",
+    "cn": "难道你不认为贫富差距越来越大了吗？"
+   },
+   {
+    "en": "Don't you think that his English sounds just like a native speaker？",
+    "cn": "你不觉得他的英语听起来像是本土人说的吗？【绝对高级、纯正！】"
+   }
+  ]
+ },
+ {
+  "num": 32,
+  "pattern": "Excuse me for",
+  "gloss": "请原谅我⋯",
+  "examples": [
+   {
+    "en": "Excuse me for interrupting, but I have something urgent to say.",
+    "cn": "很抱歉打断你，但我有急事要说。【urgent n. 紧急的；急迫的】"
+   },
+   {
+    "en": "Excuse me for making this phone call, but it is very important.",
+    "cn": "很抱歉给你打这个电话，但是我有重要的事情要说。"
+   }
+  ]
+ },
+ {
+  "num": 33,
+  "pattern": "For one thing，. For another",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "For one thing, these shoes don't suit you. For another, they are too expensive.",
+    "cn": "一方面，这双鞋子并不适合你；另一方面，这太贵了。"
+   },
+   {
+    "en": "For one thing, it is too far away. For another, it is too crowded on the weekend. Wed better stay home.",
+    "cn": "一方面，太远了；另一方面，周末人太挤了。我们还是待在家里吧。"
+   }
+  ]
+ },
+ {
+  "num": 34,
+  "pattern": "From my point of view",
+  "gloss": "在我看来，",
+  "examples": [
+   {
+    "en": "From my point of view, Crazy English is the most 【",
+    "cn": "表达观点句型】 effective way to learn English.在我看来，“疯狂英语”是学习英语最有效的方法。"
+   },
+   {
+    "en": "From my point of view, America is China's most important strategic partner.",
+    "cn": "在我看来，美国是中国最重要的战略伙伴。"
+   }
+  ]
+ },
+ {
+  "num": 35,
+  "pattern": "From where I stand",
+  "gloss": "从我的立场来说，⋯",
+  "examples": [
+   {
+    "en": "From where I stand, we should stand by him no matter what happens.",
+    "cn": "依我看来，无论发生什么事，我们都应该支持他。"
+   },
+   {
+    "en": "From where I stand, pollution is the biggest Challenge we face.",
+    "cn": "依我看，污染是我们面临的最大挑战。"
+   }
+  ]
+ },
+ {
+  "num": 36,
+  "pattern": "Generally speaking",
+  "gloss": "总的来说，…⋯",
+  "examples": [
+   {
+    "en": "Generally speaking, Chinese students are very shy.",
+    "cn": "总的来说，中国学生很腼腆。"
+   },
+   {
+    "en": "Generally speaking people like to hear compliments from others.",
+    "cn": "总的说来，人们都喜欢听到别人的称赞。"
+   }
+  ]
+ },
+ {
+  "num": 37,
+  "pattern": "Hardly...when",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "Hardly had she begun speaking when there was a knock on the door.",
+    "cn": "她刚开始说话就听见敲门声。"
+   },
+   {
+    "en": "Hardly had we arrived when the movie started.",
+    "cn": "我们刚到电影就开始放了。"
+   }
+  ]
+ },
+ {
+  "num": 38,
+  "pattern": "Have you considered doing...？",
+  "gloss": "你有没有考虑过.……？",
+  "examples": [
+   {
+    "en": "Have you considered going abroad to study?",
+    "cn": "你有没有考虑过出国留学？"
+   },
+   {
+    "en": "Have you considered starting your own business?",
+    "cn": "你有没有考虑过自己做生意？"
+   }
+  ]
+ },
+ {
+  "num": 39,
+  "pattern": "Have you decided",
+  "gloss": "你决定好……了吗？",
+  "examples": [
+   {
+    "en": "Have you decided on a major?",
+    "cn": "你决定好要学什么专业了吗？"
+   },
+   {
+    "en": "Have you decided where to spend your summer Vacation？",
+    "cn": "你决定好去哪儿过暑假了吗？"
+   }
+  ]
+ },
+ {
+  "num": 40,
+  "pattern": "Have you ever been to",
+  "gloss": "你曾经去过……吗？",
+  "examples": [
+   {
+    "en": "Have you ever been to Disneyland?",
+    "cn": "你有没有去过迪斯尼乐园？"
+   },
+   {
+    "en": "Have you ever been to any rural parts of China?",
+    "cn": "你去过中国农村地区吗？"
+   }
+  ]
+ },
+ {
+  "num": 41,
+  "pattern": "Have you thought about/of...？",
+  "gloss": "你有没有想过…？",
+  "examples": [
+   {
+    "en": "Have you thought of becoming an English teacher?",
+    "cn": "你想过做英语老师吗？"
+   },
+   {
+    "en": "Have you thought about setting up your own business？",
+    "cn": "你想过自己做生意吗？"
+   }
+  ]
+ },
+ {
+  "num": 42,
+  "pattern": "Haven't you heard of...？",
+  "gloss": "难道你没听说过.⋯吗？",
+  "examples": [
+   {
+    "en": "Haven't you heard of Crazy English established by Li Yang？",
+    "cn": "难道你没听说过李阳创立的疯狂英语吗？"
+   },
+   {
+    "en": "Haven't you heard of Liu Xiang? He is a very famous athlete in China.",
+    "cn": "你没听说刘翔吗？他是中国非常著名的运动员。"
+   }
+  ]
+ },
+ {
+  "num": 43,
+  "pattern": "How are you getting on/along with...?",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "How are you getting on with swimming lessons?",
+    "cn": "你的游泳课进展如何？"
+   },
+   {
+    "en": "How are you getting along with your business?",
+    "cn": "你的生意做得如何？"
+   }
+  ]
+ },
+ {
+  "num": 44,
+  "pattern": "How are you going to...？",
+  "gloss": "你打算如何……？【询问打算句型】",
+  "examples": [
+   {
+    "en": "How are you going to celebrate your graduation?",
+    "cn": "你打算如何庆祝你毕业了？"
+   },
+   {
+    "en": "How are you going to prepare for the speech competition？",
+    "cn": "你打算怎么准备演讲比赛？"
+   }
+  ]
+ },
+ {
+  "num": 45,
+  "pattern": "How does...sound?",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "How does making our appointment at 8sound?",
+    "cn": "我们把约会定在8点如何？"
+   },
+   {
+    "en": "How does taking a break and getting a drink sound?",
+    "cn": "休息一下，喝一杯怎么样？"
+   }
+  ]
+ },
+ {
+  "num": 46,
+  "pattern": "How long will/does it take you to...?",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "How long will it take you to memorize your speech?",
+    "cn": "你记住演讲稿得花多长时间？"
+   },
+   {
+    "en": "How long does it take you to walk home from your office?",
+    "cn": "你从办公室走到家得花多长时间？"
+   },
+   {
+    "en": "How long will it take you to recite such a passage?",
+    "cn": "你背诵这么一篇文章要多长时间？"
+   }
+  ]
+ },
+ {
+  "num": 47,
+  "pattern": "How should I...？",
+  "gloss": "我该如何…...？【征求建议句型】",
+  "examples": [
+   {
+    "en": "How should I tell him the bad news?",
+    "cn": "我该如何告诉他这个坏消息？"
+   },
+   {
+    "en": "How should I contact you？",
+    "cn": "我怎么跟你联系呢？"
+   }
+  ]
+ },
+ {
+  "num": 48,
+  "pattern": "I absolutely agree with",
+  "gloss": "我完全同意………。【表达同意句型】",
+  "examples": [
+   {
+    "en": "Sure, I absolutely agree with your point.",
+    "cn": "当然，我绝对同意你的观点。"
+   },
+   {
+    "en": "I absolutely agree with this article; you should read it.",
+    "cn": "我完全赞同这篇文章的观点，你应该看看。"
+   }
+  ]
+ },
+ {
+  "num": 49,
+  "pattern": "I'm grateful for",
+  "gloss": "我非常感激【表达感激句型】",
+  "examples": [
+   {
+    "en": "I'm grateful for your timely help.",
+    "cn": "非常感谢你及时的帮助。"
+   },
+   {
+    "en": "I'm grateful for everything my parents have done for me.",
+    "cn": "我非常感谢我的父母为我做的一切。"
+   }
+  ]
+ },
+ {
+  "num": 50,
+  "pattern": "I am planning to",
+  "gloss": "我打算…【表示打算句型】",
+  "examples": [
+   {
+    "en": "I am planning to travel around China.",
+    "cn": "我打算游遍中国。"
+   },
+   {
+    "en": "I am planning to attend LYCE intensive training camp this summer.",
+    "cn": "今年夏天我打算参加李阳疯狂英语集训营。【绝对地道！】第二级"
+   }
+  ]
+ },
+ {
+  "num": 51,
+  "pattern": "I am very pleased to have this opportunity to",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "I am very pleased to have this opportunity to stand here and give you a speech.",
+    "cn": "我很高兴有机会站在这里为你们作演讲。"
+   },
+   {
+    "en": "I am very pleased to have this opportunity to show you around Beijing.",
+    "cn": "我很高兴有机会带你逛北京。"
+   }
+  ]
+ },
+ {
+  "num": 52,
+  "pattern": "I apologize for",
+  "gloss": "我为⋯道歉。【道歉句型】",
+  "examples": [
+   {
+    "en": "I apologize for leaving you alone.",
+    "cn": "很抱歉把你一个人留下。"
+   },
+   {
+    "en": "I apologize for keeping you waiting.",
+    "cn": "很抱歉让你久等了。"
+   }
+  ]
+ },
+ {
+  "num": 53,
+  "pattern": "I believe (that)",
+  "gloss": "我相信……。",
+  "examples": [
+   {
+    "en": "I believe that we can cure cancer totally some day.",
+    "cn": "我相信我们总有一天能够完全治愈癌症。"
+   },
+   {
+    "en": "I believe that everyone should learn a foreign language.",
+    "cn": "我相信每个人都应该学一门外语。"
+   }
+  ]
+ },
+ {
+  "num": 54,
+  "pattern": "I believe we should",
+  "gloss": "我认为我们应该…。【表达观点何型】",
+  "examples": [
+   {
+    "en": "I believe we should work together to protect OuT environment.",
+    "cn": "我认为我们应该携手保护环境。"
+   },
+   {
+    "en": "I believe we should have a great aim in our life.",
+    "cn": "我认为我们人生要有远大的目标。"
+   }
+  ]
+ },
+ {
+  "num": 55,
+  "pattern": "I can't imagine",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "I can't imagine what my life would be like if I were disabled.",
+    "cn": "我无法想像如果我身惠残疾，我的生活会怎样。"
+   },
+   {
+    "en": "I can't imagine how cold it must be here in the winter.",
+    "cn": "我无法想像这里冬天会有多冷。"
+   }
+  ]
+ },
+ {
+  "num": 56,
+  "pattern": "I can't stand it when",
+  "gloss": "我无法忍受……。【经典抱怨句型】",
+  "examples": [
+   {
+    "en": "I can't stand it when I forget how to say something in English.",
+    "cn": "有些话忘了用英语怎么说让我受不了。"
+   },
+   {
+    "en": "I can't stand it when people talk with their mouth full.",
+    "cn": "我无法忍受别人说话的时候满嘴食物。"
+   }
+  ]
+ },
+ {
+  "num": 57,
+  "pattern": "I didn't expect to",
+  "gloss": "我没想到…⋯。【表达意外的句型】",
+  "examples": [
+   {
+    "en": "I didn't expect to see you here.",
+    "cn": "真没想到会在这里见到你。"
+   },
+   {
+    "en": "I didn't expect to receive such a pretty card from him.",
+    "cn": "我没想到能收到他寄来的那么漂亮的卡片。"
+   }
+  ]
+ },
+ {
+  "num": 58,
+  "pattern": "I didn't mean to",
+  "gloss": "我不是有意……。【道歉句型】",
+  "examples": [
+   {
+    "en": "I didn't mean to offend you.",
+    "cn": "我不是有意要冒犯你的。【offend v. 冒犯：得罪】"
+   },
+   {
+    "en": "I didn't mean to keep you waiting for such a long time, I'm sorry.",
+    "cn": "我不是有意让你等这么久的，对不起。"
+   }
+  ]
+ },
+ {
+  "num": 59,
+  "pattern": "I didn't realize",
+  "gloss": "我不知道……。",
+  "examples": [
+   {
+    "en": "1didnt realize how much this meant to you.",
+    "cn": "我不知道这对你那么重要。"
+   },
+   {
+    "en": "I didn't realize you spoke Chinese.",
+    "cn": "我不知道你会说中文。"
+   }
+  ]
+ },
+ {
+  "num": 60,
+  "pattern": "I （don't） feel like",
+  "gloss": "我（不）想……。",
+  "examples": [
+   {
+    "en": "I feel like going rock climbing with you this weekend.",
+    "cn": "这周末我想和你一起去攀岩。"
+   },
+   {
+    "en": "I really don't feel like going to the movies tonight.",
+    "cn": "我今晚真的不想去看电影。"
+   }
+  ]
+ },
+ {
+  "num": 61,
+  "pattern": "I don't get very excited about",
+  "gloss": "我对…⋯不怎么感兴趣。",
+  "examples": [
+   {
+    "en": "I don't get very excited about going to concerts.",
+    "cn": "我对去听演唱会不怎么感兴趣。"
+   },
+   {
+    "en": "I don't get very excited about math class.",
+    "cn": "我不怎么喜欢数学课。"
+   }
+  ]
+ },
+ {
+  "num": 62,
+  "pattern": "I don't know how to",
+  "gloss": "我不知道如何…⋯",
+  "examples": [
+   {
+    "en": "I don't know how to answer the question.",
+    "cn": "我不知道如何回答这个问题。"
+   },
+   {
+    "en": "I don't know how to say what I mean in English.",
+    "cn": "我不知道如何用英语表达自己的意思。"
+   }
+  ]
+ },
+ {
+  "num": 63,
+  "pattern": "I don't see (that)",
+  "gloss": "我看不出…/我认为不……",
+  "examples": [
+   {
+    "en": "I don't see that she really intends to help us out.",
+    "cn": "我觉得她无意于帮助我们。"
+   },
+   {
+    "en": "I don't see (that) anyone has a problem with our Plan.",
+    "cn": "我看不出谁对我们的计划有意见。"
+   }
+  ]
+ },
+ {
+  "num": 64,
+  "pattern": "I don't think it is necessary to",
+  "gloss": "我认为没有必要……。",
+  "examples": [
+   {
+    "en": "I don't think it is necessary to leave so early.",
+    "cn": "我认为没有必要这么早走。"
+   },
+   {
+    "en": "I don't think it is necessary to order so much food.",
+    "cn": "我觉得没必要点这么多吃的。"
+   }
+  ]
+ },
+ {
+  "num": 65,
+  "pattern": "I don't think it's right to",
+  "gloss": "我认为……是不对的。",
+  "examples": [
+   {
+    "en": "don't think it's right to bad-mouth other people.",
+    "cn": "我认为说别人坏话是不对的。【bad-mouth .说.…⋯•坏话】"
+   },
+   {
+    "en": "I don't think it is right to use so many plastic bags.",
+    "cn": "我觉得用这么多塑料袋是不对的。"
+   }
+  ]
+ },
+ {
+  "num": 66,
+  "pattern": "I doubt that/if/whether",
+  "gloss": "我怀疑/我不相信.……。",
+  "examples": [
+   {
+    "en": "I doubt if what he said is true.",
+    "cn": "我怀疑他所说的不是事实。"
+   },
+   {
+    "en": "I doubt if she has ever been to Hong Kong.",
+    "cn": "我怀疑她是不是去过香港。"
+   }
+  ]
+ },
+ {
+  "num": 67,
+  "pattern": "I dream of",
+  "gloss": "我梦想……【表达梦想句型】",
+  "examples": [
+   {
+    "en": "I dream of being a successful salesman.",
+    "cn": "我梦想成为一名成功的推销员。"
+   },
+   {
+    "en": "I dream of speaking English as well as Li Yang.",
+    "cn": "我梦想英语说得和李阳一样好。"
+   }
+  ]
+ },
+ {
+  "num": 68,
+  "pattern": "I'm dying to",
+  "gloss": "我渴望….⋯/我盼望……【表达渴望句型】",
+  "examples": [
+   {
+    "en": "I'm dying to improve my English.",
+    "cn": "我渴望提高自己的英语水平。"
+   },
+   {
+    "en": "I'm dying to leave for Beijing to meet my parents.",
+    "cn": "我盼望着前往北京去见我的父母。"
+   }
+  ]
+ },
+ {
+  "num": 69,
+  "pattern": "I feel very honored to",
+  "gloss": "我觉得很荣幸…。【经典演讲句型】",
+  "examples": [
+   {
+    "en": "I feel very honored to speak to you today.",
+    "cn": "我很荣幸今天能在此给你们讲话。"
+   },
+   {
+    "en": "I feel very honored to be a member of this team.",
+    "cn": "能成为这个队的一员我深感荣幸。"
+   }
+  ]
+ },
+ {
+  "num": 70,
+  "pattern": "I'm fed up with",
+  "gloss": "我厌倦了……。/我受够了……",
+  "examples": [
+   {
+    "en": "I'm fed up with his complaining.",
+    "cn": "我受够了他的抱怨。"
+   },
+   {
+    "en": "I'm fed up with all these traffic jams.",
+    "cn": "我受够了这些交通堵塞。"
+   }
+  ]
+ },
+ {
+  "num": 71,
+  "pattern": "I'm sick and tired of",
+  "gloss": "我对…感到厌烦。【经奥抱怨句型】",
+  "examples": [
+   {
+    "en": "I'm sick and tired of all this noise.",
+    "cn": ""
+   },
+   {
+    "en": "I'm sick and tired of the same old routine every",
+    "cn": "这些噪音让我烦透了 day. 我对日复一日呆板的生活感到厌倦。 【routine n. 日常事物：常规】第 6 张照片"
+   }
+  ]
+ },
+ {
+  "num": 72,
+  "pattern": "I find it hard for me to",
+  "gloss": "我发现……对我来说很难。",
+  "examples": [
+   {
+    "en": "I find it hard for me to study late at night.",
+    "cn": "我发现熬夜学习对我来说很难。"
+   },
+   {
+    "en": "I find it hard for me to make a speech in public.",
+    "cn": "我发现在公众场合作演讲对我来说很难。"
+   }
+  ]
+ },
+ {
+  "num": 73,
+  "pattern": "I hate to disagree with you, but",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "I hate to disagree with you, but what you are saying isn't correct.",
+    "cn": "我不想跟你有不同意见，但你说的不对。"
+   },
+   {
+    "en": "I hate to disagree with you, but I think your view is impractical.",
+    "cn": "我不想跟你有不同意见，但我认为你的观点不切合实际。"
+   }
+  ]
+ },
+ {
+  "num": 74,
+  "pattern": "I have confidence in",
+  "gloss": "我相信⋯……⋯/我对……有信心。",
+  "examples": [
+   {
+    "en": "I have confidence in winning the Crazy English Speech contest.",
+    "cn": "我有信心赢得这次疯狂英语演讲比赛。"
+   },
+   {
+    "en": "I have confidence in making it into a top university.",
+    "cn": "我有信心能考入一所重点大学。"
+   }
+  ]
+ },
+ {
+  "num": 75,
+  "pattern": "I have nothing to do with",
+  "gloss": "我与…⋯无关",
+  "examples": [
+   {
+    "en": "I have nothing to do with that man; I've never seen him before.",
+    "cn": "我与那个人一点关系都没有，我以前从来没见过他。"
+   },
+   {
+    "en": "I have nothing to do with that problem - I just arrived.",
+    "cn": "这个问题跟我一点关系都没有，我刚刚才到的。"
+   }
+  ]
+ },
+ {
+  "num": 76,
+  "pattern": "I have no experience in",
+  "gloss": "我在……方面没有经验。",
+  "examples": [
+   {
+    "en": "I have no experience in dealing with children.",
+    "cn": "我在和孩子打交道方面没有什么经验。"
+   },
+   {
+    "en": "I have no experience in talking with native speakers.",
+    "cn": "我还没有和英语为母语的人交谈过。"
+   }
+  ]
+ },
+ {
+  "num": 77,
+  "pattern": "I haven't done... for a long time",
+  "gloss": "我很久没有……了。",
+  "examples": [
+   {
+    "en": "I haven't played the piano for a long time.",
+    "cn": "我很久没有弹钢琴了。"
+   },
+   {
+    "en": "I haven't spoken English for a long time.",
+    "cn": "我好久没说英语了。"
+   }
+  ]
+ },
+ {
+  "num": 78,
+  "pattern": "I insist that",
+  "gloss": "我坚决要求……。【宾语从句使用虚拟语气】",
+  "examples": [
+   {
+    "en": "I insist that you let me show you around.",
+    "cn": "我坚持要求你让我带你到处转转。"
+   },
+   {
+    "en": "I insist that you give me my money back.",
+    "cn": "我坚持要求你把钱退给我。"
+   }
+  ]
+ },
+ {
+  "num": 79,
+  "pattern": "I insist on doing",
+  "gloss": "我坚持……。【后接V-ing形式作宾语】",
+  "examples": [
+   {
+    "en": "I insisted on making him our coach.",
+    "cn": "我坚持要他做我们的教练。"
+   },
+   {
+    "en": "I insisted on paying for lunch.",
+    "cn": "我坚持午餐由我付账。"
+   }
+  ]
+ },
+ {
+  "num": 80,
+  "pattern": "I intend to",
+  "gloss": "我打算【表达打算句型】",
+  "examples": [
+   {
+    "en": "I intend to give him a surprise.",
+    "cn": "我打算给他一个惊喜。"
+   },
+   {
+    "en": "I intend to study in America next year.",
+    "cn": "我打算明年去美国读书。"
+   }
+  ]
+ },
+ {
+  "num": 81,
+  "pattern": "I like nothing better than",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "I like nothing better than helping people.",
+    "cn": "我最喜欢帮助别人。"
+   },
+   {
+    "en": "I like nothing better than traveling to places I've never been to before.",
+    "cn": "我最喜欢去从来没有去过的地方旅行。"
+   }
+  ]
+ },
+ {
+  "num": 82,
+  "pattern": "I never dreamed of",
+  "gloss": "我从未想过……【表达意外旬型】",
+  "examples": [
+   {
+    "en": "I never dreamed of getting a perfect score.",
+    "cn": "我从未想过拿这么高的分。"
+   },
+   {
+    "en": "I never dreamed of meeting you here. What a coincidence！",
+    "cn": ""
+   }
+  ]
+ },
+ {
+  "num": 83,
+  "pattern": "I prefer...to",
+  "gloss": "我喜欢…⋯胜过……。【表达偏爱句型】",
+  "examples": [
+   {
+    "en": "I prefer playing sports to watching them on TV.",
+    "cn": "我喜欢玩体育运动胜过在电视上看体育比赛。"
+   },
+   {
+    "en": "I prefer working as a manager in a small company to working as a clerk in a big one.",
+    "cn": "我喜欢在小公司当经理胜过在大公司做小职员。"
+   }
+  ]
+ },
+ {
+  "num": 84,
+  "pattern": "I prefer to...rather than",
+  "gloss": "我宁愿…⋯而不愿……",
+  "examples": [
+   {
+    "en": "I prefer to send text messages rather than call.",
+    "cn": "我宁愿发短信而不愿打电话。"
+   },
+   {
+    "en": "I prefer to stay at home rather than go out.",
+    "cn": "我宁愿呆在家里而不愿出去。"
+   }
+  ]
+ },
+ {
+  "num": 85,
+  "pattern": "I really want to know",
+  "gloss": "我真的很想知道⋯……",
+  "examples": [
+   {
+    "en": "I really want to know more about your country.",
+    "cn": "我真的想多了解你的国家。"
+   },
+   {
+    "en": "I really want to know how to improve my English Pronunciation.",
+    "cn": "我真的很想知道如何改进我的英语发音。"
+   }
+  ]
+ },
+ {
+  "num": 86,
+  "pattern": "I set my mind to do sth./on sth",
+  "gloss": "我下定决心做某事。",
+  "examples": [
+   {
+    "en": "I set my mind on winning the competition.",
+    "cn": "我下定决心要赢得比赛。"
+   },
+   {
+    "en": "I set my mind to believe, hope, and endure all things.",
+    "cn": "我下定决心对所有事情采取信任、希望和容忍的态度。"
+   }
+  ]
+ },
+ {
+  "num": 87,
+  "pattern": "I sincerely hope that",
+  "gloss": "我真诚地希望…⋯。【表达希望句型】",
+  "examples": [
+   {
+    "en": "I sincerely hope that our friendship will last forever.",
+    "cn": "我真诚地希望我们的友谊天长地久。"
+   },
+   {
+    "en": "I sincerely hope that you will take China as your second home.",
+    "cn": "我真诚地希望你能把中国当作你的第二故乡。"
+   }
+  ]
+ },
+ {
+  "num": 88,
+  "pattern": "I strongly advise you to",
+  "gloss": "我强烈建议你…⋯。【不定式作宾补】",
+  "examples": [
+   {
+    "en": "I strongly advise you to drink more water.",
+    "cn": "我强烈建议你多喝水。"
+   },
+   {
+    "en": "I strongly advise you to attend Crazy English Summer Camp, and I'm sure you will get more than you expected.",
+    "cn": "我强烈建议你参加疯狂英语夏令营，我相信你会学到比你预期的还要多。"
+   }
+  ]
+ },
+ {
+  "num": 89,
+  "pattern": "I suggest (that)",
+  "gloss": "我建议……【宾语从句使用虚拟语气】",
+  "examples": [
+   {
+    "en": "I suggest (that) yougo there by yourself.",
+    "cn": "我建议你自己一个人去那里。"
+   },
+   {
+    "en": "I suggest (that) you try some special local foods.",
+    "cn": "我建议你尝尝一些当地特色食品。"
+   }
+  ]
+ },
+ {
+  "num": 90,
+  "pattern": "I think this is a good chance for you to",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "I think this is a good chance for you to test your English.",
+    "cn": "我认为这是测试你英语水平的好机会。"
+   },
+   {
+    "en": "I think this is a good chance for you to make new friends.",
+    "cn": "我认为这是你交新朋友的好机会。"
+   }
+  ]
+ },
+ {
+  "num": 91,
+  "pattern": "I think it is a good idea to",
+  "gloss": "我认为…⋯是个好主意。",
+  "examples": [
+   {
+    "en": "I think it is a good idea to do exercise every day.",
+    "cn": "我认为每天做运动是个好主意。"
+   },
+   {
+    "en": "I think it is a good idea to save all receipts.",
+    "cn": "我认为把所有的收据都收好是个好主意。"
+   }
+  ]
+ },
+ {
+  "num": 92,
+  "pattern": "I think it is a waste of money/time doing",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "I think it is a waste of time sitting in front of the television all day.",
+    "cn": "我觉得整天看电视是浪费时间。"
+   },
+   {
+    "en": "I think it is a waste of time memorizing words and grammar rules.",
+    "cn": "我觉得背单词和语法规则很浪费时间。"
+   }
+  ]
+ },
+ {
+  "num": 93,
+  "pattern": "I think its wrong to",
+  "gloss": "我认为…是不对的。【表达看法句型】",
+  "examples": [
+   {
+    "en": "I think it's wrong to impose your thoughts on others.",
+    "cn": "我认为把自己的想法强加给别人是不对的。"
+   },
+   {
+    "en": "I think it's wrong to treat service people rudely.",
+    "cn": "我认为粗鲁对待服务人员是不对的。"
+   }
+  ]
+ },
+ {
+  "num": 94,
+  "pattern": "I think that it is impossible to",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "I think that it is impossible to be there before eight.",
+    "cn": "我觉得在8点之前赶到那里是不可能的。"
+   },
+   {
+    "en": "I think that it is impossible to see everything on such a short trip.",
+    "cn": "我觉得在这么短的旅程中要看到所有的东西是不可能的。"
+   }
+  ]
+ },
+ {
+  "num": 95,
+  "pattern": "I think you might like to",
+  "gloss": "我想你可能会喜欢…⋯。",
+  "examples": [
+   {
+    "en": "I think you might like to know something about my hometown.",
+    "cn": "我想你可能会想知道一些关于我家乡的事情。"
+   },
+   {
+    "en": "I think you might like to hear the legend of this dish.",
+    "cn": "我想你可能会想知道关于这道菜的由来。"
+   }
+  ]
+ },
+ {
+  "num": 96,
+  "pattern": "I think you'd better",
+  "gloss": "我觉得你最好………。【表达建议句型】",
+  "examples": [
+   {
+    "en": "I think youd better rest for a while.",
+    "cn": "我觉得你最好休息一下。"
+   },
+   {
+    "en": "I think youd better hurry up, or you will be late.",
+    "cn": "我觉得你最好快点，不然要迟到了。"
+   }
+  ]
+ },
+ {
+  "num": 97,
+  "pattern": "I want to express my gratitude to",
+  "gloss": "我要感谢…….",
+  "examples": [
+   {
+    "en": "I want to express my gratitude to my family for their support.",
+    "cn": "我要感谢我的家人给我的支持。"
+   },
+   {
+    "en": "I want to express my gratitude to my teacher for her guidance and patience.",
+    "cn": "我要感谢我的老师对我的耐心指导。"
+   },
+   {
+    "en": "I was impressed by his inspiring words, and I decided to cooperate with him.",
+    "cn": "他令人鼓舞的话打动了我，我决定跟他合作。"
+   },
+   {
+    "en": "I was deeply impressed by the athletes' dedication.",
+    "cn": "运动员们的执着深深地打动了我。"
+   },
+   {
+    "en": "I wonder if I could take this dictionary home.",
+    "cn": "我想知道能否把这本字典带回家。"
+   },
+   {
+    "en": "I was wondering if you'd like to go to a concert tomorrow night.",
+    "cn": "我在想你明天晚上是否愿意去听演唱会。"
+   }
+  ]
+ },
+ {
+  "num": 98,
+  "pattern": "I demanded (that)",
+  "gloss": "我要求…",
+  "examples": [
+   {
+    "en": "I demanded (that) I see the principal right away.",
+    "cn": "我要求马上见校长。"
+   },
+   {
+    "en": "I demanded (that) he pick up the litter he had thrown on the ground.",
+    "cn": "我要求他把自己扔在地上的垃圾捡起来。"
+   },
+   {
+    "en": "I won't write to him unless he writes to me first.",
+    "cn": ""
+   },
+   {
+    "en": "I won't leave unless you give me a reason.",
+    "cn": "除非你给我一个理由，否则我是不会走的。"
+   }
+  ]
+ },
+ {
+  "num": 99,
+  "pattern": "I used to.：",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "I used to go to play basketball with some of my friends every Saturday afteroon.",
+    "cn": "以前每个星期六我都和一些朋友去打篮球。"
+   },
+   {
+    "en": "I used to be afraid of speaking English.",
+    "cn": "我曾经害怕说英语。"
+   }
+  ]
+ },
+ {
+  "num": 100,
+  "pattern": "I would advise you to",
+  "gloss": "我想建议你…。",
+  "examples": [
+   {
+    "en": "I would advise you to book tickets in advance.",
+    "cn": "我建议你还是提前订票吧。"
+   },
+   {
+    "en": "I would advise you to get up earlier on Mondays， because there's always a traffic jam.",
+    "cn": "我想建议你星期一早上早点起床，因为星期一总是会塞车。"
+   }
+  ]
+ },
+ {
+  "num": 101,
+  "pattern": "I would appreciate it if",
+  "gloss": "如果……我会非常感激。",
+  "examples": [
+   {
+    "en": "I would appreciate it if you call me back this evening.",
+    "cn": "如果你晚上再打过来，我会非常感激。"
+   },
+   {
+    "en": "I would appreciate it if you would write a few words for me.",
+    "cn": "如果你给我写点什么的话，我会非常感激。"
+   }
+  ]
+ },
+ {
+  "num": 102,
+  "pattern": "I would like to recommend",
+  "gloss": "我想推荐……。【推荐介绍句型】",
+  "examples": [
+   {
+    "en": "I would like to recommend the noodles here.",
+    "cn": ""
+   },
+   {
+    "en": "1would like to recommend a trip to Jiuzhaigou.",
+    "cn": "我想推荐去九寨沟旅行。"
+   }
+  ]
+ },
+ {
+  "num": 103,
+  "pattern": "I would like to...rather than",
+  "gloss": "我宁愿……也不愿……。",
+  "examples": [
+   {
+    "en": "I would like to take a walk rather than watch TV this weekend.",
+    "cn": "周末我宁愿散步也不想看电视。"
+   },
+   {
+    "en": "I would like to chat in person rather than chat on line.",
+    "cn": "我宁愿面对面聊天而不是网上聊天。"
+   }
+  ]
+ },
+ {
+  "num": 104,
+  "pattern": "I would rather...than",
+  "gloss": "我宁愿…⋯，而不愿……。",
+  "examples": [
+   {
+    "en": "I would rather eat local food than fast food.",
+    "cn": "我想吃本地的食品而不是快餐。"
+   },
+   {
+    "en": "I would rather stay at home than go shopping on such a humid day.",
+    "cn": "这么潮湿的天，我宁愿呆在家里也不愿意去购物。"
+   },
+   {
+    "en": "I wouldn't feel happy if you didn't come to my birthday party.",
+    "cn": "如果你不来我的生日聚会，我会不高兴的。"
+   },
+   {
+    "en": "1wouldn't feel happy if I felt you weren't comfortable.",
+    "cn": "如果感觉你不舒服的话，我会不高兴的。"
+   }
+  ]
+ },
+ {
+  "num": 105,
+  "pattern": "I'd be happy to...， if you'd like",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "I'd be happy to show you around, if you'd like.",
+    "cn": "如果你愿意，我很高兴带你四处看看。"
+   },
+   {
+    "en": "I'd be happy to translate for you, if you'd like.",
+    "cn": "如果你愿意，我很高兴给你翻译。"
+   }
+  ]
+ },
+ {
+  "num": 106,
+  "pattern": "I'd like to know more about",
+  "gloss": "我心了解更多关干……。",
+  "examples": [
+   {
+    "en": "I'd like to know more about the project you are carrying out.",
+    "cn": "我想更多地了解你们正在进行的项目。"
+   },
+   {
+    "en": "I'd like to know more about how you learned English.",
+    "cn": "我想更多地了解你是怎样学英语的。"
+   }
+  ]
+ },
+ {
+  "num": 107,
+  "pattern": "I'd like to suggest you do",
+  "gloss": "我想建议你……。",
+  "examples": [
+   {
+    "en": "I'd like to suggest you take the test When you are still in school..",
+    "cn": "我想建议你还在上学的时候就参加这个考试。"
+   },
+   {
+    "en": "I'd like to suggest you visit our school again soon.",
+    "cn": "我想建议你不久之后再来我们学校参观。"
+   }
+  ]
+ },
+ {
+  "num": 108,
+  "pattern": "I'd like/love to, but",
+  "gloss": "我很想，但……。【表达拒绝句型】",
+  "examples": [
+   {
+    "en": "I'd love to, but I'm afraid I'm otherwise engaged.",
+    "cn": "我很想，但恐怕我已经另有安排了。"
+   },
+   {
+    "en": "I'd love to, but sadly, I am leaving tomorrow.",
+    "cn": "我很想，但是很遗憾，我明天就要走了。"
+   }
+  ]
+ },
+ {
+  "num": 109,
+  "pattern": "I'm （not） certain",
+  "gloss": "我（不）确定……。",
+  "examples": [
+   {
+    "en": "I'm certain that you will get over your laziness.",
+    "cn": "我确信你会克服你的惰性的。"
+   },
+   {
+    "en": "I'm not certain whether this address is correct.",
+    "cn": "我不确定这个地址对不对。"
+   }
+  ]
+ },
+ {
+  "num": 110,
+  "pattern": "I'm afraid I won't be able to",
+  "gloss": "恐怕我不能……",
+  "examples": [
+   {
+    "en": "I'm afraid I won't be able to finish the task before Friday.",
+    "cn": "恐怕我无法在星期五之前完成这项任务。"
+   },
+   {
+    "en": "I'm afraid I won't be able to keep our appointment.",
+    "cn": "恐怕我无法赴约了。"
+   }
+  ]
+ },
+ {
+  "num": 111,
+  "pattern": "I'm busy with/doing",
+  "gloss": "我正忙于",
+  "examples": [
+   {
+    "en": "Don't bother me -I'm busy with my project right now.",
+    "cn": "别打扰我，我现在正忙我的项目呢。"
+   },
+   {
+    "en": "Don't bother me -I am busy writing my composition.",
+    "cn": "别烦我，我在忙着写作文呢。"
+   }
+  ]
+ },
+ {
+  "num": 112,
+  "pattern": "I'm considering doing",
+  "gloss": "我正考虑……",
+  "examples": [
+   {
+    "en": "I'm considering buying a second-hand computer because I'm short of money now.",
+    "cn": "因为现在钱不够，我正考虑买台二手电脑。"
+   },
+   {
+    "en": "I'm considering paying a visit to Bejing next month.",
+    "cn": "我正考虑下个月去北京玩。"
+   },
+   {
+    "en": "I'm convinced that what you said is quite right.",
+    "cn": "我相信你所说的相当正确。"
+   },
+   {
+    "en": "I'm convinced that our school has the best teachers.",
+    "cn": "我相信，我们的学校有最好的老师。"
+   }
+  ]
+ },
+ {
+  "num": 113,
+  "pattern": "I'm curious to do",
+  "gloss": "我对做……很好奇。",
+  "examples": [
+   {
+    "en": "I'm curious to know what was happening outside.",
+    "cn": "我很好奇想知道刚才外面发生了什么事。"
+   },
+   {
+    "en": "I'm curious to know more about American holidays.",
+    "cn": "我很好奇想多了解一些关于美国节日的情况。"
+   }
+  ]
+ },
+ {
+  "num": 114,
+  "pattern": "I'm determined to",
+  "gloss": "我决定【表决心句型】",
+  "examples": [
+   {
+    "en": "I'm determined to read 10 books this month.",
+    "cn": "我决定这个月读十本书"
+   },
+   {
+    "en": "I'm determined to practice English every morning when I wake up.",
+    "cn": "我决定每天早上一起床就操练英语。"
+   }
+  ]
+ },
+ {
+  "num": 115,
+  "pattern": "I'm getting a little concerned about",
+  "gloss": "我对…有点担忧。",
+  "examples": [
+   {
+    "en": "I'm getting a little concerned about my father's health.",
+    "cn": "我对我父亲的健康状况有点担忧。"
+   },
+   {
+    "en": "I'm getting a little concerned about the results of my TOEFL test.",
+    "cn": "我对我的托福考试成绩有点担忧。"
+   }
+  ]
+ },
+ {
+  "num": 116,
+  "pattern": "I'm interested in",
+  "gloss": "我对…⋯感兴趣。【表达兴趣句型】",
+  "examples": [
+   {
+    "en": "I'm interested in joining the English corner.",
+    "cn": "我有感兴趣参加英语角。"
+   },
+   {
+    "en": "I'm interested in learning more about your country.",
+    "cn": "我很有兴趣多点了解你的国家。"
+   }
+  ]
+ },
+ {
+  "num": 117,
+  "pattern": "I'm (just) calling to",
+  "gloss": "我打电话来是要……。【打电话常用句型】",
+  "examples": [
+   {
+    "en": "I am just calling to confirm my flight number.",
+    "cn": "我打电话来是要确认我的航班号。"
+   },
+   {
+    "en": "I am (just) calling to see how you are feeling.",
+    "cn": "我打电话来是想看看你现在感觉如何。"
+   }
+  ]
+ },
+ {
+  "num": 118,
+  "pattern": "I'm （not） sure",
+  "gloss": "我（不）确定⋯",
+  "examples": [
+   {
+    "en": "I'm not sure if I should accept that job offer in Hong Kong.",
+    "cn": "我不确定我是否应该接受香港的那份工作。"
+   },
+   {
+    "en": "I'm not sure if I want to go abroad to study.",
+    "cn": "我不确定我是否想出国留学。"
+   }
+  ]
+ },
+ {
+  "num": 119,
+  "pattern": "I'm not very interested in",
+  "gloss": "我对……不是很感兴趣。",
+  "examples": [
+   {
+    "en": "I'm not very interested in Korean TV shows.",
+    "cn": "我对韩剧不是很感兴趣。"
+   },
+   {
+    "en": "I'm not very interested in listening to classical music.",
+    "cn": "我对听古典音乐不是很感兴趣。"
+   }
+  ]
+ },
+ {
+  "num": 120,
+  "pattern": "I'm occupied in doing/with",
+  "gloss": "我正忙于⋯",
+  "examples": [
+   {
+    "en": "I'm occupied in preparing for the final exams; don't bother me！",
+    "cn": ""
+   },
+   {
+    "en": "I'm occupied with volunteer work. I'm an Olympic volunteer.",
+    "cn": "我正忙着做志愿工作，我是奥运会志愿者。"
+   }
+  ]
+ },
+ {
+  "num": 121,
+  "pattern": "I'm really fond of",
+  "gloss": "我很喜欢…⋯。【表达爱好句型】",
+  "examples": [
+   {
+    "en": "I'm really fond of surfing the Internet; it is pretty convenient.",
+    "cn": "我很喜欢上网，上网真的很方便。"
+   },
+   {
+    "en": "I'm really fond of classical music because it can calm me down.",
+    "cn": "我很喜欢古典音乐，因为它可以让我平静。"
+   }
+  ]
+ },
+ {
+  "num": 122,
+  "pattern": "I'm really/terribly/extremely sorry for",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "I'm really sorry for the delay of the report.",
+    "cn": "报告延误上交，我对此感到非常抱歉。"
+   },
+   {
+    "en": "I'm really sorry for what happened.",
+    "cn": "我对刚刚发生的事情感到非常抱歉。"
+   }
+  ]
+ },
+ {
+  "num": 123,
+  "pattern": "I've been thinking about",
+  "gloss": "我一直想…⋯。",
+  "examples": [
+   {
+    "en": "I've been thinking about going to France to study art.",
+    "cn": "我一直想去法国学艺术。"
+   },
+   {
+    "en": "I've been thinking about going to your intensive training camp.",
+    "cn": "我一直想参加你的集训营。"
+   }
+  ]
+ },
+ {
+  "num": 124,
+  "pattern": "I have a desire to",
+  "gloss": "我非常渴望⋯……。【表达渴望句型】",
+  "examples": [
+   {
+    "en": "I have a strong desire to speak good English.",
+    "cn": "我非常渴望说一口流利的英语。"
+   },
+   {
+    "en": "I have a desire to hike the Great Wall.",
+    "cn": "我渴望去长城徒步。"
+   }
+  ]
+ },
+ {
+  "num": 125,
+  "pattern": "I've decided to",
+  "gloss": "我已经决定……【表达决定句型】",
+  "examples": [
+   {
+    "en": "I've decided to join a health club.",
+    "cn": "我已经决定加入一个健康俱乐部。"
+   },
+   {
+    "en": "I've decided to run for the monitor of our class.",
+    "cn": "我已经决定竞选班长了。【run for：竞选】"
+   }
+  ]
+ },
+ {
+  "num": 126,
+  "pattern": "If I did...， I would",
+  "gloss": "如果我…，我会……。",
+  "examples": [
+   {
+    "en": "If I knew his number, I would phone him.",
+    "cn": "如果我知道他的电话号码，我会打电话给他的。"
+   },
+   {
+    "en": "If I had enough money, I would buy an MP3 player.",
+    "cn": "如果我带够钱，我会买一部MIP3。"
+   },
+   {
+    "en": "If I had known that you were coming, I would",
+    "cn": "如果我……，我就会…⋯。 have met you at the airport.如果我知道你要来，我就去机场接你了。"
+   },
+   {
+    "en": "If I had seen the accident, I would have stopped to help.",
+    "cn": "如果我看到了事故，我就停下来帮忙了。"
+   }
+  ]
+ },
+ {
+  "num": 127,
+  "pattern": "If I were you, I would",
+  "gloss": "如果我是你，我就会……。",
+  "examples": [
+   {
+    "en": "If I were you, I would get rid of this bad habit.",
+    "cn": ""
+   },
+   {
+    "en": "If I were you, I would take a bottle of water with me.",
+    "cn": "如果我是你，我就会改掉这个坏习惯。"
+   }
+  ]
+ },
+ {
+  "num": 128,
+  "pattern": "If only",
+  "gloss": "真希望……/若是…那该多好啊。",
+  "examples": [
+   {
+    "en": "If only she would accept my invitation.",
+    "cn": "要是她接受我的邀请该多好啊！"
+   },
+   {
+    "en": "If only we could get a ticket！",
+    "cn": ""
+   }
+  ]
+ },
+ {
+  "num": 129,
+  "pattern": "If it is possible",
+  "gloss": "可能的话……",
+  "examples": [
+   {
+    "en": "If it is possible, I'd like to visit your company.",
+    "cn": "如果可能的话，我想参观你的公司。"
+   },
+   {
+    "en": "If it is possible, lend me your car tonight.",
+    "cn": "如果可能的话，今晚把你的车借给我。"
+   }
+  ]
+ },
+ {
+  "num": 130,
+  "pattern": "If you ask me, I think",
+  "gloss": "如果你问我，我认为……",
+  "examples": [
+   {
+    "en": "If you ask me, I think you should practice more.",
+    "cn": "如果你问我，我认为你应该多加练习。"
+   },
+   {
+    "en": "If you ask me, I think pollution is China's biggest problem.",
+    "cn": "如果你问我，我认为污染是中国最大的问题。"
+   }
+  ]
+ },
+ {
+  "num": 131,
+  "pattern": "If you want to...， you'll have to",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "If you want to remember more words, you'll have to read a lot in English.",
+    "cn": "你要是想记住更多的单词，你就得读大量的英语。"
+   },
+   {
+    "en": "If you want to lose weight, you'll have to eat less and exercise more.",
+    "cn": "如果你想减肥，你就得少吃多运动。"
+   }
+  ]
+ },
+ {
+  "num": 132,
+  "pattern": "In a word",
+  "gloss": "总之，。【经典概括句型】",
+  "examples": [
+   {
+    "en": "In a word, money is something but not everything.",
+    "cn": "总之，金钱很重要，但不是万能的。"
+   },
+   {
+    "en": "What matters most in life? In a word, health.",
+    "cn": "生命中什么最重要？一句话，健康。"
+   }
+  ]
+ },
+ {
+  "num": 133,
+  "pattern": "In brief/short",
+  "gloss": "简言之，",
+  "examples": [
+   {
+    "en": "In brief, we cannot please everyone all the time.",
+    "cn": "总而言之，我们无法总是让每个人都满意。"
+   },
+   {
+    "en": "In short, science frees us from the bondage of nature. It has made our lives easier and more comfortable.",
+    "cn": "总之，科学把我们从自然的束缚中解脱出来，使我们生活得更加轻松舒适。【bondage n. 束缚：奴役】"
+   }
+  ]
+ },
+ {
+  "num": 134,
+  "pattern": "In conclusion",
+  "gloss": "最后，……。/总之，……。【经典概括句型】",
+  "examples": [
+   {
+    "en": "In conclusion, I find mutual understanding plays a key role in building a friendly relationship.",
+    "cn": "总之，我发现相互理解对建立友好关系至关重要。"
+   },
+   {
+    "en": "In conclusion, we must work together to improve Our performance.",
+    "cn": "总之，我们必须合作才能提高成绩。"
+   }
+  ]
+ },
+ {
+  "num": 135,
+  "pattern": "In general",
+  "gloss": "一般而言，…⋯。【经典写作句型】",
+  "examples": [
+   {
+    "en": "In general, graduates who speak good English will have more chances than those who don t.",
+    "cn": "机会更多。"
+   },
+   {
+    "en": "In general, the food here is very light and fresh.",
+    "cn": "一般来说，这里的食物很清淡。"
+   }
+  ]
+ },
+ {
+  "num": 136,
+  "pattern": "In my opinion/view",
+  "gloss": "我认为……。【表达观点句型】",
+  "examples": [
+   {
+    "en": "In my opinion, we should never abandon hope for success.",
+    "cn": "我认为我们永还不应该没弃对成功的希望。"
+   },
+   {
+    "en": "In my opinion, exams create a lot of stress.",
+    "cn": "我认为，考试带来了很多压力。"
+   }
+  ]
+ },
+ {
+  "num": 137,
+  "pattern": "In order to...you should",
+  "gloss": "为了，你应该…。",
+  "examples": [
+   {
+    "en": "In order to understand this essay fully, you should read more about its author.",
+    "cn": "为了更充分地理解这篇文章，你应该再看一些关于作者的介绍。"
+   },
+   {
+    "en": "In order to score well in exams, you should study every day and not wait until the last minute.",
+    "cn": "为了考试拿高分，你应该每天学习，不要临时抱佛脚。"
+   }
+  ]
+ },
+ {
+  "num": 138,
+  "pattern": "In other words",
+  "gloss": "换句话说，⋯。",
+  "examples": [
+   {
+    "en": "In other words, you should read and speak English crazily every day.",
+    "cn": "换句话说，你应该每天疯狂读英语、说英语。"
+   },
+   {
+    "en": "In other words, there are no shortcuts to success.",
+    "cn": "换句话说，成功是没有捷径的。"
+   }
+  ]
+ },
+ {
+  "num": 139,
+  "pattern": "In that case",
+  "gloss": "那样的话，",
+  "examples": [
+   {
+    "en": "In that case, I have no more to say.",
+    "cn": "那样的话，我没有什么好说的了。"
+   },
+   {
+    "en": "The weather forecast calls for rain tomorrow. In that case, we will meet indoors.",
+    "cn": "天气预报说明天会下雨。这样的话，我们就在室内会面吧。"
+   }
+  ]
+ },
+ {
+  "num": 140,
+  "pattern": "is of great importance. …⋯",
+  "gloss": "很重要",
+  "examples": [
+   {
+    "en": "If you want to succeed in life, I think to set a goal for yourself is of great importance.",
+    "cn": "如果你想在生活中成功，我觉得为自己确立一个目标是非常重要的。"
+   },
+   {
+    "en": "Communication skills are of great importance in today's job market.",
+    "cn": "在今天的就业市场，沟通能力至关重要。"
+   }
+  ]
+ },
+ {
+  "num": 141,
+  "pattern": "Is it convenient for you to...？",
+  "gloss": "你是否方便.…？",
+  "examples": [
+   {
+    "en": "Is it convenient for you to post this letter for me When you go out?",
+    "cn": "你出去的时候是否方便帮我把这封信寄了？"
+   },
+   {
+    "en": "Is it convenient for you to read my essay this afternoon？",
+    "cn": "今天下午你方便读一下我的文章吗？"
+   }
+  ]
+ },
+ {
+  "num": 142,
+  "pattern": "Is it OK if...？……",
+  "gloss": "可以吗？【表达请求句型】",
+  "examples": [
+   {
+    "en": "Is it OK if Iborrow your notebook tonight?",
+    "cn": "我今晚借你的笔记本可以吗？"
+   },
+   {
+    "en": "Is it OK if Iask you a few questions?",
+    "cn": "我可以问你几个问题吗？"
+   }
+  ]
+ },
+ {
+  "num": 143,
+  "pattern": "Is it possible to...？",
+  "gloss": "可以...⋯吗？",
+  "examples": [
+   {
+    "en": "Isi possible to exchange the milk Shake for the ice cream?",
+    "cn": "可以把奶昔換成雪糕吗？【milk shake：奶昔】"
+   },
+   {
+    "en": "Is it possible to exchange this shirt for a larger size?",
+    "cn": "这件衬衫可以换一件大一点的吗？"
+   }
+  ]
+ },
+ {
+  "num": 144,
+  "pattern": "Is there a better way to...？…",
+  "gloss": "有没有更好的方法？",
+  "examples": [
+   {
+    "en": "Is there a better way to search for images on the Internet？",
+    "cn": "在网上搜索图片有没有更好的办法？"
+   },
+   {
+    "en": "Is there a better way to send these books to my friend in Canada?",
+    "cn": "有没有更好的办法把这些书寄给我在加拿大的朋友？"
+   },
+   {
+    "en": "Is there a better way to improve my pronunciation?",
+    "cn": "有没有更好的办法来改善我的发音？"
+   }
+  ]
+ },
+ {
+  "num": 145,
+  "pattern": "Is there any chance you could possibly...?",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "Is there any chance you could possibly come to China？",
+    "cn": "你有没有可能来中国？"
+   },
+   {
+    "en": "Is there any chance you could possibly change your schedule？",
+    "cn": "你有没有可能改一下你的日程？"
+   }
+  ]
+ },
+ {
+  "num": 146,
+  "pattern": "Is there anything else that...？",
+  "gloss": "还有别的…吗？",
+  "examples": [
+   {
+    "en": "Is there anything else that you don't understand?",
+    "cn": "你还有什么不懂的地方吗？"
+   },
+   {
+    "en": "Is there anything else that I can do for you?",
+    "cn": "我还可以帮你做点什么吗？"
+   }
+  ]
+ },
+ {
+  "num": 147,
+  "pattern": "It appears that",
+  "gloss": "看来……。",
+  "examples": [
+   {
+    "en": "It appears that the air is much cleaner this year.",
+    "cn": "今年的空气似乎干净多了。"
+   },
+   {
+    "en": "It appears that great progress has been made in the IT industry.",
+    "cn": "看来信息产业取得了巨大的进步。"
+   }
+  ]
+ },
+ {
+  "num": 148,
+  "pattern": "It depends on whether",
+  "gloss": "这取决于……是否⋯",
+  "examples": [
+   {
+    "en": "It depends on whether you are determined to do it or not.",
+    "cn": "这取决于你是否决心要做这件事情。"
+   },
+   {
+    "en": "Itdepends on whether I do well on my exam or not.",
+    "cn": "这取决于我考试考得好不好。"
+   }
+  ]
+ },
+ {
+  "num": 149,
+  "pattern": "It doesnt make sense to... ……",
+  "gloss": "没有任何意义。",
+  "examples": [
+   {
+    "en": "It doesn't make sense to argue with him.",
+    "cn": "和他争论没有任何意义。"
+   },
+   {
+    "en": "It doesn't make sense to spend so much money，",
+    "cn": "花这么多钱没什么意义。 （第四章）"
+   }
+  ]
+ },
+ {
+  "num": 150,
+  "pattern": "It doesn't mater whether/f",
+  "gloss": "没关系。/⋯无所谓。",
+  "examples": [
+   {
+    "en": "It doesn't matter if you have made mistakes. Leam from your mistakes and you'll make progress.",
+    "cn": "你有没有犯了错都没关系。从错误中学习，你就会进步。"
+   },
+   {
+    "en": "It doesn't matter whether you go to a famous university or not.",
+    "cn": "你有没有上名牌大学并不重要。"
+   }
+  ]
+ },
+ {
+  "num": 151,
+  "pattern": "It goes without saying that...……",
+  "gloss": "理应如此/不言而喻。",
+  "examples": [
+   {
+    "en": "It goes without saying that China needs more English speakers.",
+    "cn": "毋庸置疑，中国需要更多的人说英语。"
+   },
+   {
+    "en": "It goes without saying that women should have equal rights and opportunities with men.",
+    "cn": "女性理应拥有和男性平等的权利和机会。"
+   }
+  ]
+ },
+ {
+  "num": 152,
+  "pattern": "It makes a/no difference （to sb.）",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "It makes no difference to me whether you go or not.",
+    "cn": "你去不去对我来说都无所谓。"
+   },
+   {
+    "en": "It makes no difference whether we speak English or Chinese, both are OK.",
+    "cn": "我们说英语还是汉语无所谓，都可以的。"
+   }
+  ]
+ },
+ {
+  "num": 153,
+  "pattern": "It occurred to me that",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "It suddenly occurred to me thatl knew how to solve that problem.",
+    "cn": "我突然想起我知道怎样解决那个问题。"
+   },
+   {
+    "en": "It occurred to me that we met during the Spring Festival several years ago.",
+    "cn": "我想起我们是在几年前的春节见面的。"
+   }
+  ]
+ },
+ {
+  "num": 154,
+  "pattern": "It won't do any harm to...…",
+  "gloss": "没有坏处。",
+  "examples": [
+   {
+    "en": "It won't do any harm to try it.",
+    "cn": "试试又不会有什么坏处。"
+   },
+   {
+    "en": "It won't do any harm to practice a little more.",
+    "cn": "多点练习没有坏处。"
+   }
+  ]
+ },
+ {
+  "num": 155,
+  "pattern": "It would be wonderful if",
+  "gloss": "要是……那就太好了。",
+  "examples": [
+   {
+    "en": "It would be wonderful if we could go visit Mount Emei this summer！",
+    "cn": ""
+   },
+   {
+    "en": "It would be wonderful if we stayed in touch by email.",
+    "cn": "如果我们通过电子邮件保持联系就太好了。"
+   }
+  ]
+ },
+ {
+  "num": 156,
+  "pattern": "It happened that",
+  "gloss": "很偶然。",
+  "examples": [
+   {
+    "en": "Ithappened thatl won the footballottery last week.",
+    "cn": "我上星期中了足彩。【lottery n. 彩票；奖券】"
+   },
+   {
+    "en": "It happened that Iran into my English teacher at the supermarket，",
+    "cn": "我在超市碰巧遇到了我的英语老师。"
+   }
+  ]
+ },
+ {
+  "num": 157,
+  "pattern": "It helps if",
+  "gloss": "如果…⋯的话，将会（对某人）有帮助/好处。",
+  "examples": [
+   {
+    "en": "It helps if you can conquer your shyness and yell English out crazily.",
+    "cn": "如果你能够克服羞涩，疯狂大喊英语，将会对你有好处。"
+   },
+   {
+    "en": "It helps if you take a long deep breath when you feel nervous.",
+    "cn": "感觉紧张的时候深吸一口气很有帮助。"
+   }
+  ]
+ },
+ {
+  "num": 158,
+  "pattern": "It's amazing (that)",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "It's amazing (that) China became the third country that launched a manned spacecraft.",
+    "cn": "中国成为第三个发送载人航天飞机的国家，真是很了不起。"
+   },
+   {
+    "en": "It's amazing that he didn't hurt himself in the traffic accident.",
+    "cn": "他在车祸中竞然没有受伤，真是太不可思议了。"
+   }
+  ]
+ },
+ {
+  "num": 159,
+  "pattern": "It is/was.that/who【",
+  "gloss": "强调句句型】",
+  "examples": [
+   {
+    "en": "It was Edward who told me about it.",
+    "cn": "告诉我这件事的是爱德华。"
+   },
+   {
+    "en": "It is what you did that changed my mind, not your words.",
+    "cn": "是你的行动改变了我的想法，不是你说的话。"
+   }
+  ]
+ },
+ {
+  "num": 160,
+  "pattern": "It is bad to",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "It is bad to push yourself too hard. Just try your best.",
+    "cn": "把自己通得太紧不好。尽力而为就好了。"
+   },
+   {
+    "en": "It is bad to drink Coke and soft drinks instead of water.",
+    "cn": "光喝可乐和软饮料而不喝水是不好的。"
+   }
+  ]
+ },
+ {
+  "num": 161,
+  "pattern": "It's hard to imagine",
+  "gloss": "很难想像……。",
+  "examples": [
+   {
+    "en": "It's hard to imagine how he made it without any help.",
+    "cn": "很难想像没有人帮助，他是怎样成功的。"
+   },
+   {
+    "en": "It's hard to imagine how much China has changed.",
+    "cn": "很难想像中国的变化有多大。"
+   }
+  ]
+ },
+ {
+  "num": 162,
+  "pattern": "It is believed that",
+  "gloss": "人们认 ……。【that引导主语从句】",
+  "examples": [
+   {
+    "en": "It is believed that what she said is true.",
+    "cn": "大家相信她说的是真的。"
+   },
+   {
+    "en": "It is believed that many important things were invented in China.",
+    "cn": "人们相信很多重要的东西都是中国发明的。"
+   }
+  ]
+ },
+ {
+  "num": 163,
+  "pattern": "It didn't/won't take long before",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "It didn't take long before he got used to life abroad.",
+    "cn": "没多久他就适应了国外的生活。"
+   },
+   {
+    "en": "It won't take long before you can find your way around campus.",
+    "cn": "用不了多久你就能认熟校园了。"
+   }
+  ]
+ },
+ {
+  "num": 164,
+  "pattern": "It is easier to...than to...…⋯.……",
+  "gloss": "容易。【比较级句型】",
+  "examples": [
+   {
+    "en": "It is easier to buy a car than to keep one.",
+    "cn": "买车容易养车难。"
+   },
+   {
+    "en": "It is easier to read English than to speak English.",
+    "cn": "读英语容易说英语难。"
+   }
+  ]
+ },
+ {
+  "num": 165,
+  "pattern": "It is easy enough to...……",
+  "gloss": "相当容易.",
+  "examples": [
+   {
+    "en": "1t is easy enough tecoev ag Paste butyou shouls write something by yourself.",
+    "cn": "抄袭（复制+粒貼）非業容易。但灵体应该自已写一些东百，"
+   },
+   {
+    "en": "It is easy enough to criticize, but we should try to find solutions.",
+    "cn": "批评人很容易，但是我们应该尽力找到解决问题的办法。"
+   }
+  ]
+ },
+ {
+  "num": 166,
+  "pattern": "It is essential that",
+  "gloss": "有必要……。",
+  "examples": [
+   {
+    "en": "It is essential that you finish all of the medicine.",
+    "cn": "你有必要吃完所有这些药。"
+   },
+   {
+    "en": "It is essential that effective measures be taken to protect our civil rights.",
+    "cn": "有必要采取有效措施来保障我们公民的权利。"
+   }
+  ]
+ },
+ {
+  "num": 167,
+  "pattern": "It is good manners to do",
+  "gloss": "是有礼貌的表现。",
+  "examples": [
+   {
+    "en": "It is good manners to bring along a small gift or some flowers when you are invited to dinner by a foreign friend.",
+    "cn": "如果外国友人邀请你共进晚餐，去的时候带上一份小礼物或者鲜花是有礼貌的表现。"
+   },
+   {
+    "en": "It is good manners to hold the door for others.",
+    "cn": "替别人把好门是有礼貌的表现。"
+   }
+  ]
+ },
+ {
+  "num": 168,
+  "pattern": "It is high time (that)",
+  "gloss": "现在是……的时候了。",
+  "examples": [
+   {
+    "en": "It is high time we stopped talking about this silly question.",
+    "cn": "我们早就该结束讨论这个愚蠢的问题。"
+   },
+   {
+    "en": "It is high time that we changed this useless rule！",
+    "cn": ""
+   }
+  ]
+ },
+ {
+  "num": 169,
+  "pattern": "It is hoped that",
+  "gloss": "希望……",
+  "examples": [
+   {
+    "en": "It is hoped that no one was seriously injured in the car crash.",
+    "cn": "希望在这场车祸中没有人受重伤。"
+   },
+   {
+    "en": "It is hoped that every student can attend the program.",
+    "cn": "希望每个学生都参加这个节目。"
+   }
+  ]
+ },
+ {
+  "num": 170,
+  "pattern": "It is important that",
+  "gloss": "是很重要的。",
+  "examples": [
+   {
+    "en": "It is important that something be done before its too late.",
+    "cn": "在事情变得不能挽回之前采取一些行动很重要。"
+   },
+   {
+    "en": "It is important that you get enough sleep the night before your exam.",
+    "cn": "考试前夜睡足觉很重要。"
+   }
+  ]
+ },
+ {
+  "num": 171,
+  "pattern": "It's long been my dream to",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "It's long been my dream to make a speech in English.",
+    "cn": "用英语发表演讲一直是我的梦想。"
+   },
+   {
+    "en": "It's long been my dream to attend Harvard University.",
+    "cn": "上哈佛大学一直是我的梦想。"
+   }
+  ]
+ },
+ {
+  "num": 172,
+  "pattern": "It is （very/not） likely that...（",
+  "gloss": "很/没）有可能……",
+  "examples": [
+   {
+    "en": "It is very likely that it will rain this afternoon.",
+    "cn": "今天下午很可能会下雨。"
+   },
+   {
+    "en": "lt is not likely that they will give up the game.",
+    "cn": "他们不可能会放弃这场比赛。"
+   },
+   {
+    "en": "1think it is necessary to look before you leap.",
+    "cn": "我觉得三思而后行是有必要的。"
+   },
+   {
+    "en": "When invited, it is not necessary for you to bring anything with you.",
+    "cn": "去做客不一定非要带礼物。"
+   },
+   {
+    "en": "It is no use talking without doing.",
+    "cn": "光说不做是没有用的。"
+   },
+   {
+    "en": "It is no use blaming each other when the problem already exists.",
+    "cn": "问题已经存在，互相指贡毫无用处。"
+   }
+  ]
+ },
+ {
+  "num": 173,
+  "pattern": "It is not unusual for sb. to do",
+  "gloss": "某人做……不足为奇。",
+  "examples": [
+   {
+    "en": "It is not unusual for the British people to drink tea.",
+    "cn": "英国人喝茶不足为奇。"
+   },
+   {
+    "en": "It is not unusual for employees to work overtime.",
+    "cn": "员工加班很正常。"
+   }
+  ]
+ },
+ {
+  "num": 174,
+  "pattern": "It is possible/impossible to.……",
+  "gloss": "是（不）可能的。",
+  "examples": [
+   {
+    "en": "It's possible for him to finish it in five days.",
+    "cn": "在五天内完成对他来说是可能的。"
+   },
+   {
+    "en": "It's impossible to predict the outcome of the game.",
+    "cn": "要预知比赛结果是不可能的。【outcome n. 结果；成果】"
+   }
+  ]
+ },
+ {
+  "num": 175,
+  "pattern": "It is dangerous to...……",
+  "gloss": "是危险的。",
+  "examples": [
+   {
+    "en": "It is dangerous to explore a jungle alive with wild animals.",
+    "cn": "在野兽出没的丛林里探险是危险的。"
+   },
+   {
+    "en": "It is dangerous to post your personal information on the Internet.",
+    "cn": "在互联网上发布自己的个人信息是危险的。"
+   }
+  ]
+ },
+ {
+  "num": 176,
+  "pattern": "It is （rather）common to do",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "It is rather common to see grandparents caring for small children.",
+    "cn": "祖父母照看小孩相当普遍。"
+   },
+   {
+    "en": "It is rather common for women to hold important positions in companies now.",
+    "cn": "如今女性在公司担任要职相当普遍。"
+   }
+  ]
+ },
+ {
+  "num": 177,
+  "pattern": "It is reported that",
+  "gloss": "据说；据传⋯……。【that引导主语从句】",
+  "examples": [
+   {
+    "en": "It is reported that the world famous football star will come to China next year.",
+    "cn": "有报道说那位世界著名的足球明星明年来中国。"
+   },
+   {
+    "en": "It is reported that the economy will grow by 9 percent this year.",
+    "cn": "据报道，今年的经济将增长9%。"
+   },
+   {
+    "en": "It is required that all members of the club speak English.",
+    "cn": "俱乐部所有成员都要说英语。"
+   },
+   {
+    "en": "It is required that every student （should） attend the meeting this afternoon.",
+    "cn": "要求每个学生都参加下午的会议。"
+   }
+  ]
+ },
+ {
+  "num": 178,
+  "pattern": "It is said that",
+  "gloss": "据说……",
+  "examples": [
+   {
+    "en": "It is said that Liu Xiang will come to our city soon.",
+    "cn": "据说刘翔不久将来我市。"
+   },
+   {
+    "en": "It is said that Li Yang translated for many famous people.",
+    "cn": "据说李阳给很多名人做过翻译。"
+   }
+  ]
+ },
+ {
+  "num": 179,
+  "pattern": "It is thought that",
+  "gloss": "人们认 ……【that引导主语从句】",
+  "examples": [
+   {
+    "en": "It is thought that girls have more language ability than boys.",
+    "cn": "人们认为女孩的语言能力比男孩强。"
+   },
+   {
+    "en": "It is thought that man's ability to learn languages makes him different from the animals.",
+    "cn": "人们认为人类的语言学习能力使其区别于动物。"
+   }
+  ]
+ },
+ {
+  "num": 180,
+  "pattern": "It is （not） true that... ...（",
+  "gloss": "不）是真的。【that引导主语从句】",
+  "examples": [
+   {
+    "en": "It is true that city life is much more exciting than country life.",
+    "cn": "确实，城市生活比乡村生活更令人兴奋。"
+   },
+   {
+    "en": "It is true that boys cannot speak English as well as girls.",
+    "cn": "男孩的英语确实说得不如女孩好。"
+   }
+  ]
+ },
+ {
+  "num": 181,
+  "pattern": "lt is （very） difficult to",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "It is very difficult to avoid traffic jams during rush hours.",
+    "cn": "上下班高峰期塞车是难免的。"
+   },
+   {
+    "en": "It is very difficult to foretell what the world will be like in the future.",
+    "cn": "很难预测将来的世界会是什么样子。"
+   }
+  ]
+ },
+ {
+  "num": 182,
+  "pattern": "It's really a challenge for me to",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "It's really a challenge for me to speak in public because I am very shy.",
+    "cn": "在大庭广众下讲话对我来说确实是一个挑战，因为我很腼腆。"
+   },
+   {
+    "en": "It's really a challenge for me to take this job, and I think I will appreciate working with you.",
+    "cn": "做这份工作对我来说确实是一个挑战，但我想会很高兴和你们一起工作的。"
+   }
+  ]
+ },
+ {
+  "num": 183,
+  "pattern": "It is （very） useful to...⋯.（",
+  "gloss": "很）有用。",
+  "examples": [
+   {
+    "en": "It is very useful to recite English sentences and Passages.",
+    "cn": "背诵英语句子和短文非常有用。"
+   },
+   {
+    "en": "It is very useful to take a deep breathwhen you feel nervous.",
+    "cn": "紧张的时候深呼吸很有用。"
+   }
+  ]
+ },
+ {
+  "num": 184,
+  "pattern": "It is/was obvious/clear that",
+  "gloss": "很明显⋯",
+  "examples": [
+   {
+    "en": "It is obvious that she is terribly nervous on stage.",
+    "cn": ""
+   },
+   {
+    "en": "It was clear that he didn't want me to join them.",
+    "cn": "很明显，他不想让我加入他们。"
+   }
+  ]
+ },
+ {
+  "num": 185,
+  "pattern": "It seems/seemed that",
+  "gloss": "好像……/似乎⋯……",
+  "examples": [
+   {
+    "en": "It seemed that no one knew what had happened.",
+    "cn": ""
+   },
+   {
+    "en": "It seems that you don't know anyone here.",
+    "cn": "这里的人你好像一个也不认识。"
+   },
+   {
+    "en": "It sounds like a good idea.",
+    "cn": "听起来这主意不错。"
+   },
+   {
+    "en": "It sounds like you have a great future ahead of you.",
+    "cn": "听起来好像你前程一片大好。"
+   }
+  ]
+ },
+ {
+  "num": 186,
+  "pattern": "It takes/took/will take sb. some time to do sth",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "It took me years of hard work to speak good English.",
+    "cn": "为了讲一口流利的英语，我花了多年时间刻苦操练。"
+   },
+   {
+    "en": "It takes my father an hour to go to work every day.",
+    "cn": "我爸爸每天去上班要花一个小时。"
+   }
+  ]
+ },
+ {
+  "num": 187,
+  "pattern": "It wasn't until...that",
+  "gloss": "直到…….……。【强调句型】",
+  "examples": [
+   {
+    "en": "It wasn't until yesterday that I got your Letter.",
+    "cn": "我昨天才收到你的来信。"
+   },
+   {
+    "en": "It wasn't until last week that l found out my exam score.",
+    "cn": "直到上周我才知道我的考试成绩。"
+   }
+  ]
+ },
+ {
+  "num": 188,
+  "pattern": "It is not/just like sb. to do sth",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "It's not like her father to lose his temper; he is very patient.",
+    "cn": "发脾气不像她爸爸的为人，他很有耐心的。"
+   },
+   {
+    "en": "It's not like Jim to be late for class. He regards time as the most important thing in life.",
+    "cn": "迟到不像吉姆的为人，他把时间看作是生命中最重要的。"
+   }
+  ]
+ },
+ {
+  "num": 189,
+  "pattern": "It is a bad habit to...……",
+  "gloss": "是一个坏习惯",
+  "examples": [
+   {
+    "en": "It's a bad habit to put off things until the last minute.",
+    "cn": "把事情拖到最后时刻才做是个坏习惯。"
+   },
+   {
+    "en": "It's a bad habit to eat too much junk food.",
+    "cn": "吃太多垃圾食品是个坏习惯。"
+   }
+  ]
+ },
+ {
+  "num": 190,
+  "pattern": "It is a great pleasure to... ⋯（",
+  "gloss": "感到）非常愉快。",
+  "examples": [
+   {
+    "en": "It's a great pleasure to do business with you.",
+    "cn": "跟你做生意我感到非常愉快。"
+   },
+   {
+    "en": "It's a great pleasure to welcome you to our school.",
+    "cn": "很高兴你能来我们学校，欢迎你。"
+   },
+   {
+    "en": "It is customary to.……",
+    "cn": "是一种习俗."
+   },
+   {
+    "en": "It's customary to give people gifts on their birthday.",
+    "cn": "过生日送礼物是一种习俗。"
+   },
+   {
+    "en": "It's customary to give lucky money to children in Spring Festival.",
+    "cn": "春节期间给孩子们压岁钱是一种习俗。"
+   }
+  ]
+ },
+ {
+  "num": 191,
+  "pattern": "It is delightful to...……",
+  "gloss": "令人很愉快。",
+  "examples": [
+   {
+    "en": "It's delightful to play by the seashore.",
+    "cn": "在海滨玩令人很愉快。"
+   },
+   {
+    "en": "It's delightful to meet people from so many different countries.",
+    "cn": "见到来自这么多不同国家的人很让人高兴。"
+   }
+  ]
+ },
+ {
+  "num": 192,
+  "pattern": "It is my great honor to",
+  "gloss": "我很荣幸……。",
+  "examples": [
+   {
+    "en": "It's my great honor to be here today.",
+    "cn": "今天能来这里是我莫大的荣幸"
+   },
+   {
+    "en": "It's my great honor to present the governor.",
+    "cn": "我很荣幸为大家介绍州长。"
+   }
+  ]
+ },
+ {
+  "num": 193,
+  "pattern": "It is （not） good to",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "It's not good to get into the habit of telling lies.",
+    "cn": "养成说谎的习惯是不好的。"
+   },
+   {
+    "en": "It's not good to sleep right after eating a big meal.",
+    "cn": "刚吃完大餐就睡觉是不好的。"
+   }
+  ]
+ },
+ {
+  "num": 194,
+  "pattern": "It is our duty to... ……",
+  "gloss": "是我们的责任。",
+  "examples": [
+   {
+    "en": "It's our duty to learn as much as we can！",
+    "cn": ""
+   },
+   {
+    "en": "It's our duty to protect the forests from destruction.",
+    "cn": "保护森林免遭破坏是我们的责任。"
+   }
+  ]
+ },
+ {
+  "num": 195,
+  "pattern": "It is wrong to...⋯",
+  "gloss": "是不对的。",
+  "examples": [
+   {
+    "en": "It's wrong to cheat on exams！",
+    "cn": ""
+   },
+   {
+    "en": "Its wrong to read people's private letters without permission.",
+    "cn": "未经允许看别人的私人信件是不对的。"
+   }
+  ]
+ },
+ {
+  "num": 196,
+  "pattern": "It's a shame/pity that",
+  "gloss": "可惜/遗憾……。【that引导主语从句】",
+  "examples": [
+   {
+    "en": "It's a shame that you can t stay a little longer.",
+    "cn": "真可惜你不能多待一会。"
+   },
+   {
+    "en": "It's a shame that you cannot make it to the party tonight.",
+    "cn": "今晚你不能来参加聚会，真可惜。"
+   }
+  ]
+ },
+ {
+  "num": 197,
+  "pattern": "It is （really） unbelievable that",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "It's really unbelievable that such an honest man could betray his friends！",
+    "cn": ""
+   },
+   {
+    "en": "It's really unbelievable that five students from my class will attend Beijing University.",
+    "cn": "我们班有5位同学考上北京大学，真让人难以置信。"
+   }
+  ]
+ },
+ {
+  "num": 198,
+  "pattern": "It is/will be difficult to",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "It is difficult to arrive there on time in such bad.",
+    "cn": ""
+   },
+   {
+    "en": "I think it will be difficult to tell her the truth.",
+    "cn": "我认为告诉她真相会很难。"
+   }
+  ]
+ },
+ {
+  "num": 199,
+  "pattern": "It'll do you good to.…",
+  "gloss": "对你有好处",
+  "examples": [
+   {
+    "en": "I think it'll do you good to get some fresh air.",
+    "cn": "我认为呼吸新鲜空气对你有好处。"
+   },
+   {
+    "en": "I think it'll do you good to drink eight glasses of water every day.",
+    "cn": "我认为每天喝八杯水对你有好处。"
+   }
+  ]
+ },
+ {
+  "num": 200,
+  "pattern": "Last but not least，",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "Last but not least, I'd love to thank all my teachers and friends.",
+    "cn": "最后但同样重要的是，我要感谢我所有的老师和朋友。【演讲套话】"
+   },
+   {
+    "en": "Last but not least, I want to present the award for the best English speaker.",
+    "cn": "最后但同样重要的是，我要为最好的英语演说家颁奖。"
+   }
+  ]
+ },
+ {
+  "num": 201,
+  "pattern": "Let me explain why",
+  "gloss": "让我解释为什么……。",
+  "examples": [
+   {
+    "en": "Let me explain why I am so late.",
+    "cn": "让我解释我什么会这么迟。"
+   },
+   {
+    "en": "Let me explain why I didn't do my homework.",
+    "cn": "让我解释为什么我没做家庭作业。"
+   }
+  ]
+ },
+ {
+  "num": 202,
+  "pattern": "Let me fill you in on",
+  "gloss": "让我来告诉你…⋯。【六星级句型】",
+  "examples": [
+   {
+    "en": "Let me fill you in on the company's new policies.",
+    "cn": "让我来告诉你公司的新政策。"
+   },
+   {
+    "en": "Let me fill you in on what we did in class yesterday.",
+    "cn": "让我来告诉你我们昨天在课堂上做了什么。"
+   },
+   {
+    "en": "Let me know if you change your mind",
+    "cn": "如果你改变主意，请告诉我。"
+   },
+   {
+    "en": "（just） let me know if you don't know how to get to that shop. I will be glad to take you there.",
+    "cn": "如果你不知道怎么去那家店，请告诉我。我很乐意带你去。"
+   }
+  ]
+ },
+ {
+  "num": 203,
+  "pattern": "Let me see if",
+  "gloss": "让我看看是否⋯",
+  "examples": [
+   {
+    "en": "Let me see if I can be of any help.",
+    "cn": "让我看看能否帮上什么忙。"
+   },
+   {
+    "en": "Let me see if I can explain this Chinese idiom in English.",
+    "cn": "让我看看能否用英语来解释这个中国成语。"
+   }
+  ]
+ },
+ {
+  "num": 204,
+  "pattern": "Make sure to do sth",
+  "gloss": "一定要做某事……",
+  "examples": [
+   {
+    "en": "Make sure to leave a note if you go out.",
+    "cn": "你出去的话一定要留个条。"
+   },
+   {
+    "en": "Make sure to turn off the computer when you finish your work.",
+    "cn": "完成工作后一定要关电脑。"
+   }
+  ]
+ },
+ {
+  "num": 205,
+  "pattern": "Maybe it's better to",
+  "gloss": "也许⋯会更好。",
+  "examples": [
+   {
+    "en": "Maybe it's better to stay at the hospital for another few days.",
+    "cn": "在医院再住几天可能会更好一些。"
+   },
+   {
+    "en": "Maybe it's better to send atext message instead of calling.",
+    "cn": "也许发短信比打电话更好。"
+   }
+  ]
+ },
+ {
+  "num": 206,
+  "pattern": "means a great deal to",
+  "gloss": "对…⋯意义重大。",
+  "examples": [
+   {
+    "en": "Your encouragement means a great deal to me.",
+    "cn": "你的鼓励对我来说意义重大。"
+   },
+   {
+    "en": "This dictionary means a great deal to me becaulse Iwonit in a speech competition.",
+    "cn": "这本字典对我来说意义重大，因为我是在一次演讲比赛中赢来的。"
+   }
+  ]
+ },
+ {
+  "num": 207,
+  "pattern": "My dream/goal/hope/plan is to",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "My dream is to become a doctor and find a cure for cancer.",
+    "cn": "我的梦想是成为一名医生，找到治疗癌症的方法。"
+   },
+   {
+    "en": "My goal is to speak fluent English in three months.",
+    "cn": "我的目标是在三个月内学会讲一口漂亮的英语。"
+   }
+  ]
+ },
+ {
+  "num": 208,
+  "pattern": "My point of view is that",
+  "gloss": "我的观点是…⋯。",
+  "examples": [
+   {
+    "en": "My point of view is that everybody should have the right to get education.",
+    "cn": "我的观点是每个人都应该有权利接受教育。"
+   },
+   {
+    "en": "My point of view is that nothing in the world is more important than family.",
+    "cn": "我的观点是世界上没有什么比家庭更重要。"
+   }
+  ]
+ },
+ {
+  "num": 209,
+  "pattern": "No matter what",
+  "gloss": "无论……【让步状语从句句型】",
+  "examples": [
+   {
+    "en": "No matter what happens, Tll always stand by you.",
+    "cn": "不论发生什么事，我都永远支持你。"
+   },
+   {
+    "en": "No matter what happens, your parents love you very much.",
+    "cn": "不论发生什么事，你的父母都很爱你。"
+   }
+  ]
+ },
+ {
+  "num": 210,
+  "pattern": "No one can deny that",
+  "gloss": "没有人能够否认……。",
+  "examples": [
+   {
+    "en": "No one can deny that the accident was caused by carelessness.",
+    "cn": "没有人能够否认这起事故是由粗心造成的。"
+   },
+   {
+    "en": "No one can deny that the 2008 Olympics were a great success.",
+    "cn": "没有人能够否认2008年奥运会是一个巨大的成功。"
+   }
+  ]
+ },
+ {
+  "num": 211,
+  "pattern": "No sooner...than...—……",
+  "gloss": "就⋯【倒装句型】",
+  "examples": [
+   {
+    "en": "No sooner had he closed his eyes than he fel asleep.",
+    "cn": "他一合眼就睡着了。"
+   },
+   {
+    "en": "No sooner had I fallen asleep than I heard the phone ring.",
+    "cn": "我刚睡着就听到电话铃响。"
+   }
+  ]
+ },
+ {
+  "num": 212,
+  "pattern": "No words can express",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "No words can express how thankful l am for your help.",
+    "cn": "语言难以表达我多么感激你的帮助。"
+   },
+   {
+    "en": "No words can express how surprised and happy I was when I saw the gift.",
+    "cn": "语言难以表达当我看到那份礼物时有多么的惊喜。"
+   }
+  ]
+ },
+ {
+  "num": 213,
+  "pattern": "Not until...did",
+  "gloss": "直到……才⋯……⋯。【倒装句型】",
+  "examples": [
+   {
+    "en": "Not until we got home did we notice how late it was.",
+    "cn": "直到回到家，我们才意识到已经那么晚了。"
+   },
+   {
+    "en": "Not until Ibegan to work did I realize how much time I had wasted.",
+    "cn": "直到开始工作，我才意识到我已蹉跎了很多岁月。"
+   }
+  ]
+ },
+ {
+  "num": 214,
+  "pattern": "Now that",
+  "gloss": "既然/由于……，",
+  "examples": [
+   {
+    "en": "Now that you are alone, we can talk freely.",
+    "cn": "既然你也是一个人，我们就无拘束地聊聊吧。"
+   },
+   {
+    "en": "Now that you have already made up your mind， I'm not going to say anything.",
+    "cn": "既然你已经下定决心，我也就不多说了。"
+   }
+  ]
+ },
+ {
+  "num": 215,
+  "pattern": "on the condition that",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "Iwill help you, on the condition that you finish your assignment first.",
+    "cn": "我会帮你，条件是你得先完成作业。"
+   },
+   {
+    "en": "Iwill lend it to you on the condition that you return it in a week.",
+    "cn": "我会把它借给你，条件是你得在一个星期内还。"
+   }
+  ]
+ },
+ {
+  "num": 216,
+  "pattern": "On the contrary",
+  "gloss": "正好相反，",
+  "examples": [
+   {
+    "en": "Their criticism did not discourage me. On the contrary, I worked even harder.",
+    "cn": "他们的批评并没有使我感到气馁，相反，我比以前更加努力了。"
+   },
+   {
+    "en": "Most Americans do not like pale skin, on the contrary, they are fond of dark skin.",
+    "cn": "许多美国人不喜欢苍白的肤色，相反，他们喜欢深色肤色。"
+   }
+  ]
+ },
+ {
+  "num": 217,
+  "pattern": "On （the） one hand... on the other （hand），",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "On （the） one hand Iadmire your ability, but on the other （hand） Idistrust your judgment.",
+    "cn": "一方面我钦佩你的才能，但另一方面我不相信你的判断力。"
+   },
+   {
+    "en": "On （the） one hand I want to be a teacher, on the other （hand） I worry about making money.",
+    "cn": "一万面我想做老师，但另一方面我为挣钱而担忧。"
+   }
+  ]
+ },
+ {
+  "num": 218,
+  "pattern": "One of the+",
+  "gloss": "形容词最高级＋名词（短语）is...",
+  "examples": [
+   {
+    "en": "One of the most impressive pieces of writing is Hamlet.",
+    "cn": "最棒的著作之一就是《哈姆雷特》"
+   },
+   {
+    "en": "One of the most impressive sights in the world is the Great Wall.",
+    "cn": "世界上最棒的景点之一就是长城。"
+   }
+  ]
+ },
+ {
+  "num": 219,
+  "pattern": "Personally, I think/believe/feel (that)",
+  "gloss": "我个人认为…⋯",
+  "examples": [
+   {
+    "en": "Personally, I think a lot of Chinese food is too oily and salty.",
+    "cn": "我个人认为，很多中国食物太油腻、太成了。"
+   },
+   {
+    "en": "Personally, I believe that women play an increasingly important part in society now.",
+    "cn": "我个人认为女性在社会中发挥着越来越重要的作用。"
+   }
+  ]
+ },
+ {
+  "num": 220,
+  "pattern": "Please don't hesitate to",
+  "gloss": "请随时……",
+  "examples": [
+   {
+    "en": "Please don't hesitate to call me anytime you are in town.",
+    "cn": "你无论何时来城里，请随时打电话给我。"
+   },
+   {
+    "en": "Please don't hesitate to contact us if you are in need of assistance.",
+    "cn": "如果你需要协助，请随时联系我们。"
+   },
+   {
+    "en": "Please dsfe oe toif Bo re . pay English name. if it is easier for you to remember.",
+    "cn": "如果对你来说更容易记住的话，尽管叫我的英文名，"
+   }
+  ]
+ },
+ {
+  "num": 221,
+  "pattern": "Please forgive me for",
+  "gloss": "请原谅我……",
+  "examples": [
+   {
+    "en": "Please forgive me for being late.",
+    "cn": "请原谅我来晚了。"
+   },
+   {
+    "en": "Please forgive me for forgetting your name.",
+    "cn": "请原谅我忘记你的名字了。"
+   }
+  ]
+ },
+ {
+  "num": 222,
+  "pattern": "Please give my best wishes to",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "Please give my best wishes to your parents.",
+    "cn": "请代我问候你的父母。"
+   },
+   {
+    "en": "Please give my best wishes to your whole family.",
+    "cn": "请代我向你全家人问好。"
+   }
+  ]
+ },
+ {
+  "num": 223,
+  "pattern": "Recent studies show that",
+  "gloss": "最近研究表明.……",
+  "examples": [
+   {
+    "en": "Recent studies show that an increasing number of students go abroad at an early age.",
+    "cn": "最近调查表明，越来越多的学生在年纪尚小的时候就出国留学了。"
+   },
+   {
+    "en": "Recent studies show that spending too much time indoors can cause myopia.",
+    "cn": "最近研究表明，在室内呆太久会导致近视。【myopia n. 近视】"
+   }
+  ]
+ },
+ {
+  "num": 224,
+  "pattern": "Sb. can do nothing but do",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "Their neighbors can do nothing but envy their new pool.",
+    "cn": "他们的邻居只能羡慕他们的新游泳池。"
+   },
+   {
+    "en": "I can do nothing but wait for my father's return.",
+    "cn": "除了等我爸爸回来，我什么也做不了。"
+   }
+  ]
+ },
+ {
+  "num": 225,
+  "pattern": "Sb. have/has/had no choice but to do",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "We had no choice but to cancel our trip.",
+    "cn": "除了取消行程，我们别无选择。"
+   },
+   {
+    "en": "We had no choice but to take a taxi for we'd missed the last bus.",
+    "cn": "由于错过了末班车，除了打的，我们别无选择。"
+   }
+  ]
+ },
+ {
+  "num": 226,
+  "pattern": "Sb. look（s） as if",
+  "gloss": "某人看上去好像.…",
+  "examples": [
+   {
+    "en": "She looks as if she has a cold, unfriendly manner.",
+    "cn": "她看上去好像态度冷淡，不友好。"
+   },
+   {
+    "en": "He looks as if he likes his job very much.",
+    "cn": "他看起来非常喜欢他的工作。"
+   }
+  ]
+ },
+ {
+  "num": 227,
+  "pattern": "Something must be done to",
+  "gloss": "必须采取措施⋯。",
+  "examples": [
+   {
+    "en": "Something must be done to change our current examination system.",
+    "cn": "必须采取措施来改革我们现行的考试制度。"
+   },
+   {
+    "en": "Something must be done to reduce pollution.",
+    "cn": "必须采取措施减少污染。"
+   },
+   {
+    "en": "Sorry to bather yow. DxAHWe a pestion to ask you.",
+    "cn": "很抱歉打犹你，可是我有个问题要问你。"
+   },
+   {
+    "en": "5omy to bother yon",
+    "cn": "成很的e781about to begin很抱歉打扰你，不过会议很快就要开始了。"
+   }
+  ]
+ },
+ {
+  "num": 228,
+  "pattern": "Thanks to.…",
+  "gloss": "由于……〈多亏……。【表达原因何型】",
+  "examples": [
+   {
+    "en": "Thanks to his parents encouragement and support， he finally realized his dream.",
+    "cn": "多亏了父母的鼓励和支持，她终于实现了自己的梦想。"
+   },
+   {
+    "en": "Thanks to Li Yang Crazy English, Ibecame the top student in my class.",
+    "cn": "多亏了李阳疯狂英语，我成了班上的尖子生。"
+   }
+  ]
+ },
+ {
+  "num": 229,
+  "pattern": "The point is (that)",
+  "gloss": "重点/关键是……",
+  "examples": [
+   {
+    "en": "The point is that you have to keep your promise to help her with her English.",
+    "cn": "关键是你得遵守诺言，帮她学习英语。"
+   },
+   {
+    "en": "The point is we should not waste our precious time.",
+    "cn": "关键是我们不能浪费宝贵的时间。"
+   }
+  ]
+ },
+ {
+  "num": 230,
+  "pattern": "The problem/question is that/whether",
+  "gloss": "问题是",
+  "examples": [
+   {
+    "en": "The problem now is that we're locked out of the house.",
+    "cn": "现在的问题是我们被锁在门外了。"
+   },
+   {
+    "en": "The question is whether they will be able to help us.",
+    "cn": "问题是他们能否帮我们。"
+   }
+  ]
+ },
+ {
+  "num": 231,
+  "pattern": "The reason why...is...……",
+  "gloss": "的原因是……。",
+  "examples": [
+   {
+    "en": "The reason why he made such a great achievement is his perseverance.",
+    "cn": "他之所以取得如此伟大的成就，是因为他坚持不懈。【坚持创造辉煌！】"
+   },
+   {
+    "en": "The reason why I am here is that I want to meet other Crazy English learners.",
+    "cn": "我来这里的原因是我想认识其他疯狂英语学习者。"
+   }
+  ]
+ },
+ {
+  "num": 232,
+  "pattern": "The secret of...is to",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "The secret of success is to do the common things uncommonly well.",
+    "cn": "成功的秘诀是将平凡的事做得不平凡。【李阳老师强烈推荐】"
+   },
+   {
+    "en": "The secret of speaking English well is to practice constantly.",
+    "cn": "说好英语的秘诀是不断练习。"
+   }
+  ]
+ },
+ {
+  "num": 233,
+  "pattern": "The way I see it",
+  "gloss": "我的看法是“。",
+  "examples": [
+   {
+    "en": "The way I see it, you should avoid making the same mistake again.",
+    "cn": "我的看法是你应该避免再犯同样的错误。"
+   },
+   {
+    "en": "The way I see it, we are likely wasting our time.",
+    "cn": "我的看法是我们很可能在浪费时间。"
+   }
+  ]
+ },
+ {
+  "num": 234,
+  "pattern": "This was the moment when",
+  "gloss": "就是那个时候………",
+  "examples": [
+   {
+    "en": "This was the moment when I realized that I wanted 【when",
+    "cn": "引导定语从句】 to be a professional singer.就是那时我意识到自己想成为一名专业歌手。"
+   },
+   {
+    "en": "This was the moment when I felt all my hard work had finally paid off.",
+    "cn": "就是那时我觉得我所有的努力都有了回报。"
+   }
+  ]
+ },
+ {
+  "num": 235,
+  "pattern": "That reminds me，",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "That reminds me, I must get some cash.",
+    "cn": ""
+   },
+   {
+    "en": "That reminds me, I need to make an appointment with the dentist.",
+    "cn": "这倒提醒了我，我得跟牙医预约。"
+   }
+  ]
+ },
+ {
+  "num": 236,
+  "pattern": "There are signs that",
+  "gloss": "有迹象表明/显示……",
+  "examples": [
+   {
+    "en": "There are signs that you have made a significan't improvement.",
+    "cn": "有迹象表明你有了显著的进步。"
+   },
+   {
+    "en": "There are signs that the tourism industry is growing.",
+    "cn": "有迹象表明旅游业正在发展。"
+   }
+  ]
+ },
+ {
+  "num": 237,
+  "pattern": "There is no doubt that",
+  "gloss": "毫无疑问，",
+  "examples": [
+   {
+    "en": "There is no doubt that health is better than wealth.",
+    "cn": "毫无疑问，健康胜于财富。"
+   },
+   {
+    "en": "There is no doubt that English is an international language.",
+    "cn": "毫无疑问，英语是一门国际语言。"
+   }
+  ]
+ },
+ {
+  "num": 238,
+  "pattern": "There seems to be",
+  "gloss": "看起来好像有⋯。",
+  "examples": [
+   {
+    "en": "There seems to be a little misunderstanding between them.",
+    "cn": "看起来他们之间好像有点小误会。"
+   },
+   {
+    "en": "There seems to be something wrong with my computer.",
+    "cn": "我的电脑好像有问题。"
+   }
+  ]
+ },
+ {
+  "num": 239,
+  "pattern": "There used to be",
+  "gloss": "过去曾有⋯……。/曾经有过……。",
+  "examples": [
+   {
+    "en": "There used to be many forests in our country.",
+    "cn": "以前我们国家有很多森林。"
+   },
+   {
+    "en": "There used to be some shabby buildings here.",
+    "cn": "以前这里是一些残破的建筑物。"
+   }
+  ]
+ },
+ {
+  "num": 240,
+  "pattern": "There's no point in",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "There's no point in getting angry when things have happened.",
+    "cn": "事情发生了，生气也没有用。"
+   },
+   {
+    "en": "There is no point in being upset about it now, you can't change the past.",
+    "cn": "现在生气也没有用，你不能改变过去。"
+   }
+  ]
+ },
+ {
+  "num": 241,
+  "pattern": "There's no way",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "There's no way one could succeed without hard work.",
+    "cn": "一个人不努力绝不可能成功。"
+   },
+   {
+    "en": "There is no way you can master English without Practice.",
+    "cn": "不练习是不可能掌握英语的。"
+   }
+  ]
+ },
+ {
+  "num": 242,
+  "pattern": "To a great/some extent，",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "To a great extent, you will be on your own.",
+    "cn": ""
+   },
+   {
+    "en": "To some extent, from self-confidence comes success",
+    "cn": "在很大程度上，你要靠自己。 and from success comes more self-confidence.在某种程度上，成功源于自信，而成功又能带来更多的自信。"
+   }
+  ]
+ },
+ {
+  "num": 243,
+  "pattern": "To be frank/honest",
+  "gloss": "老实说，",
+  "examples": [
+   {
+    "en": "To be honest, I don't think we have a chance of winning.",
+    "cn": "说实话，我认为我们没有获胜的可能。"
+   },
+   {
+    "en": "To be honest, I didn't like the show.",
+    "cn": "说实话，我不喜欢这个演出。"
+   }
+  ]
+ },
+ {
+  "num": 244,
+  "pattern": "To one's delight/joy/surprise，",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "To my delight, there's a sale on clothes on Beijing Road.",
+    "cn": "让我高兴的是，北京路的衣服正在大减价。"
+   },
+   {
+    "en": "To my surprise, I got a new computer for my birthday.",
+    "cn": "令我惊喜的是，我得到一台新电脑作为生日礼物。"
+   }
+  ]
+ },
+ {
+  "num": 245,
+  "pattern": "To start with，",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "To start with, let's talk about how much money we need.",
+    "cn": "首先，让我们讨论一下我们需要多少资金。"
+   },
+   {
+    "en": "To start with, we have to make a schedule.",
+    "cn": "首先，我们得先制定一个时间表。"
+   }
+  ]
+ },
+ {
+  "num": 246,
+  "pattern": "To sum up",
+  "gloss": "总之，…⋯。/总而言之，…",
+  "examples": [
+   {
+    "en": "To sum up, life in the future will certainly be very different from that of today.",
+    "cn": "总之，未来的生活肯定会和当前的很不一样。"
+   },
+   {
+    "en": "To sum up, we must all work together.",
+    "cn": "总之，我们必须携手努力。"
+   }
+  ]
+ },
+ {
+  "num": 247,
+  "pattern": "To tell （you） the truth",
+  "gloss": "说实话，",
+  "examples": [
+   {
+    "en": "To tell you the truth, I used to make a lot of trouble when I was young.",
+    "cn": "不瞒你说，我小时候老是闯祸。"
+   },
+   {
+    "en": "To tell you the truth, I am not a very good student.",
+    "cn": "不瞒你说，我不是个很好的学生。"
+   }
+  ]
+ },
+ {
+  "num": 248,
+  "pattern": "We hold the opinion that",
+  "gloss": "我们认…⋯",
+  "examples": [
+   {
+    "en": "We hold the opinion that miracles sometimes occur, but one has to work terribly hard for them.",
+    "cn": "我们认为奇迹有时候是会发生的，但是你得为之拼搏。"
+   },
+   {
+    "en": "We hold the opinion that all cultures are very important.",
+    "cn": "我们认为，所有的文化都是非常重要的。"
+   }
+  ]
+ },
+ {
+  "num": 249,
+  "pattern": "We must do something to",
+  "gloss": "我们必须采取行动…⋯",
+  "examples": [
+   {
+    "en": "We must do something to reduce the pollution.",
+    "cn": "我们必须采取措施减少污染。"
+   },
+   {
+    "en": "We must do something to show our appreciation to our teacher.",
+    "cn": "我们应该做些什么来表达我们对老师的感谢。"
+   }
+  ]
+ },
+ {
+  "num": 250,
+  "pattern": "We must take action/measures to",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "We must take action to keep up with new developments.",
+    "cn": "我们必须采取行动跟上新的发展形势。"
+   },
+   {
+    "en": "We must take measures to fight against pollution.",
+    "cn": "我们必须采取措施与污染作斗争。"
+   }
+  ]
+ },
+ {
+  "num": 251,
+  "pattern": "We should make every effort to",
+  "gloss": "我们应该尽全力…。",
+  "examples": [
+   {
+    "en": "We should make every effort to protect our valuable drinking water.",
+    "cn": "我们应该竭尽全力保护我们宝贵的饮用水。"
+   },
+   {
+    "en": "We should make every effort to promote Chinese culture around the world.",
+    "cn": "我们应该尽全力在世界范围内发扬中国文化。"
+   }
+  ]
+ },
+ {
+  "num": 252,
+  "pattern": "What do you find the hardest in...?",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "What do you find the hardest in Learning English?",
+    "cn": "你觉得学英语最大的困难是什么？"
+   },
+   {
+    "en": "What do you find the hardest in university life?",
+    "cn": "你觉得大学生活最困难的是什么？"
+   }
+  ]
+ },
+ {
+  "num": 253,
+  "pattern": "What do you mean by...？",
+  "gloss": "你…是什么意思？",
+  "examples": [
+   {
+    "en": "What do you mean by telling me a lie?",
+    "cn": "你跟我撒谎是什么意思？"
+   },
+   {
+    "en": "What do you mean by borrowing my book without asking my permission?",
+    "cn": "你不经过我的允许擅自借走我的书是什么意恩？"
+   }
+  ]
+ },
+ {
+  "num": 254,
+  "pattern": "What do you say...？",
+  "gloss": "你认为…怎么样？",
+  "examples": [
+   {
+    "en": "What do you say we go for a drive one of these days when it clearsup?",
+    "cn": "最近天晴的时候我们开车出去兜兜风，你认为怎么样？"
+   },
+   {
+    "en": "What do you say I cook you dinner tonight?",
+    "cn": "我帮你做晚饭，你认为如何？"
+   }
+  ]
+ },
+ {
+  "num": 255,
+  "pattern": "What do you think of...？",
+  "gloss": "你认为…⋯怎么样？",
+  "examples": [
+   {
+    "en": "What do you think of the relationship between China and Japan？",
+    "cn": "你认为中日关系如何？"
+   },
+   {
+    "en": "What do you think of the Japanese food?",
+    "cn": "你认为这道日本菜怎么样？"
+   }
+  ]
+ },
+ {
+  "num": 256,
+  "pattern": "What I'm getting atis",
+  "gloss": "我的意思是……。",
+  "examples": [
+   {
+    "en": "What I'm getting at is that he deserves this promotion.",
+    "cn": "我的意思是他被提升是理所应当的。"
+   },
+   {
+    "en": "What I'm getting at is all our teachers work very hard.",
+    "cn": "我的意思是我们所有的老师工作都很努力。"
+   }
+  ]
+ },
+ {
+  "num": 257,
+  "pattern": "What is more serious is that",
+  "gloss": "更严重的是⋯。",
+  "examples": [
+   {
+    "en": "What is more serious is that you didn't realize your mistake.",
+    "cn": "更严重的是你没有意识到自己的错误。"
+   },
+   {
+    "en": "What is more serious is that you are risking your health by not resting.",
+    "cn": "更严重的是你不休息，是在拿自己的健康冒险。"
+   }
+  ]
+ },
+ {
+  "num": 258,
+  "pattern": "What's the point of...？ …",
+  "gloss": "意义何在？/ 为什么要…’",
+  "examples": [
+   {
+    "en": "What's the point of arguing aboutit?",
+    "cn": "争论这件事意义何在？"
+   },
+   {
+    "en": "What's the point of wasting so much time eating?",
+    "cn": "为什么要花这么多时间在吃上面？"
+   }
+  ]
+ },
+ {
+  "num": 259,
+  "pattern": "What makes you think...?",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "What makes you think he will show up?",
+    "cn": "是什么让你认为他会露面？"
+   },
+   {
+    "en": "What makes you think she is German?",
+    "cn": "是什么让你认为她是德国人？"
+   }
+  ]
+ },
+ {
+  "num": 260,
+  "pattern": "What seems to be the problem with...?",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "What seems to be the problem with the computer? it doesn't work smoothly.",
+    "cn": "这电脑大概出了什么问题？运行得很不顺。"
+   },
+   {
+    "en": "What seems to be the problem with your phone? It can't dial any numbers outside Beijing properly.",
+    "cn": "你的电话大概出了什么问题？北京以外的号码都打不適。"
+   }
+  ]
+ },
+ {
+  "num": 261,
+  "pattern": "What seems to be the trouble is",
+  "gloss": "好像问题在干…⋯",
+  "examples": [
+   {
+    "en": "What seems to be the trouble is that some women still don't have the same rights as men do in many respects.",
+    "cn": "好像问题在于有些女性在很多方面仍然没有和男性一样的权利。"
+   },
+   {
+    "en": "What seems to be the trouble is there aren't enough jobs.",
+    "cn": "麻烦在于没有足够的工作岗位。"
+   }
+  ]
+ },
+ {
+  "num": 262,
+  "pattern": "What surprised me is that",
+  "gloss": "令我吃惊的是⋯",
+  "examples": [
+   {
+    "en": "What surprised me is that everybody seemed to be very indifferent to her.",
+    "cn": "让我吃惊的是每个人似乎对她都很冷淡。"
+   },
+   {
+    "en": "What surprised me is that he knew so much about Chinese history.",
+    "cn": "让我吃惊的是他对中国的历史是如此地了解。"
+   }
+  ]
+ },
+ {
+  "num": 263,
+  "pattern": "What will you do if...？",
+  "gloss": "如果……，你会做什么？",
+  "examples": [
+   {
+    "en": "What will you do if such kind of thing happens to you？",
+    "cn": "如果你碰到这样的事，你会做什么？"
+   },
+   {
+    "en": "What will you do if you win the scholarship?",
+    "cn": "如果你赢得了奖学金你会做什么？"
+   }
+  ]
+ },
+ {
+  "num": 264,
+  "pattern": "What you have to do is",
+  "gloss": "你必须做的是…",
+  "examples": [
+   {
+    "en": "What you have to do is hand in your composition tomorrow.",
+    "cn": "你必须做的是明天交作文。"
+   },
+   {
+    "en": "What you have to do is apologize to him.",
+    "cn": "你得做的是向他道歉。"
+   }
+  ]
+ },
+ {
+  "num": 265,
+  "pattern": "What would you say...？",
+  "gloss": "你认为…怎么样？",
+  "examples": [
+   {
+    "en": "What would you say if the project would have to be postponed？",
+    "cn": "如果这个项目不得不推迟你觉得怎么样？"
+   },
+   {
+    "en": "What would you say if I told you I wanted to move to another city?",
+    "cn": "如果我告诉你我想搬到另一个城市去，你会怎么说？"
+   }
+  ]
+ },
+ {
+  "num": 266,
+  "pattern": "When do you want me to...？",
+  "gloss": "你想让我在什么时候….….？",
+  "examples": [
+   {
+    "en": "When do you want me to fulfil this project?",
+    "cn": "你想让我在什么时候完成这个项目？"
+   },
+   {
+    "en": "When do you want me to call you tomorrow?",
+    "cn": "你想要我明天什么时候给你打电话？"
+   }
+  ]
+ },
+ {
+  "num": 267,
+  "pattern": "When it comes to",
+  "gloss": "谈到……/涉及到⋯",
+  "examples": [
+   {
+    "en": "When it comes to English, he's an expert.",
+    "cn": "在英语方面，他是个专家。"
+   },
+   {
+    "en": "When it comes to talking to people, he is helplessly shy.",
+    "cn": "在与人交谈方面，他真是害羞得叫人没办法。"
+   }
+  ]
+ },
+ {
+  "num": 268,
+  "pattern": "When will it be convenient for you to...?",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "When will it be convenient for you to come to my home？",
+    "cn": "你看什么时候方便来我家？"
+   },
+   {
+    "en": "When will it be convenient for you to read my composition？",
+    "cn": "您什么时候方便读下我的文章？"
+   }
+  ]
+ },
+ {
+  "num": 269,
+  "pattern": "Would you be so kind as to...？",
+  "gloss": "能否请你帮我…？",
+  "examples": [
+   {
+    "en": "Would you be so kind as to get our board and lodging ready?",
+    "cn": "能否请你帮我们安排好食宿？【board and lodging：食宿】"
+   },
+   {
+    "en": "Would you be so kind as to get our room?",
+    "cn": "能否请你帮我们安排下房间？"
+   }
+  ]
+ },
+ {
+  "num": 270,
+  "pattern": "Would you like to...？",
+  "gloss": "你想…⋯吗？",
+  "examples": [
+   {
+    "en": "Would you like to join us? We're sure you'll have a good time.",
+    "cn": "你想加入我们吗？我们相信你会玩得很开心的。"
+   },
+   {
+    "en": "Would you like to try this hot pot restaurant?",
+    "cn": "你想试下这家火锅店吗？"
+   }
+  ]
+ },
+ {
+  "num": 271,
+  "pattern": "You are bound to...if",
+  "gloss": "如果.…你一定会……",
+  "examples": [
+   {
+    "en": "You are bound to win if you are determined to win.",
+    "cn": "如果你决心要成功，你就会成功。"
+   },
+   {
+    "en": "You are bound to succeed if you work hard and stick to your goal.",
+    "cn": "如果你刻苦努力并坚持目标，你一定会成功。"
+   }
+  ]
+ },
+ {
+  "num": 272,
+  "pattern": "You are expected to",
+  "gloss": "你要/应该……",
+  "examples": [
+   {
+    "en": "You are expected to work late tonight.",
+    "cn": ""
+   },
+   {
+    "en": "You are expected to bring all the necessary documents.",
+    "cn": "你今晚要加班。"
+   }
+  ]
+ },
+ {
+  "num": 273,
+  "pattern": "You are （not） allowed to...（",
+  "gloss": "不）允许你……",
+  "examples": [
+   {
+    "en": "You are not allowed to use my computer when 【",
+    "cn": "不定式作主语补足语】 I'm away.我不在的时候不许你用我的电脑。"
+   },
+   {
+    "en": "You are not allowed to eat or drink on the subway.",
+    "cn": "地铁里禁止饮食。"
+   }
+  ]
+ },
+ {
+  "num": 274,
+  "pattern": "You are （not） permitted to...（",
+  "gloss": "不）允许你…⋯。",
+  "examples": [
+   {
+    "en": "You are not permitted to park your car here.",
+    "cn": "你不许把车停在这儿。"
+   },
+   {
+    "en": "You are not permitted to begin the exam until the teacher tells you to start.",
+    "cn": "直到老师说考试开始，你才能动笔。"
+   }
+  ]
+ },
+ {
+  "num": 275,
+  "pattern": "You are required to",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "You are required to show the ticket.",
+    "cn": "你必须出示车票。"
+   },
+   {
+    "en": "You are required to fill out this form if you want a refund.",
+    "cn": "如果你想要退款的话，必须填这张表格。"
+   }
+  ]
+ },
+ {
+  "num": 276,
+  "pattern": "You are supposed to",
+  "gloss": "你应该",
+  "examples": [
+   {
+    "en": "You are supposed to have finished reading this novel by now.",
+    "cn": "这时你应该看完这本小说了。"
+   },
+   {
+    "en": "You are supposed to take this medicine three times a day.",
+    "cn": "这种药你应该一天服用三次。"
+   }
+  ]
+ },
+ {
+  "num": 277,
+  "pattern": "You don't have to",
+  "gloss": "你没必要/不必……",
+  "examples": [
+   {
+    "en": "You don't have to be present.",
+    "cn": "你不必到场。"
+   },
+   {
+    "en": "You don't have to thank me, it was my pleasure to help.",
+    "cn": "你不必谢我，我很乐意帮助你。"
+   }
+  ]
+ },
+ {
+  "num": 278,
+  "pattern": "You don't need to",
+  "gloss": "你没必要……",
+  "examples": [
+   {
+    "en": "You don't need to do all that was required of us.",
+    "cn": "你没必要做要求我们做的一切。"
+   },
+   {
+    "en": "You don't need to wait for me.",
+    "cn": "你没必要等我。"
+   }
+  ]
+ },
+ {
+  "num": 279,
+  "pattern": "You really have to do something about",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "You really have to do something about your poor pronunciation.",
+    "cn": "你真得为你糟糕的发音做点什么了。"
+   },
+   {
+    "en": "You really have to do something about your weight. It is not healthy to be so heavy.",
+    "cn": "你真的得为你的体重做点什么了，这么重不健康。"
+   }
+  ]
+ },
+ {
+  "num": 280,
+  "pattern": "You should avoid doing sth",
+  "gloss": "你应该避免…",
+  "examples": [
+   {
+    "en": "You should avoid being late for school.",
+    "cn": "你应该避免上学迟到。"
+   },
+   {
+    "en": "You should avoid breathing second-hand smoke.",
+    "cn": "你应该尽量避免吸二手烟。"
+   }
+  ]
+ },
+ {
+  "num": 281,
+  "pattern": "You should make an effort to",
+  "gloss": "你应该努力⋯。",
+  "examples": [
+   {
+    "en": "You should make an effort to improve your reading comprehension.",
+    "cn": "你应该努力提高你的阅读能力。"
+   },
+   {
+    "en": "You should make an effort to understand your Parents better.",
+    "cn": "你应该努力去理解你的父母。"
+   }
+  ]
+ },
+ {
+  "num": 282,
+  "pattern": "You should make good use of",
+  "gloss": "",
+  "examples": [
+   {
+    "en": "You should make good use of your spare time to practice English.",
+    "cn": "你应该充分利用空余时间操练英语。"
+   },
+   {
+    "en": "You should make good use of every opportunity to improve yourself.",
+    "cn": "你应该充分利用每一个机会来提升你自己。"
+   }
+  ]
+ },
+ {
+  "num": 283,
+  "pattern": "You should never",
+  "gloss": "你永远都不应该………。【常用建议句型】",
+  "examples": [
+   {
+    "en": "You should never hesitate. What is needed is your firm action.",
+    "cn": "你永远都不应该犹豫，需要的是你坚定的行动。"
+   },
+   {
+    "en": "You should never even try smoking.",
+    "cn": "你永远都不应该尝试抽烟。"
+   }
+  ]
+ },
+ {
+  "num": 284,
+  "pattern": "You were （not） supposed to",
+  "gloss": "你本（不）应该…⋯。",
+  "examples": [
+   {
+    "en": "Jim, you were supposed to call three hours ago！",
+    "cn": ""
+   },
+   {
+    "en": "You were not supposed to leave until the program was over.",
+    "cn": "节目结束前你都不该离开的。"
+   }
+  ]
+ },
+ {
+  "num": 285,
+  "pattern": "You will be able to...if",
+  "gloss": "如果……，你将能够……。",
+  "examples": [
+   {
+    "en": "You will be able to get accepted by a top law school if you can pass the exam.",
+    "cn": "如果你能通过考试，你将能够被一所一流法学院录取。"
+   },
+   {
+    "en": "You will be able to improve quickly if you practice more every day.",
+    "cn": "如果你能每天多练习一点，你将能够进步得更快。"
+   }
+  ]
+ },
+ {
+  "num": 286,
+  "pattern": "You'll never guess",
+  "gloss": "你永远猜不到⋯",
+  "examples": [
+   {
+    "en": "You'll never guess who telephoned me just now",
+    "cn": "一 my cousin from America.你绝对猜不到刚才谁给我打电话我美国的表姐。"
+   },
+   {
+    "en": "You will never guess how old she is.",
+    "cn": "你绝对猜不到她的年龄。"
+   }
+  ]
+ }
+]
