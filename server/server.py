@@ -13,6 +13,7 @@
 import hashlib
 import hmac
 import json
+import math
 import os
 import random
 import secrets
@@ -36,13 +37,26 @@ DB_PATH = BASE / "data.db"
 STATIC_DIR = BASE / "public"
 SECRET_FILE = BASE / ".secret"
 
+# ---------- 配置：优先读 .env，环境变量可覆盖 ----------
+def load_dotenv(path: Path):
+    if not path.exists():
+        return
+    for line in path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        k, v = line.split("=", 1)
+        os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
+
+load_dotenv(BASE / ".env")
+
 # ---------- 邮件发送配置（未配置时走开发模式：验证码只打印到控制台） ----------
 SMTP_HOST = os.environ.get("SMTP_HOST", "")
 SMTP_PORT = int(os.environ.get("SMTP_PORT", "465"))
 SMTP_USER = os.environ.get("SMTP_USER", "")
 SMTP_PASS = os.environ.get("SMTP_PASS", "")
 SMTP_FROM = os.environ.get("SMTP_FROM", SMTP_USER)
-MAIL_ON = bool(SMTP_HOST and SMTP_USER)
+MAIL_ON = bool(SMTP_HOST and SMTP_USER and SMTP_PASS)
 DEV_ECHO = os.environ.get("DEV_ECHO_CODE", "1") == "1"   # 开发模式：接口直接回显验证码，方便本地联调
 
 # ---------- 密钥 ----------
@@ -101,31 +115,184 @@ init_db()
 CAPTCHA = {}
 CAPTCHA_TTL = 300
 
-def make_captcha_svg(code):
-    colors = ["#e0432f", "#2563eb", "#059669", "#7c3aed", "#d97706"]
+# 说明：验证码用自绘「单线笔画字体」渲染成 <path>，绝不输出 <text>。
+# 每次生成都会对笔画做低频平滑随机扰动 + 随机旋转/倾斜/缩放，并把变换烘焙进坐标
+# （不输出 <g transform>），因此同一个字符每次的 path d 都不同，无法用 d 做指纹查表。
+def _cap_arc(cx, cy, rx, ry, a0, a1, n=18):
+    """角度按数学惯例（0°=右，逆时针为正）；y 轴向下，故取负号。"""
+    pts = []
+    for i in range(n + 1):
+        a = math.radians(a0 + (a1 - a0) * i / n)
+        pts.append((cx + rx * math.cos(a), cy - ry * math.sin(a)))
+    return pts
+
+def _cap_ell(cx, cy, rx, ry, n=20):
+    return _cap_arc(cx, cy, rx, ry, 0, 360, n)
+
+def _cap_smooth(pts, seg=6):
+    """Catmull-Rom 平滑：粗糙折线 → 平滑曲线。"""
+    P = [pts[0]] + list(pts) + [pts[-1]]
+    out = []
+    for i in range(1, len(P) - 2):
+        p0, p1, p2, p3 = P[i - 1], P[i], P[i + 1], P[i + 2]
+        for j in range(seg):
+            t = j / seg
+            t2, t3 = t * t, t * t * t
+            out.append((
+                0.5 * ((2 * p1[0]) + (-p0[0] + p2[0]) * t + (2 * p0[0] - 5 * p1[0] + 4 * p2[0] - p3[0]) * t2 + (-p0[0] + 3 * p1[0] - 3 * p2[0] + p3[0]) * t3),
+                0.5 * ((2 * p1[1]) + (-p0[1] + p2[1]) * t + (2 * p0[1] - 5 * p1[1] + 4 * p2[1] - p3[1]) * t2 + (-p0[1] + 3 * p1[1] - 3 * p2[1] + p3[1]) * t3),
+            ))
+    out.append(P[-2])
+    return out
+
+def _cap_poly(*pts):
+    return [tuple(p) for p in pts]
+
+def _cap_curve(pts, seg=6):
+    return _cap_smooth(pts, seg)
+
+# 字形表：坐标 x∈[0,6] y∈[0,10]，y 向下
+_CAP_GLYPHS = {
+    "A": [_cap_poly((0, 10), (3, 0.4)), _cap_poly((3, 0.4), (6, 10)), _cap_poly((1.05, 6.9), (4.95, 6.9))],
+    "B": [_cap_poly((0, 0), (0, 10)), _cap_arc(0, 2.6, 3.1, 2.3, 90, -90), _cap_arc(0, 7.4, 3.6, 2.6, 90, -90)],
+    "C": [_cap_arc(3.15, 5, 2.55, 4.6, 45, 315)],
+    "D": [_cap_poly((0, 0), (0, 10)), _cap_arc(0, 5, 3.9, 4.7, 90, -90)],
+    "E": [_cap_poly((0, 0), (0, 10)), _cap_poly((0, 0.35), (4.9, 0.35)), _cap_poly((0, 5), (3.9, 5)), _cap_poly((0, 9.65), (4.9, 9.65))],
+    "F": [_cap_poly((0, 0), (0, 10)), _cap_poly((0, 0.35), (4.9, 0.35)), _cap_poly((0, 5), (3.9, 5))],
+    "G": [_cap_arc(3.15, 5, 2.55, 4.6, 45, 352), _cap_poly((5.66, 5.85), (5.85, 5.2), (5.85, 4.65), (3.95, 4.65))],
+    "H": [_cap_poly((0, 0), (0, 10)), _cap_poly((5.2, 0), (5.2, 10)), _cap_poly((0, 5), (5.2, 5))],
+    "J": [_cap_poly((3.6, 0), (3.6, 8.5)), _cap_arc(1.8, 8.5, 1.8, 1.5, 0, -180)],
+    "K": [_cap_poly((0, 0), (0, 10)), _cap_poly((5.2, 0), (0.7, 5.6)), _cap_poly((2.0, 4.3), (5.3, 10))],
+    "L": [_cap_poly((0, 0), (0, 10)), _cap_poly((0, 10), (5.0, 10))],
+    "M": [_cap_poly((0, 10), (0, 0.4), (2.8, 6.7), (5.6, 0.4), (5.6, 10))],
+    "N": [_cap_poly((0, 10), (0, 0.4), (5.0, 9.6), (5.0, 0))],
+    "P": [_cap_poly((0, 10), (0, 0)), _cap_arc(0, 2.7, 3.3, 2.4, 90, -90)],
+    "Q": [_cap_ell(2.95, 5.0, 2.95, 4.7), _cap_poly((3.7, 7.4), (6.0, 10.3))],
+    "R": [_cap_poly((0, 10), (0, 0)), _cap_arc(0, 2.7, 3.3, 2.4, 90, -90), _cap_poly((1.5, 5.15), (5.35, 10))],
+    "S": [_cap_curve([(5.2, 1.35), (4.35, 0.3), (2.75, 0.0), (1.2, 0.5), (0.5, 1.75),
+                      (0.8, 3.15), (2.05, 4.15), (3.9, 4.85), (5.15, 5.9), (5.5, 7.35),
+                      (4.8, 8.75), (3.05, 9.6), (1.35, 9.35), (0.35, 8.25)], 5)],
+    "T": [_cap_poly((0, 0.35), (5.6, 0.35)), _cap_poly((2.8, 0.35), (2.8, 10))],
+    "U": [_cap_poly((0, 0), (0, 7.0)), _cap_arc(2.7, 7.0, 2.7, 3.0, 180, 360), _cap_poly((5.4, 0), (5.4, 7.0))],
+    "V": [_cap_poly((0, 0.4), (2.9, 10)), _cap_poly((2.9, 10), (5.8, 0.4))],
+    "W": [_cap_poly((0, 0.4), (1.5, 10), (3.0, 4.2), (4.5, 10), (6.0, 0.4))],
+    "X": [_cap_poly((0, 0.4), (5.6, 10)), _cap_poly((5.6, 0.4), (0, 10))],
+    "Y": [_cap_poly((0, 0.4), (2.8, 5.5)), _cap_poly((5.6, 0.4), (2.8, 5.5)), _cap_poly((2.8, 5.5), (2.8, 10))],
+    "Z": [_cap_poly((0, 0.35), (5.45, 0.35)), _cap_poly((5.45, 0.35), (0, 9.65)), _cap_poly((0, 9.65), (5.45, 9.65))],
+    "2": [_cap_curve([(0.45, 1.95), (1.15, 0.7), (2.75, 0.05), (4.4, 0.55), (5.25, 1.85),
+                      (5.15, 3.3), (3.6, 5.4), (0.35, 9.65), (5.5, 9.65)], 5)],
+    "3": [_cap_curve([(0.5, 1.6), (1.5, 0.4), (3.1, 0.0), (4.7, 0.6), (5.4, 2.0), (5.0, 3.5), (3.4, 4.5), (2.35, 4.6)], 5),
+          _cap_curve([(2.35, 4.6), (4.0, 4.75), (5.35, 5.9), (5.55, 7.6), (4.7, 9.2), (3.0, 9.9), (1.3, 9.6), (0.4, 8.5)], 5)],
+    "4": [_cap_poly((4.35, 0.35), (0.3, 6.7), (5.7, 6.7)), _cap_poly((4.35, 0.35), (4.35, 10))],
+    "5": [_cap_poly((5.2, 0.4), (0.75, 0.4), (0.55, 4.3)),
+          _cap_curve([(0.55, 4.3), (2.2, 3.85), (4.0, 4.5), (5.2, 5.85), (5.4, 7.5), (4.4, 9.1), (2.7, 9.9), (1.1, 9.5), (0.3, 8.6)], 5)],
+    "6": [_cap_curve([(5.0, 0.8), (3.8, 0.05), (2.2, 0.35), (1.1, 1.7), (0.55, 3.9), (0.5, 6.3),
+                      (1.1, 8.4), (2.6, 9.75), (4.2, 9.5), (5.2, 8.1), (5.15, 6.4), (4.1, 5.3),
+                      (2.6, 5.15), (1.4, 6.0), (0.62, 7.35)], 5)],
+    "7": [_cap_poly((0.35, 0.4), (5.55, 0.4)), _cap_poly((5.55, 0.4), (2.3, 10)), _cap_poly((4.25, 5.3), (1.55, 5.3))],
+    "8": [_cap_ell(2.85, 2.75, 2.4, 2.55, 18), _cap_ell(2.85, 7.2, 2.95, 2.75, 18)],
+    "9": [_cap_ell(3.0, 3.3, 2.9, 2.9, 18), _cap_poly((5.9, 3.3), (5.8, 6.1), (5.0, 8.4), (3.5, 9.75), (1.85, 9.5), (0.8, 8.3))],
+}
+
+CAPTCHA_CHARS = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"   # 去掉易混的 I O 0 1
+CAPTCHA_COLORS = ["#e0432f", "#2563eb", "#059669", "#7c3aed", "#d97706", "#0f766e"]
+CAPTCHA_NOISE_COLORS = ["#e2e8f0", "#cbd5e1", "#dbeafe", "#fee2e2", "#d1fae5"]
+
+def _cap_wobble(pts, amp):
+    """沿路径做低频平滑随机扰动 —— 这是让每次 path d 都不同的关键。"""
+    if len(pts) < 3:
+        return pts
+    k = random.randint(3, 5)
+    ctrl = [random.uniform(-1.0, 1.0) for _ in range(k + 3)]
+    n = len(pts)
+    out = []
+    for i, (x, y) in enumerate(pts):
+        t = i / (n - 1) * k
+        i0 = min(int(t), k + 1)
+        f = t - i0
+        s = f * f * (3 - 2 * f)                      # smoothstep
+        a, b = ctrl[i0], ctrl[i0 + 1]
+        off = (a + (b - a) * s) * amp
+        if i == 0:
+            dx, dy = pts[1][0] - x, pts[1][1] - y
+        elif i == n - 1:
+            dx, dy = x - pts[-2][0], y - pts[-2][1]
+        else:
+            dx, dy = pts[i + 1][0] - pts[i - 1][0], pts[i + 1][1] - pts[i - 1][1]
+        L = math.hypot(dx, dy) or 1.0
+        out.append((x - dy / L * off, y + dx / L * off))
+    return out
+
+def _cap_thin(pts, keep=2):
+    """抽稀，控制 path 字符串长度。只对密点曲线生效；
+    稀疏折线（M/W/N 的顶点）抽稀会毁掉字形，必须原样保留。"""
+    if len(pts) < 24:
+        return pts
+    out = pts[::keep]
+    if out[-1] != pts[-1]:
+        out.append(pts[-1])
+    return out
+
+def make_captcha_svg(code, width=126, height=46):
     parts = []
+    slot = (width - 12) / len(code)
     for i, ch in enumerate(code):
-        x = 18 + i * 30
-        rot = random.randint(-22, 22)
+        glyph = _CAP_GLYPHS.get(ch)
+        if not glyph:
+            continue
+        # 该字符实例的随机变换参数（全部烘焙进坐标，不输出 transform）
+        cx0 = 6 + slot * (i + 0.5) + random.uniform(-1.2, 1.2)
+        cy0 = height / 2 + random.uniform(-1.4, 1.4)
+        sc = random.uniform(2.85, 3.35)      # 纵向缩放
+        scx = sc * 0.85                      # 横向收窄（避免旋转后越界重叠）
+        rot = math.radians(random.uniform(-18, 18))
+        skew = random.uniform(-0.16, 0.16)
+        ca, sa = math.cos(rot), math.sin(rot)
+        color = random.choice(CAPTCHA_COLORS)
+        for stroke in glyph:
+            pts = _cap_wobble(_cap_thin(stroke, 2), amp=0.42 / 3.0 * sc)
+            xy = []
+            for gx, gy in pts:
+                X = (gx - 3.0) * scx
+                Y = (gy - 5.0) * sc
+                X += Y * skew                              # 倾斜
+                X, Y = X * ca - Y * sa, X * sa + Y * ca    # 旋转
+                xy.append((cx0 + X, cy0 + Y))
+            d = "M" + " ".join(f"{x:.1f} {y:.1f}" for x, y in xy)
+            parts.append(
+                f'<path d="{d}" fill="none" stroke="{color}" '
+                f'stroke-width="{random.uniform(2.5, 3.5):.1f}" '
+                f'stroke-linecap="round" stroke-linejoin="round" '
+                f'opacity="{random.uniform(0.82, 1.0):.2f}"/>'
+            )
+    # 干扰线 / 干扰点（同样是 path，深浅颜色混合，增加过滤难度）
+    for _ in range(random.randint(4, 6)):
+        x1, y1 = random.uniform(0, width), random.uniform(0, height)
+        x2, y2 = random.uniform(0, width), random.uniform(0, height)
+        mx = (x1 + x2) / 2 + random.uniform(-14, 14)
+        my = (y1 + y2) / 2 + random.uniform(-12, 12)
         parts.append(
-            f'<text x="{x}" y="{34 + random.randint(-4, 4)}" font-size="30" font-family="Menlo,monospace" '
-            f'font-weight="bold" fill="{random.choice(colors)}" '
-            f'transform="rotate({rot} {x} 30)">{ch}</text>'
+            f'<path d="M{x1:.1f} {y1:.1f}Q{mx:.1f} {my:.1f} {x2:.1f} {y2:.1f}" fill="none" '
+            f'stroke="{random.choice(CAPTCHA_NOISE_COLORS)}" stroke-width="{random.uniform(1.0, 1.8):.1f}" '
+            f'opacity="{random.uniform(0.55, 0.85):.2f}"/>'
         )
-    for _ in range(6):
+    for _ in range(3):
+        x, y = random.uniform(4, width - 4), random.uniform(4, height - 4)
         parts.append(
-            f'<line x1="{random.randint(0,120)}" y1="{random.randint(0,46)}" '
-            f'x2="{random.randint(0,120)}" y2="{random.randint(0,46)}" '
-            f'stroke="{"#cbd5e1"}" stroke-width="1"/>'
+            f'<path d="M{x:.1f} {y:.1f}q{random.uniform(-5, 5):.1f} {random.uniform(-4, 4):.1f} '
+            f'{random.uniform(-6, 6):.1f} {random.uniform(-5, 5):.1f}" fill="none" '
+            f'stroke="{random.choice(CAPTCHA_COLORS)}" stroke-width="{random.uniform(1.6, 2.6):.1f}" '
+            f'opacity="{random.uniform(0.28, 0.5):.2f}"/>'
         )
-    return ('<svg xmlns="http://www.w3.org/2000/svg" width="126" height="46" '
-            f'style="background:#f8fafc;border-radius:8px">' + "".join(parts) + "</svg>")
+    return ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 %d %d" width="%d" height="%d" '
+            'style="background:#f8fafc;border-radius:8px">' % (width, height, width, height)
+            ) + "".join(parts) + "</svg>"
 
 def new_captcha():
     for k, (_, exp) in list(CAPTCHA.items()):
         if exp < time.time():
             CAPTCHA.pop(k, None)
-    code = "".join(random.choice("ABCDEFGHJKLMNPQRSTUVWXYZ23456789") for _ in range(4))
+    code = "".join(random.choice(CAPTCHA_CHARS) for _ in range(4))
     cid = secrets.token_urlsafe(10)
     CAPTCHA[cid] = (code.lower(), time.time() + CAPTCHA_TTL)
     return cid, make_captcha_svg(code)
