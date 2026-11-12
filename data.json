@@ -403,7 +403,7 @@
     "cn": "你说的话没有道理。我不同意你的看法。"
    },
    {
-    "en": "This bill doesn' make sense. I was overcharged.",
+    "en": "This bill doesn't make sense. I was overcharged.",
     "cn": "账单不对，多收我钱了。"
    }
   ]
@@ -414,7 +414,7 @@
   "gloss": "不要害怕……",
   "examples": [
    {
-    "en": "Don' be afraid of losing face and making mistakes.",
+    "en": "Don't be afraid of losing face and making mistakes.",
     "cn": "不要害怕丢脸和犯错。【李阳疯狂英语经典口号】"
    },
    {
@@ -448,7 +448,7 @@
     "cn": "不要浪费时间玩电子游戏。"
    },
    {
-    "en": "Don't waste time learning a lot of useless words in isolation. The best way of learning English words 1s to blurt out as many authentic sentences as you can.",
+    "en": "Don't waste time learning a lot of useless words in isolation. The best way of learning English words is to blurt out as many authentic sentences as you can.",
     "cn": "不要浪费时间孤立地学习没有用的单词。学习英语单词最好的方法就是脱口而出尽量多的地道句子。"
    }
   ]
@@ -669,7 +669,7 @@
   "gloss": "……怎么样？/……听起来怎么样？【征询意见句型】",
   "examples": [
    {
-    "en": "How does making our appointment at 8sound?",
+    "en": "How does making our appointment at 8 sound?",
     "cn": "我们把约会定在8点如何？"
    },
    {
@@ -883,7 +883,7 @@
   "gloss": "我不知道……。/我没意识到……。",
   "examples": [
    {
-    "en": "1didnt realize how much this meant to you.",
+    "en": "I didn't realize how much this meant to you.",
     "cn": "我不知道这对你那么重要。"
    },
    {
@@ -1333,7 +1333,7 @@
   "gloss": "我建议……【宾语从句使用虚拟语气】",
   "examples": [
    {
-    "en": "I suggest (that) yougo there by yourself.",
+    "en": "I suggest (that) you go there by yourself.",
     "cn": "我建议你自己一个人去那里。"
    },
    {
@@ -1503,11 +1503,11 @@
  },
  {
   "num": 99,
-  "pattern": "I used to.：",
+  "pattern": "I used to ...",
   "gloss": "我过去常常……。【后接动词原形】",
   "examples": [
    {
-    "en": "I used to go to play basketball with some of my friends every Saturday afteroon.",
+    "en": "I used to go to play basketball with some of my friends every Saturday afternoon.",
     "cn": "以前每个星期六我都和一些朋友去打篮球。"
    },
    {
@@ -1556,7 +1556,7 @@
     "cn": "我想推荐这里的面条，非常好吃。"
    },
    {
-    "en": "1would like to recommend a trip to Jiuzhaigou.",
+    "en": "I would like to recommend a trip to Jiuzhaigou.",
     "cn": "我想推荐去九寨沟旅行。"
    }
   ]
@@ -1594,7 +1594,7 @@
     "cn": "如果你不来我的生日聚会，我会不高兴的。"
    },
    {
-    "en": "1wouldn't feel happy if I felt you weren't comfortable.",
+    "en": "I wouldn't feel happy if I felt you weren't comfortable.",
     "cn": "如果感觉你不舒服的话，我会不高兴的。"
    }
   ]
@@ -1714,7 +1714,7 @@
     "cn": "因为现在钱不够，我正考虑买台二手电脑。"
    },
    {
-    "en": "I'm considering paying a visit to Bejing next month.",
+    "en": "I'm considering paying a visit to Beijing next month.",
     "cn": "我正考虑下个月去北京玩。"
    },
    {
@@ -2176,11 +2176,11 @@
   "gloss": "可以吗？【表达请求句型】",
   "examples": [
    {
-    "en": "Is it OK if Iborrow your notebook tonight?",
+    "en": "Is it OK if I borrow your notebook tonight?",
     "cn": "我今晚借你的笔记本可以吗？"
    },
    {
-    "en": "Is it OK if Iask you a few questions?",
+    "en": "Is it OK if I ask you a few questions?",
     "cn": "我可以问你几个问题吗？"
    }
   ]
@@ -2274,14 +2274,14 @@
     "cn": "这取决于你是否决心要做这件事情。"
    },
    {
-    "en": "Itdepends on whether I do well on my exam or not.",
+    "en": "It depends on whether I do well on my exam or not.",
     "cn": "这取决于我考试考得好不好。"
    }
   ]
  },
  {
   "num": 149,
-  "pattern": "It doesnt make sense to...",
+  "pattern": "It doesn't make sense to ...",
   "gloss": "没有任何意义。",
   "examples": [
    {
@@ -2290,17 +2290,17 @@
    },
    {
     "en": "It doesn't make sense to spend so much money，",
-    "cn": "花这么多钱没什么意义。 （第四章）"
+    "cn": "花这么多钱没什么意义。"
    }
   ]
  },
  {
   "num": 150,
-  "pattern": "It doesn't mater whether/f",
+  "pattern": "It doesn't matter whether/if ...",
   "gloss": "没关系。/……无所谓。",
   "examples": [
    {
-    "en": "It doesn't matter if you have made mistakes. Leam from your mistakes and you'll make progress.",
+    "en": "It doesn't matter if you have made mistakes. Learn from your mistakes and you'll make progress.",
     "cn": "你有没有犯了错都没关系。从错误中学习，你就会进步。"
    },
    {
@@ -2345,7 +2345,7 @@
   "gloss": "……浮现于我的脑中。/我想起……。【that 引导主语从句】",
   "examples": [
    {
-    "en": "It suddenly occurred to me thatl knew how to solve that problem.",
+    "en": "It suddenly occurred to me that I knew how to solve that problem.",
     "cn": "我突然想起我知道怎样解决那个问题。"
    },
    {
@@ -2390,11 +2390,11 @@
   "gloss": "很偶然。",
   "examples": [
    {
-    "en": "Ithappened thatl won the footballottery last week.",
+    "en": "It happened that I won the football lottery last week.",
     "cn": "我上星期中了足彩。【lottery n. 彩票；奖券】"
    },
    {
-    "en": "It happened that Iran into my English teacher at the supermarket，",
+    "en": "It happened that I ran into my English teacher at the supermarket.",
     "cn": "我在超市碰巧遇到了我的英语老师。"
    }
   ]
@@ -2525,8 +2525,8 @@
   "gloss": "相当容易.",
   "examples": [
    {
-    "en": "1t is easy enough tecoev ag Paste butyou shouls write something by yourself.",
-    "cn": "抄袭（复制+粒貼）非業容易。但灵体应该自已写一些东百，"
+    "en": "It is easy enough to copy and paste, but you should write something by yourself.",
+    "cn": "抄袭（复制+粘贴）非常容易，但你应该自己写一些东西。"
    },
    {
     "en": "It is easy enough to criticize, but we should try to find solutions.",
@@ -2638,7 +2638,7 @@
     "cn": "他们不可能会放弃这场比赛。"
    },
    {
-    "en": "1think it is necessary to look before you leap.",
+    "en": "I think it is necessary to look before you leap.",
     "cn": "我觉得三思而后行是有必要的。"
    },
    {
@@ -2819,11 +2819,11 @@
   "gloss": "（很）有用。",
   "examples": [
    {
-    "en": "It is very useful to recite English sentences and Passages.",
+    "en": "It is very useful to recite English sentences and passages.",
     "cn": "背诵英语句子和短文非常有用。"
    },
    {
-    "en": "It is very useful to take a deep breathwhen you feel nervous.",
+    "en": "It is very useful to take a deep breath when you feel nervous.",
     "cn": "紧张的时候深呼吸很有用。"
    }
   ]
@@ -3181,7 +3181,7 @@
     "cn": "在医院再住几天可能会更好一些。"
    },
    {
-    "en": "Maybe it's better to send atext message instead of calling.",
+    "en": "Maybe it's better to send a text message instead of calling.",
     "cn": "也许发短信比打电话更好。"
    }
   ]
@@ -3196,7 +3196,7 @@
     "cn": "你的鼓励对我来说意义重大。"
    },
    {
-    "en": "This dictionary means a great deal to me becaulse Iwonit in a speech competition.",
+    "en": "This dictionary means a great deal to me because I won it in a speech competition.",
     "cn": "这本字典对我来说意义重大，因为我是在一次演讲比赛中赢来的。"
    }
   ]
@@ -3301,7 +3301,7 @@
     "cn": "直到回到家，我们才意识到已经那么晚了。"
    },
    {
-    "en": "Not until Ibegan to work did I realize how much time I had wasted.",
+    "en": "Not until I began to work did I realize how much time I had wasted.",
     "cn": "直到开始工作，我才意识到我已蹉跎了很多岁月。"
    }
   ]
@@ -3357,12 +3357,12 @@
   "gloss": "一方面……，另一方面……。【写作必备句型】",
   "examples": [
    {
-    "en": "On （the） one hand Iadmire your ability, but on the other （hand） Idistrust your judgment.",
+    "en": "On the one hand I admire your ability, but on the other hand I distrust your judgment.",
     "cn": "一方面我钦佩你的才能，但另一方面我不相信你的判断力。"
    },
    {
-    "en": "On （the） one hand I want to be a teacher, on the other （hand） I worry about making money.",
-    "cn": "一万面我想做老师，但另一方面我为挣钱而担忧。"
+    "en": "On the one hand I want to be a teacher, on the other hand I worry about making money.",
+    "cn": "一方面我想做老师，但另一方面我为挣钱而担忧。"
    }
   ]
  },
@@ -3410,8 +3410,8 @@
     "cn": "如果你需要协助，请随时联系我们。"
    },
    {
-    "en": "Please dsfe oe toif Bo re . pay English name. if it is easier for you to remember.",
-    "cn": "如果对你来说更容易记住的话，尽管叫我的英文名，"
+    "en": "Please feel free to call me by my English name, if it is easier for you to remember.",
+    "cn": "如果对你来说更容易记住的话，尽管叫我的英文名。"
    }
   ]
  },
@@ -3519,26 +3519,26 @@
     "cn": "必须采取措施减少污染。"
    },
    {
-    "en": "Sorry to bather yow. DxAHWe a pestion to ask you.",
-    "cn": "很抱歉打犹你，可是我有个问题要问你。"
+    "en": "Sorry to bother you. I have a question to ask you.",
+    "cn": "很抱歉打扰你，可是我有个问题要问你。"
    },
    {
-    "en": "5omy to bother yon",
-    "cn": "成很的e781about to begin很抱歉打扰你，不过会议很快就要开始了。"
+    "en": "Sorry to bother you, but the meeting is about to begin.",
+    "cn": "很抱歉打扰你，不过会议很快就要开始了。"
    }
   ]
  },
  {
   "num": 228,
-  "pattern": "Thanks to.",
+  "pattern": "Thanks to ...",
   "gloss": "由于……〈多亏……。【表达原因何型】",
   "examples": [
    {
     "en": "Thanks to his parents encouragement and support， he finally realized his dream.",
-    "cn": "多亏了父母的鼓励和支持，她终于实现了自己的梦想。"
+    "cn": "多亏了父母的鼓励和支持，他终于实现了自己的梦想。"
    },
    {
-    "en": "Thanks to Li Yang Crazy English, Ibecame the top student in my class.",
+    "en": "Thanks to Li Yang Crazy English, I became the top student in my class.",
     "cn": "多亏了李阳疯狂英语，我成了班上的尖子生。"
    }
   ]
@@ -3654,7 +3654,7 @@
   "gloss": "有迹象表明/显示……",
   "examples": [
    {
-    "en": "There are signs that you have made a significan't improvement.",
+    "en": "There are signs that you have made a significant improvement.",
     "cn": "有迹象表明你有了显著的进步。"
    },
    {
@@ -3924,7 +3924,7 @@
   "gloss": "你认为……怎么样？",
   "examples": [
    {
-    "en": "What do you say we go for a drive one of these days when it clearsup?",
+    "en": "What do you say we go for a drive one of these days when it clears up?",
     "cn": "最近天晴的时候我们开车出去兜兜风，你认为怎么样？"
    },
    {
@@ -3950,7 +3950,7 @@
  },
  {
   "num": 256,
-  "pattern": "What I'm getting atis",
+  "pattern": "What I'm getting at is ...",
   "gloss": "我的意思是……。",
   "examples": [
    {
@@ -3984,7 +3984,7 @@
   "gloss": "意义何在？/ 为什么要……’",
   "examples": [
    {
-    "en": "What's the point of arguing aboutit?",
+    "en": "What's the point of arguing about it?",
     "cn": "争论这件事意义何在？"
    },
    {

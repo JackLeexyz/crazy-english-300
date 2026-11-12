@@ -118,6 +118,95 @@ for w in sorted(all_words):
     else:
         missed.append(w)
 
+# ---- 人工兜底释义：保证页面上每个可悬停单词都有中文 ----
+# ECDICT 对缩写、专名、句型占位符覆盖不全；另有少量词条 translation 为空。
+# 这些词若不给中文，悬停气泡要么显示「未收录该词」，要么只有单词没有释义。
+MANUAL_SENSES = {
+    "sb": "某人（somebody 的缩写，句型占位符）",
+    "sth": "某事；某物（something 的缩写，句型占位符）",
+    "sw": "某地（somewhere 的缩写，句型占位符）",
+    "emei": "峨眉山（中国四川名山）",
+    "jiuzhaigou": "九寨沟（中国四川风景区）",
+    "beijing": "北京（中国首都）",
+    "haven't": "还没有；未曾（have not 的缩写）",
+    "wouldn't": "不会；不愿（would not 的缩写）",
+    "doesn't": "不；没有（does not 的缩写，第三人称单数）",
+    "didn't": "没有（did not 的缩写，过去式）",
+    "isn't": "不是（is not 的缩写）",
+    "aren't": "不是（are not 的缩写）",
+    "won't": "将不；不会（will not 的缩写）",
+    "can't": "不能；不会（cannot 的缩写）",
+    "don't": "不；不要（do not 的缩写）",
+    "couldn't": "不能（could not 的缩写）",
+    "shouldn't": "不应该（should not 的缩写）",
+    "i'm": "我是（I am 的缩写）",
+    "it's": "它是（it is 的缩写）",
+    "that's": "那是（that is 的缩写）",
+    "there's": "有；存在（there is 的缩写）",
+    "what's": "是什么（what is 的缩写）",
+    "let's": "让我们（let us 的缩写）",
+    "you're": "你是；你们是（you are 的缩写）",
+    "we're": "我们是（we are 的缩写）",
+    "they're": "他们是（they are 的缩写）",
+    "i'd": "我愿意；我会（I would / I had 的缩写）",
+    "i'll": "我将（I will 的缩写）",
+    "i've": "我已经（I have 的缩写）",
+    "you'll": "你将（you will 的缩写）",
+    "we'd": "我们会（we would 的缩写）",
+    "it'll": "它将（it will 的缩写）",
+}
+# 句式标题里的词也会被 tokenize() 包成可悬停单词，单独补进 DICT。
+# 不并入 all_words，避免影响 450 个重点词的筛选结果。
+for _p in data:
+    for _raw in word_re.findall(_p["pattern"]):
+        _w = _raw.lower().replace("’", "'").strip("'")
+        if not _w or _w in DICT:
+            continue
+        _lemma, _row = lookup(_w)
+        if _row:
+            DICT[_w] = {
+                "p": (_row.get("phonetic") or "").strip(),
+                "t": clean_trans(_row.get("translation") or _row.get("definition") or ""),
+            }
+
+for _w, _t in MANUAL_SENSES.items():
+    # ECDICT 对 haven't 之类只给 "=have not"（无中文），也要覆盖掉
+    _cur = DICT.get(_w, {}).get("t") or ""
+    if not re.search(r"[\u4e00-\u9fff]", _cur):
+        DICT[_w] = {"p": "", "t": _t}
+
+# ---- 硬校验：句式/例句里的每个词都要能查到中文释义 ----
+# 与 template.html 的 lookupWord 使用同一套词形还原规则。
+def _has_han(s):
+    return bool(re.search(r"[\u4e00-\u9fff]", s or ""))
+
+def _resolve(w):
+    if w in DICT and _has_han(DICT[w].get("t")):
+        return DICT[w]["t"]
+    tries = []
+    if w.endswith("'s"): tries.append(w[:-2])
+    if w.endswith("ies"): tries.append(w[:-3] + "y")
+    if w.endswith("es"): tries.append(w[:-2])
+    if w.endswith("s"): tries.append(w[:-1])
+    if w.endswith("ied"): tries.append(w[:-3] + "y")
+    if w.endswith("ed"): tries += [w[:-2], w[:-1]]
+    if w.endswith("ing"): tries += [w[:-3], w[:-3] + "e"]
+    if w.endswith("er"): tries.append(w[:-2])
+    if w.endswith("est"): tries.append(w[:-3])
+    if w.endswith("ly"): tries.append(w[:-2])
+    for t in tries:
+        if t in DICT and _has_han(DICT[t].get("t")):
+            return DICT[t]["t"]
+    return ""
+
+_all_tokens = set(all_words)
+for _p in data:
+    for _w in word_re.findall(_p["pattern"]):
+        _all_tokens.add(_w.lower().replace("’", "'").strip("'"))
+_no_sense = sorted(w for w in _all_tokens if w and not _resolve(w))
+if _no_sense:
+    sys.exit("[构建中止] 以下单词悬停后没有中文释义，请补 MANUAL_SENSES:\n  " + ", ".join(_no_sense[:60]))
+
 # ---- contextual sense per (sentence, word) ----
 def senses_of(t):
     if not t:
