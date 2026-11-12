@@ -6,6 +6,25 @@ import csv, json, re, sys
 BASE = "/Users/Macxpro/WorkBuddy/2026-09-20-04-17-56/crazy300"
 data = json.load(open(f"{BASE}/data.json"))
 
+# ---- fail fast: 中文释义完整性 ----
+# 源 docx 是照片 OCR 版，部分句型的释义被排到标题行的下一段。早期整理时
+# 只读标题行，曾静默丢掉 57 个句式释义 + 19 条例句译文，页面上表现为空白。
+# 这里硬校验，构建时直接报错，避免同类问题再次溜到线上。
+_bad = []
+for _p in data:
+    _g = (_p.get("gloss") or "").strip()
+    if not _g:
+        _bad.append(f"句式 {_p['num']:03d} 缺中文释义")
+    if _g.count("（") != _g.count("）") or re.match(r"^[）】]", _g):
+        _bad.append(f"句式 {_p['num']:03d} 中文释义疑似被截断: {_g}")
+    if re.search(r"[【（⋯…]\s*$", _p["pattern"]):
+        _bad.append(f"句式 {_p['num']:03d} 标题尾部粘了中文: {_p['pattern']}")
+    for _i, _e in enumerate(_p["examples"]):
+        if not (_e.get("cn") or "").strip():
+            _bad.append(f"句式 {_p['num']:03d} 例句 {_i + 1} 缺中文译文")
+if _bad:
+    sys.exit("[data.json] 中文释义不完整，已中止构建:\n  " + "\n  ".join(_bad[:20]))
+
 # ---- collect words ----
 word_re = re.compile(r"[A-Za-z]+(?:['’][a-z]+)?")
 all_words = set()
